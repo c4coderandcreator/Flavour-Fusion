@@ -6,6 +6,7 @@ This is a Food Website built with HTML, CSS, and JavaScript. It allows user to o
 
 - HTML
 - CSS
+- BootStrap
 - JavaScript
 
 ## Installation
