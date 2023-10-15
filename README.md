@@ -37,3 +37,5 @@ Feel free to contribute to this project by creating a pull request. We welcome a
 ## Thanks to all Contributors 💪
 
 Also Give it a Star 🌟, If you loved contributing to the project.
+
+## [MIT Licensed](https://github.com/c4coderandcreator/Flavour-Fusion/blob/main/LICENSE)
