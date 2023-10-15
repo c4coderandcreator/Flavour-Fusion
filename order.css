@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  position: relative;
+  font-family: "Poppins", sans-serif !important;
+}
+
+#close-sam-section {
+  position: absolute;
+  top: 15%;
+  right: 20%;
+  background-color: black;
+  color: white;
+  padding: 5px 7px;
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.container-sam {
+  overflow: hidden;
+  width: 100%;
+  height: 600px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 69;
+  gap: 10px;
+  position: absolute;
+}
+
+.main-head-sam {
+  overflow: hidden;
+  height: 70%;
+  width: 30%;
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+.head-content-sam {
+  border-radius: 10px;
+  height: 13%;
+  width: 100%;
+  background-color: #f9f2b9;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0px 20px;
+  border-bottom: 1px solid grey;
+}
+.head-content-sam i {
+  font-size: 1.69rem;
+}
+#search-box-sam {
+  width: 80%;
+  height: 65%;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  font-size: 1.2rem;
+  font-family: Poppins;
+}
+.food-items-sam {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  overflow-y: scroll;
+  padding: 5px 0;
+}
+.food-content-sam {
+  height: 20%;
+  width: 100%;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  position: relative;
+}
+.food-content-sam img {
+  height: 110%;
+  z-index: 1;
+}
+.food-content-sam-description {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+  height: 70%;
+  border: 1px solid black;
+  border-radius: 12px;
+  position: absolute;
+  left: 22%;
+  padding: 10px;
+  box-shadow: 0px 0px 2px 1px black;
+}
+.description-sam {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 70%;
+  height: 70%;
+  padding-left: 15%;
+}
+.description-sam h3 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0 !important;
+  text-align: left;
+}
+.description-sam p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin: 0 !important;
+}
+.item-sam {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30%;
+  padding: 0 7%;
+}
+.item-sam button {
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background-color: black;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 20% 25%;
+  color: white;
+}
+
+.container-sam {
+  display: none;
+  transition: 0.49s ease-in-out;
+}
+.container-sam.active-sam {
+  display: flex;
+  transition: 0.49s ease-in-out;
+}
+.order-sam {
+  padding: 10px 20px;
+  font-size: 24px;
+  margin: 50px;
+}
+.quantity {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.checkout-sam {
+  margin-left: 5rem;
+  height: 30%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 2% 0;
+  gap: 5%;
+}
+.checkout-sam h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 10px 0px;
+}
+.checkout-sam h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding: 10px 20px;
+}
+.text-content-sam {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  padding: 10px 20px;
+  border: 2px solid black;
+}
+.checkout-btn-sam {
+  height: max-content;
+  width: 50%;
+  background-color: black;
+  color: white;
+  padding: 3% 5%;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.checkout-btn-sam:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+#order-sam {
+  cursor: pointer;
+}
+
+@media (max-width: 1280px) and (min-width: 1024px) {
+  .main-head-sam {
+    height: 75%;
+    width: 45%;
+  }
+  .checkout-sam {
+    margin-left: 0rem;
+    height: 35%;
+    width: 30%;
+  }
+}
+@media (max-width: 1024px) and (min-width: 780px) {
+  #close-sam-section {
+    top: 25%;
+    right: 10%;
+  }
+  .head-content-sam {
+    padding: 5px;
+  }
+  .container-sam.active-sam {
+    height: 100vh;
+  }
+  .main-head-sam {
+    height: 50%;
+    width: 50%;
+  }
+  .checkout-sam {
+    margin-left: 0rem;
+    height: 40%;
+    width: 35%;
+  }
+  .checkout-sam h1 {
+    padding: 0;
+  }
+}
+@media (max-width: 780px) and (min-width: 612px) {
+  .container-sam.active-sam {
+    width: 100%;
+    height: 100vh;
+  }
+  .main-head-sam {
+    width: 80%;
+  }
+  .checkout-sam {
+    margin-left: 0rem;
+    width: 80%;
+  }
+  .description-sam h3 {
+    font-size: 1rem;
+  }
+  .description-sam p {
+    font-size: 0.8rem;
+  }
+  .item-sam button {
+    font-size: 0.8rem;
+  }
+  .food-content-sam-description {
+    padding: 10% 0;
+  }
+  .checkout-sam h1 {
+    font-size: 1.1rem;
+  }
+  .checkout-sam h2 {
+    font-size: 0.9rem;
+  }
+  .checkout-btn-sam {
+    font-size: 0.9rem;
+  }
+  .food-content-sam img {
+    height: 85% !important;
+  }
+}
+@media (max-width: 612px) {
+  .main-head-sam {
+    width: 85%;
+    height: 60%;
+  }
+  #close-sam-section {
+    top: 6%;
+    right: 10%;
+  }
+  .food-content-sam img {
+    height: 100% !important;
+  }
+
+  .container-sam.active-sam {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+  }
+  .main-head-sam {
+    width: 80%;
+    height: 60%;
+  }
+  .checkout-sam {
+    margin-left: 0rem;
+    width: 80%;
+    height: 30%;
+  }
+  .checkout-sam h1 {
+    font-size: 1.1rem;
+    padding: 0;
+  }
+  .description-sam h3 {
+    font-size: 0.7rem !important;
+    line-height: 100%;
+    padding: 5% !important;
+  }
+  .description-sam p {
+    font-size: 0.8rem;
+    line-height: 100%;
+  }
+  .item-sam button {
+    font-size: 0.8rem;
+    padding: 15% 20%;
+  }
+  .food-content-sam-description {
+    height: 90%;
+    padding: 10px;
+  }
+  #search-box-sam {
+    font-size: 1.1rem;
+  }
+  .checkout-btn-sam {
+    font-size: 0.9rem;
+  }
+  .checkout-sam h2 {
+    font-size: 0.9rem;
+  }
+  .item-sam button {
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background-color: black;
+    font-size: 0.6rem !important;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 20% 25%;
+    color: white;
+  }
+}
