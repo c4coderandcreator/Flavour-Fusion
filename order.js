@@ -9,10 +9,12 @@ function removeContent(){
   homeSam2.style.display="none";
   homeSam3.style.display="none";
 }
+
 function revealContent(){
   homeSam.style.display="block";
   homeSam2.style.display="block";
   homeSam3.style.display="block";
+  console.log('hi Im here in the revealContent in order page');
 }
 
 //Search bar functionality
@@ -46,8 +48,10 @@ closeSamSec.addEventListener("click", () => {
   revealContent();
 });
 
+
 order.addEventListener("click", () => {
   content.classList.add("active-sam");
+  console.log('hi Im here in the order page');
   removeContent();
 });
 
@@ -85,6 +89,7 @@ foodItems.forEach((item) => {
   const priceText = item.textContent.trim();
   const price = parseInt(priceText.split("Rs. ")[1]);
   priceList.push(price);
+ 
 });
 
 function calculateTotalPrice() {
