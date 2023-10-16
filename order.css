@@ -17,11 +17,17 @@ body {
   top: 15%;
   right: 20%;
   background-color: black;
-  color: white;
-  padding: 5px 7px;
-  border-radius: 5px;
+  padding: 8px 12px;
+  border-radius: 12px;
   border: 1px solid black;
   cursor: pointer;
+}
+
+#close-sam-section p {
+  color: white;
+  font-size: 24px;
+  line-height: 24px;
+  transform: rotate(45deg);
 }
 
 .container-sam {
