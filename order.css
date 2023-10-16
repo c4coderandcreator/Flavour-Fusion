@@ -68,10 +68,11 @@ body {
 #search-box-sam {
   width: 80%;
   height: 65%;
-  border-radius: 12px;
+  border-radius: 99px;
+  /* 99px for max without having to use 50% which can cause a visual bug */
   border: none;
   outline: none;
-  padding: 0 10px;
+  padding: 0 16px;
   font-size: 1.2rem;
   font-family: Poppins;
 }
