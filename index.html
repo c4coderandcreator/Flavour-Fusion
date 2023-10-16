@@ -26,6 +26,13 @@
 
     gtag('config', 'G-176HRZFSW3');
   </script>
+  <style>
+    body.dark-theme {
+      background-color: #333; /* Update with your dark theme color */
+      color: #fff; /* Update with your dark theme color */
+    }
+   
+  </style>
 </head>
 
 <body>
@@ -54,6 +61,12 @@
             <a href="#sign-in" onClick="clickSignInButton()" class="nav__link sign-in-btn-nav" id="sign-in-btn">Sign
               In</a>
           </li>
+          <li class="nav__item">   <div class="theme-toggle">
+            <li class="nav__item">
+              <button onclick="toggleTheme()" class="theme-toggle-button" id="theme-toggle-button">Dark Theme
+              </button>
+            </li>
+          </div>
         </ul>
       </div>
 
@@ -948,6 +961,40 @@
   <script src="./allindex.js"></script>
   <script src="./anorder.js"></script>
 
+  <script>
+    function toggleTheme() {
+      const body = document.body;
+      body.classList.toggle('dark-theme');
+    
+      const themeToggleButton = document.getElementById('theme-toggle-button');
+      const header = document.querySelector('header');
+    
+      if (body.classList.contains('dark-theme')) {
+        themeToggleButton.textContent = 'Bright Theme';
+        changeTextColors('white');
+        header.style.color = 'white';  // Change header text color to white
+      } else {
+        themeToggleButton.textContent = 'Dark Theme';
+        changeTextColors('black');
+        header.style.color = 'black';  // Change header text color to black
+      }
+    }
+      function changeTextColors(color) {
+      const allTextElements = document.querySelectorAll('body *');  // Select all elements
+    
+      // Exclude header elements and buttons from color change
+      const headerElements = document.querySelectorAll('header *');
+      const buttonElements = document.querySelectorAll('button');
+      const elementsToExclude = Array.from(headerElements).concat(Array.from(buttonElements));
+    
+      allTextElements.forEach(element => {
+        if (!elementsToExclude.includes(element)) {
+          element.style.color = color;
+        }
+      });
+    }
+      </script>
+    
 </body>
 
 </html>
