@@ -50,7 +50,6 @@ body {
 }
 
 .head-content-sam {
-  border-radius: 10px;
   height: 13%;
   width: 100%;
   background-color: #f9f2b9;
@@ -60,7 +59,6 @@ body {
   justify-content: center;
   gap: 10px;
   padding: 0px 20px;
-  border-bottom: 1px solid grey;
 }
 
 .head-content-sam i {
