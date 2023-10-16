@@ -46,7 +46,7 @@ body {
   border-radius: 12px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 16px 24px #eaeaea;
 }
 
 .head-content-sam {
@@ -193,7 +193,7 @@ body {
   justify-content: center;
   background: white;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 16px 24px #eaeaea;
   padding: 2% 0;
   gap: 5%;
 }
