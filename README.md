@@ -35,6 +35,7 @@ Feel free to contribute to this project by creating a pull request. We welcome a
 - If you can add more functionality, then create an issue and contribute by making pull request.
 
 ## Thanks to all Contributors 💪
+[![Contributors image](https://contributors-img.com/image?repo=c4coderandcreator/Flavour-Fusion)](https://github.com/c4coderandcreator/Flavour-Fusion/graphs/contributors)
 
 Also Give it a Star 🌟, If you loved contributing to the project.
 
