@@ -13,9 +13,7 @@ body {
 }
 
 #close-sam-section {
-  position: absolute;
-  top: 15%;
-  right: 20%;
+  width: fit-content;
   background-color: black;
   padding: 8px 12px;
   border-radius: 12px;
@@ -25,29 +23,42 @@ body {
 
 #close-sam-section p {
   color: white;
+}
+
+.close-icon {
   font-size: 24px;
   line-height: 24px;
   transform: rotate(45deg);
 }
 
 .container-sam {
-  overflow: hidden;
   width: 100%;
   height: 600px;
   background-color: #fdfbfb;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 69;
-  gap: 10px;
+  gap: 8px;
   position: absolute;
+}
+
+.container-sam-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 432px;
+  height: 535px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 0 16px;
 }
 
 .main-head-sam {
   overflow: hidden;
-  height: 70%;
-  width: 30%;
+  width: 100%;
   background-color: white;
   border-radius: 12px;
   display: flex;
@@ -190,11 +201,11 @@ body {
 }
 
 .checkout-sam {
-  margin-left: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
   background-color: #fff;
   border-radius: 12px;
   box-shadow: 0 16px 24px #eaeaea;
@@ -213,6 +224,7 @@ body {
 }
 
 .checkout-btn-wrapper {
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -225,12 +237,12 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 8px 16px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   border-radius: 12px;
 }
 
 .checkout-btn-sam {
+  width: 100%;
   background-color: black;
   color: white;
   padding: 8px 16px;
