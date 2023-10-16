@@ -12,10 +12,9 @@
 }
 
 #sign-in-content {
-  filter: blur(-4px);
   width: 65%;
   background-color: rgb(75, 91, 62);
-  margin-top: 10%;
+  margin-top: 5%;
   margin-bottom: 10%;
   display: flex;
   justify-content: space-evenly;
@@ -48,7 +47,7 @@
 }
 
 .sign-in-element {
-  width: 30%;
+  width: 37%;
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -148,8 +147,8 @@
 
 @media (max-width: 1400px) {
   .closeBtn {
-    top: 23%;
-    right: 20rem;
+     left: -6rem;
+     margin-bottom: 56.5%;
   }
 }
 

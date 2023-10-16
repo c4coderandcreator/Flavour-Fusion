@@ -133,7 +133,7 @@
           <img src="./assets/logoSignInUp.png" alt="FlavorFusion-Logo" width="100%" height="auto">
         </div>
         <button type="button" onClick="clickSignInButton()"
-          class="btn btn-dark btn-square-md position-absolute closeBtn">x</button>
+          class="btn btn-dark btn-square-md position-relative closeBtn">x</button>
       </div>
     </div>
   </header>
@@ -942,7 +942,7 @@
       </div>
     </div>
 
-    <p class="footer__copy">&#169; 2023 FlavorFusion. All right reserved</p>
+    <p class="footer__copy">&#169; <span class="year"></span> FlavorFusion. All right reserved</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
@@ -996,6 +996,11 @@
         }
       });
     }
+    
+    // code for dynamic year 
+    const year = document.querySelector('.year');
+    const currentYear = new Date().getFullYear();
+    year.innerHTML = currentYear
   </script>
 
 </body>
