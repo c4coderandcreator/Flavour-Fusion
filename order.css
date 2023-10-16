@@ -232,7 +232,7 @@ body {
   background-color: black;
   color: white;
   padding: 3% 5%;
-  border: none;
+  border: 2px solid transparent;
   outline: none;
   border-radius: 12px;
   font-size: 1.1rem;
