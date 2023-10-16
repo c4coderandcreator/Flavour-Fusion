@@ -206,6 +206,7 @@ img {
 .sign-in-btn-nav:hover {
   background-color: #ffffff;
   color: #050505;
+  border: #050505 1px solid;
 }
 
 .nav__toggle {
