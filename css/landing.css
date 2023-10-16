@@ -329,6 +329,25 @@ img {
   transform: scale(1.1);
 }
 
+#theme-toggle-button{
+  padding: 3px 6px;
+  border-radius: 10px;
+  border: none;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  transition: all ease-in-out 0.2s;
+}
+#theme-toggle-button:hover{
+  padding: 3px 6px;
+  border-radius: 10px;
+  border: none;
+  border: 1px solid #050505;
+  background-color: transparent;
+  color: black;
+  transform: scale(1.1);
+}
+
 /*========== food-fact ==========*/
 .food-fact__data {
   text-align: center;
@@ -356,7 +375,7 @@ img {
   border-radius: 1rem;
   transform-style: preserve-3d;
   perspective: 1000px;
-  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+
 }
 
 .order-landing__data:hover {
