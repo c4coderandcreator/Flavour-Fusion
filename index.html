@@ -1,4 +1,4 @@
-                                <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -16,16 +16,16 @@
   <link rel="stylesheet" href="./menu.css" />
   <link rel="stylesheet" href="./track-sam.css" />
   <link rel="stylesheet" href="./css/signInUp.css" />
-  <link rel="stylesheet" href="./anorder.css"> 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-176HRZFSW3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <link rel="stylesheet" href="./anorder.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-176HRZFSW3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-176HRZFSW3');
-</script>
+    gtag('config', 'G-176HRZFSW3');
+  </script>
 </head>
 
 <body>
@@ -35,7 +35,7 @@
 
   <header class="l-header" id="header">
     <nav class="nav bd-container">
-      <a href="#" class="nav__logo" id = "flavor-fusion-btn">FlavorFusion</a>
+      <a href="#" class="nav__logo" id="flavor-fusion-btn">FlavorFusion</a>
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
           <li class="nav__item">
@@ -48,10 +48,11 @@
             <a href="#allaboutus" class="nav__link" id="allab">About</a>
           </li>
           <li class="nav__item">
-            <a href="#order-landing" class="nav__link"id="aboutLink">Orders</a>
+            <a href="#order-landing" class="nav__link" id="aboutLink">Orders</a>
           </li>
           <li class="nav__item">
-            <a href="#sign-in" onClick="clickSignInButton()" class="nav__link sign-in-btn-nav" id="sign-in-btn">Sign In</a>
+            <a href="#sign-in" onClick="clickSignInButton()" class="nav__link sign-in-btn-nav" id="sign-in-btn">Sign
+              In</a>
           </li>
         </ul>
       </div>
@@ -60,59 +61,69 @@
         <i class="bx bx-grid-alt"></i>
       </div>
     </nav>
-  <div id="bg-sign-in" class="d-none">
-    <div id="sign-in-content">
-      <div class="d-none sign-in-element" id="signIn-Up-hd1">
-        <h1 style="color: #bfd5b6; margin-bottom: 0.5rem;">Sign Up</h1>
-        <h6 class="signIn-Up-desc">Already have account?<a onclick="toggleSignIn()" class="changeCursor" style="color: wheat; text-decoration: underline;">
-            Sign In</a></h6>
-        <button class="btn btn-light rounded-pill"><i class="fa fa-google"></i> | Sign up with Google</button>
-        <div class="divider d-flex align-items-center my-4">
-          <p style="color: white;" class="text-center fw-bold mx-3 mb-0">Or</p>
+    <div id="bg-sign-in" class="d-none">
+      <div id="sign-in-content">
+        <div class="d-none sign-in-element" id="signIn-Up-hd1">
+          <h1 style="color: #bfd5b6; margin-bottom: 0.5rem;">Sign Up</h1>
+          <h6 class="signIn-Up-desc">Already have account?<a onclick="toggleSignIn()" class="changeCursor"
+              style="color: wheat; text-decoration: underline;">
+              Sign In</a></h6>
+          <button class="btn btn-light rounded-pill"><i class="fa fa-google"></i> | Sign up with Google</button>
+          <div class="divider d-flex align-items-center my-4">
+            <p style="color: white;" class="text-center fw-bold mx-3 mb-0">Or</p>
+          </div>
+          <form action="#"></form>
+
+          <input type="email" id="email-sign-in" class="form-control rounded-pill" aria-describedby="emailHelp"
+            placeholder="Enter email">
+          <br>
+          <input type="password" name="password-sign-in" class="form-control rounded-pill" id="password-sign-in"
+            placeholder="Password">
+          <br>
+          <input type="password" name="confirmpassword-sign-in" class="form-control rounded-pill"
+            id="confirmpassword-sign-in" placeholder="Confirm password">
+
+          <br>
+          <button style="color: black; background-color: #c8dfbf;" class="btn rounded-pill loginBtn" type="submit"
+            class="btn">Sign Up</button>
+          </form>
         </div>
-        <form action="#"></form>
-       
-        <input type="email" id="email-sign-in" class="form-control rounded-pill" aria-describedby="emailHelp" placeholder="Enter email">
-        <br>
-        <input type="password" name="password-sign-in" class="form-control rounded-pill" id="password-sign-in" placeholder="Password">
-        <br>
-        <input type="password" name="confirmpassword-sign-in" class="form-control rounded-pill" id="confirmpassword-sign-in" placeholder="Confirm password">
-    
-        <br>
-        <button style="color: black; background-color: #c8dfbf;" class="btn rounded-pill loginBtn" type="submit" class="btn">Sign Up</button>
-        </form>
-      </div>
-      <div class="sign-in-loco" id="signIn-Up-hd2">
-        <img src="./assets/logoSignInUp.png" alt="FlavorFusion-Logo" width="100%" height="auto">
-      </div>
-      <div id="sign-in-line"></div>
-      <div class="sign-in-element" id="signIn-Up-hd3">
-        <h1 style="color: #bfd5b6; margin-bottom: 0.5rem;">Sign In</h1>
-        <h6 class="signIn-Up-desc">Don't have an account yet?<a onclick="toggleSignUp()" class="changeCursor" style="color: wheat; text-decoration: underline;">
-            Sign Up</a></h6>
-        <button class="btn btn-light rounded-pill"><i class="fa fa-google"></i> | Sign In with Google</button>
-        <div class="divider d-flex align-items-center my-4">
-          <p style="color: white;" class="text-center fw-bold mx-3 mb-0">Or</p>
+        <div class="sign-in-loco" id="signIn-Up-hd2">
+          <img src="./assets/logoSignInUp.png" alt="FlavorFusion-Logo" width="100%" height="auto">
         </div>
-        <form action="#"></form>
-        
-        <input type="email" id="email-sign-in" class="form-control rounded-pill" aria-describedby="emailHelp" placeholder="Enter email">
-        <br>
-        <input type="password" name="password-sign-in" class="form-control rounded-pill" id="password-sign-in" placeholder="Password">
-        
-        <br>
-        <button style="color: black; background-color: #c8dfbf;" class="btn rounded-pill loginBtn" type="submit">Sign In</button>
-        </form>
+        <div id="sign-in-line"></div>
+        <div class="sign-in-element" id="signIn-Up-hd3">
+          <h1 style="color: #bfd5b6; margin-bottom: 0.5rem;">Sign In</h1>
+          <h6 class="signIn-Up-desc">Don't have an account yet?<a onclick="toggleSignUp()" class="changeCursor"
+              style="color: wheat; text-decoration: underline;">
+              Sign Up</a></h6>
+          <button class="btn btn-light rounded-pill"><i class="fa fa-google"></i> | Sign In with Google</button>
+          <div class="divider d-flex align-items-center my-4">
+            <p style="color: white;" class="text-center fw-bold mx-3 mb-0">Or</p>
+          </div>
+          <form action="#"></form>
+
+          <input type="email" id="email-sign-in" class="form-control rounded-pill" aria-describedby="emailHelp"
+            placeholder="Enter email">
+          <br>
+          <input type="password" name="password-sign-in" class="form-control rounded-pill" id="password-sign-in"
+            placeholder="Password">
+
+          <br>
+          <button style="color: black; background-color: #c8dfbf;" class="btn rounded-pill loginBtn" type="submit">Sign
+            In</button>
+          </form>
+        </div>
+        <div class="d-none sign-in-loco" id="signIn-Up-hd4">
+          <img src="./assets/logoSignInUp.png" alt="FlavorFusion-Logo" width="100%" height="auto">
+        </div>
+        <button type="button" onClick="clickSignInButton()"
+          class="btn btn-dark btn-square-md position-absolute closeBtn">x</button>
       </div>
-      <div class="d-none sign-in-loco" id="signIn-Up-hd4">
-        <img src="./assets/logoSignInUp.png" alt="FlavorFusion-Logo" width="100%" height="auto">
-      </div>
-      <button type="button" onClick="clickSignInButton()" class="btn btn-dark btn-square-md position-absolute closeBtn">x</button>
     </div>
-  </div>
   </header>
 
-  
+
   <main class="l-main">
     <section class="home" id="home">
       <div class="home__container bd-container bd-grid">
@@ -131,7 +142,7 @@
       </div>
     </section>
 
-    
+
     <section class="food-fact section bd-container" id="#">
       <div class="food-fact__container bd-grid">
         <div class="food-fact__data">
@@ -155,143 +166,150 @@
     </section>
 
     <section id="sam" class="container-sam">
-      <button id="close-sam-section">X</button>
-      <div class="main-head-sam">
-        <div class="head-content-sam">
-          <i class="bx bx-search-alt-2"></i>
-          <input type="text" id="search-box-sam" placeholder="Search menu" onkeyup="searchSAM()" />
-        </div>
-
-        <div class="food-items-sam" id="food-items-sam">
-          <div class="food-content-sam">
-            <img src="./assets/image/salad (2).png" alt=" salad-image" />
-            <div class="food-content-sam-description">
-              <div class="description-sam">
-                <h3>Noodle organica</h3>
-                <p>Rs. 100</p>
-              </div>
-
-              <div class="item-sam">
-                <button class="sub">-</button>
-                <span class="quantity">0</span>
-                <button class="add">+</button>
-              </div>
-            </div>
-          </div>
-          <div class="food-content-sam">
-            <img src="./assets/image/salad (3).png" alt=" salad-image" />
-            <div class="food-content-sam-description">
-              <div class="description-sam">
-                <h3>Egg-salad Organica</h3>
-                <p>Rs. 100</p>
-              </div>
-
-              <div class="item-sam">
-                <button class="sub">-</button>
-                <span class="quantity">0</span>
-                <button class="add">+</button>
-              </div>
-            </div>
-          </div>
-          <div class="food-content-sam">
-            <img src="./assets/image/salad (4).png" alt=" salad-image" />
-            <div class="food-content-sam-description">
-              <div class="description-sam">
-                <h3>Fruits de fresh</h3>
-                <p>Rs. 130</p>
-              </div>
-
-              <div class="item-sam">
-                <button class="sub">-</button>
-                <span class="quantity">0</span>
-                <button class="add">+</button>
-              </div>
-            </div>
-          </div>
-          <div class="food-content-sam">
-            <img src="./assets/image/salad (5).png" alt=" salad-image" />
-            <div class="food-content-sam-description">
-              <div class="description-sam">
-                <h3>Vegetable Mashup</h3>
-                <p>Rs. 120</p>
-              </div>
-              <div class="item-sam">
-                <button class="sub">-</button>
-                <span class="quantity">0</span>
-                <button class="add">+</button>
-              </div>
-            </div>
-          </div>
-          <div class="food-content-sam">
-            <img src="./assets/image/salad (6).png" alt=" salad-image" />
-            <div class="food-content-sam-description">
-              <div class="description-sam">
-                <h3>Organica de salad</h3>
-                <p>Rs. 160</p>
-              </div>
-              <div class="item-sam">
-                <button class="sub">-</button>
-                <span class="quantity">0</span>
-                <button class="add">+</button>
-              </div>
-            </div>
-          </div>
-          <div class="food-content-sam">
-            <img src="./assets/image/salad (7).png" alt=" salad-image" />
-            <div class="food-content-sam-description">
-              <div class="description-sam">
-                <h3>Nature en salad</h3>
-                <p>Rs. 170</p>
-              </div>
-              <div class="item-sam">
-                <button class="sub">-</button>
-                <span class="quantity">0</span>
-                <button class="add">+</button>
-              </div>
-            </div>
-          </div>
-          <div class="food-content-sam">
-            <img src="./assets/image/salad (8).png" alt=" salad-image" />
-            <div class="food-content-sam-description">
-              <div class="description-sam">
-                <h3>Mix-fresh salad</h3>
-                <p>Rs. 110</p>
-              </div>
-              <div class="item-sam">
-                <button class="sub">-</button>
-                <span class="quantity">0</span>
-                <button class="add">+</button>
-              </div>
-            </div>
-          </div>
-          <div class="food-content-sam">
-            <img src="./assets/image/salad (9).png" alt=" salad-image" />
-            <div class="food-content-sam-description">
-              <div class="description-sam">
-                <h3>Fruit-e-convoy</h3>
-                <p>Rs. 210</p>
-              </div>
-              <div class="item-sam">
-                <button class="sub">-</button>
-                <span class="quantity">0</span>
-                <button class="add">+</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="checkout-sam">
-        <div class="text-content-sam">
-          <h1>Total:</h1>
-          <h2 id="totalPrice">Rs.0</h2>
-        </div>
-        <button class="checkout-btn-sam" id="reset-sam">Checkout</button>
-        <button class="checkout-btn-sam" id="reset-cart-sam">
-          Reset cart
+      <div class="container-sam-wrapper">
+        <button id="close-sam-section">
+          <p class="close-icon">+</p>
         </button>
+        <div class="main-head-sam">
+          <div class="head-content-sam">
+            <i class="bx bx-search-alt-2"></i>
+            <input type="text" id="search-box-sam" placeholder="Search menu" onkeyup="searchSAM()" />
+          </div>
+          <div class="food-items-sam" id="food-items-sam">
+            <div class="food-content-sam">
+              <img src="./assets/image/salad (2).png" alt=" salad-image" />
+              <div class="food-content-sam-description">
+                <div class="description-sam">
+                  <h3>Noodle organica</h3>
+                  <p>Rs. 100</p>
+                </div>
+
+                <div class="item-sam">
+                  <button class="sub">-</button>
+                  <span class="quantity">0</span>
+                  <button class="add">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="food-content-sam">
+              <img src="./assets/image/salad (3).png" alt=" salad-image" />
+              <div class="food-content-sam-description">
+                <div class="description-sam">
+                  <h3>Egg-salad Organica</h3>
+                  <p>Rs. 100</p>
+                </div>
+
+                <div class="item-sam">
+                  <button class="sub">-</button>
+                  <span class="quantity">0</span>
+                  <button class="add">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="food-content-sam">
+              <img src="./assets/image/salad (4).png" alt=" salad-image" />
+              <div class="food-content-sam-description">
+                <div class="description-sam">
+                  <h3>Fruits de fresh</h3>
+                  <p>Rs. 130</p>
+                </div>
+
+                <div class="item-sam">
+                  <button class="sub">-</button>
+                  <span class="quantity">0</span>
+                  <button class="add">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="food-content-sam">
+              <img src="./assets/image/salad (5).png" alt=" salad-image" />
+              <div class="food-content-sam-description">
+                <div class="description-sam">
+                  <h3>Vegetable Mashup</h3>
+                  <p>Rs. 120</p>
+                </div>
+                <div class="item-sam">
+                  <button class="sub">-</button>
+                  <span class="quantity">0</span>
+                  <button class="add">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="food-content-sam">
+              <img src="./assets/image/salad (6).png" alt=" salad-image" />
+              <div class="food-content-sam-description">
+                <div class="description-sam">
+                  <h3>Organica de salad</h3>
+                  <p>Rs. 160</p>
+                </div>
+                <div class="item-sam">
+                  <button class="sub">-</button>
+                  <span class="quantity">0</span>
+                  <button class="add">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="food-content-sam">
+              <img src="./assets/image/salad (7).png" alt=" salad-image" />
+              <div class="food-content-sam-description">
+                <div class="description-sam">
+                  <h3>Nature en salad</h3>
+                  <p>Rs. 170</p>
+                </div>
+                <div class="item-sam">
+                  <button class="sub">-</button>
+                  <span class="quantity">0</span>
+                  <button class="add">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="food-content-sam">
+              <img src="./assets/image/salad (8).png" alt=" salad-image" />
+              <div class="food-content-sam-description">
+                <div class="description-sam">
+                  <h3>Mix-fresh salad</h3>
+                  <p>Rs. 110</p>
+                </div>
+                <div class="item-sam">
+                  <button class="sub">-</button>
+                  <span class="quantity">0</span>
+                  <button class="add">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="food-content-sam">
+              <img src="./assets/image/salad (9).png" alt=" salad-image" />
+              <div class="food-content-sam-description">
+                <div class="description-sam">
+                  <h3>Fruit-e-convoy</h3>
+                  <p>Rs. 210</p>
+                </div>
+                <div class="item-sam">
+                  <button class="sub">-</button>
+                  <span class="quantity">0</span>
+                  <button class="add">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checkout-sam">
+          <div class="text-content-sam">
+            <h1>Total:</h1>
+            <h1 id="totalPrice">
+              <span>Rs.0</span>
+            </h1>
+          </div>
+          <div class="checkout-btn-wrapper">
+            <button class="checkout-btn-sam" id="reset-sam">Checkout</button>
+            <button class="checkout-btn-sam" id="reset-cart-sam">
+              Reset cart
+            </button>
+          </div>
+        </div>
       </div>
     </section>
-    
+
     <section class="track-container-sam" id="track-container-sam">
       <button id="close-track-section">X</button>
       <div class="track-top">
@@ -361,551 +379,559 @@
   </main>
 
 
-    <div class="menu-naima" id="menu">
-    
-      <div class="menu-ss-container">
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="ss-container">
-                <div class="ss-text">
-                  <h1>Summer Sale</h1>
-                  <p>Up to 70% off</p>
-                  <button class="ss-btn">BUY NOW!</button>
-                </div>
-                <div class="ss-img-container">
-                  <img class="ss-img" src="./assets/ss-1.png" alt="">
-                </div>
+  <div class="menu-naima" id="menu">
+
+    <div class="menu-ss-container">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="ss-container">
+              <div class="ss-text">
+                <h1>Summer Sale</h1>
+                <p>Up to 70% off</p>
+                <button class="ss-btn">BUY NOW!</button>
               </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="ss-container">
-                <div class="ss-text">
-                  <h1>Summer Sale</h1>
-                  <p>Up to 70% off</p>
-                  <button class="ss-btn">BUY NOW!</button>
-                </div>
-                <div class="ss-img-container">
-                  <img class="ss-img" src="./assets/ss-2.png" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="ss-container">
-                <div class="ss-text">
-                  <h1>Summer Sale</h1>
-                  <p>Up to 70% off</p>
-                  <button class="ss-btn">BUY NOW!</button>
-                </div>
-                <div class="ss-img-container">
-                  <img class="ss-img" src="./assets/ss-3.png" alt="">
-                </div>
+              <div class="ss-img-container">
+                <img class="ss-img" src="./assets/ss-1.png" alt="">
               </div>
             </div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
+          <div class="swiper-slide">
+            <div class="ss-container">
+              <div class="ss-text">
+                <h1>Summer Sale</h1>
+                <p>Up to 70% off</p>
+                <button class="ss-btn">BUY NOW!</button>
+              </div>
+              <div class="ss-img-container">
+                <img class="ss-img" src="./assets/ss-2.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="ss-container">
+              <div class="ss-text">
+                <h1>Summer Sale</h1>
+                <p>Up to 70% off</p>
+                <button class="ss-btn">BUY NOW!</button>
+              </div>
+              <div class="ss-img-container">
+                <img class="ss-img" src="./assets/ss-3.png" alt="">
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
+    </div>
 
-      
-      <div class="menu-heading">
-        <h2 class="menu-title">MENU</h2>
-        <div class="menu-line"></div>
-      </div>
-    
-      <div class="menu-btn-container">
-        <button class="menu-btn menu-clicked-btn" data-target="m-items-slide1">STARTER</button>
-        <button class="menu-btn" data-target="m-items-slide2">SALAD</button>
-        <button class="menu-btn" data-target="m-items-slide3">DESSERT</button>
-        <button class="menu-btn" data-target="m-items-slide4">SOUP</button>
-        <button class="menu-btn" data-target="m-items-slide5">SPAGHETTI</button>
-        <button class="menu-btn" data-target="m-items-slide6">DRINKS</button>
-      </div>
-     
-      <div class="dropdown">
-        <div class="select">
-          <span class="selected">Starter</span>
-          <div class="caret"></div>
-        </div>
-        <ul class="menu-dd">
-          <li data-target="m-items-slide1" class="active-menu">Starter</li>
-          <li data-target="m-items-slide2">Salad</li>
-          <li data-target="m-items-slide3">Dessert</li>
-          <li data-target="m-items-slide4">Soup</li>
-          <li data-target="m-items-slide5">Spaghetti</li>
-          <li data-target="m-items-slide6">Drinks</li>
-        </ul>
-      </div>
 
-     
-      <div class="m-items-slide m-items-slide1">
-        <div class="m-items-container">
-          <div class="dish">
-           <div class="dish-img-container">
+    <div class="menu-heading">
+      <h2 class="menu-title">MENU</h2>
+      <div class="menu-line"></div>
+    </div>
+
+    <div class="menu-btn-container">
+      <button class="menu-btn menu-clicked-btn" data-target="m-items-slide1">STARTER</button>
+      <button class="menu-btn" data-target="m-items-slide2">SALAD</button>
+      <button class="menu-btn" data-target="m-items-slide3">DESSERT</button>
+      <button class="menu-btn" data-target="m-items-slide4">SOUP</button>
+      <button class="menu-btn" data-target="m-items-slide5">SPAGHETTI</button>
+      <button class="menu-btn" data-target="m-items-slide6">DRINKS</button>
+    </div>
+
+    <div class="dropdown">
+      <div class="select">
+        <span class="selected">Starter</span>
+        <div class="caret"></div>
+      </div>
+      <ul class="menu-dd">
+        <li data-target="m-items-slide1" class="active-menu">Starter</li>
+        <li data-target="m-items-slide2">Salad</li>
+        <li data-target="m-items-slide3">Dessert</li>
+        <li data-target="m-items-slide4">Soup</li>
+        <li data-target="m-items-slide5">Spaghetti</li>
+        <li data-target="m-items-slide6">Drinks</li>
+      </ul>
+    </div>
+
+
+    <div class="m-items-slide m-items-slide1">
+      <div class="m-items-container">
+        <div class="dish">
+          <div class="dish-img-container">
             <img class="dish-new" src="./assets/new.png" alt="">
             <img class="dish-img" src="./assets/starter/starter1.png" alt="">
-           </div>
-           <div class="dish-text-container">
+          </div>
+          <div class="dish-text-container">
             <p class="dish-name">Caprese Starter</p>
             <p class="dish-price">10.30 $</p>
-           </div>
           </div>
-          <div class="dish">
-            <div class="dish-img-container">
-             <img class="dish-new" src="./assets/new.png" alt="">
-             <img class="dish-img" src="./assets/starter/starter2.png" alt="">
-            </div>
-            <div class="dish-text-container">
-             <p class="dish-name">Israeli Starter</p>
-             <p class="dish-price">12.30 $</p>
-            </div>
-           </div>
-           <div class="dish">
-            <div class="dish-img-container">
-             <img class="dish-img" src="./assets/starter/starter3.png" alt="">
-            </div>
-            <div class="dish-text-container">
-             <p class="dish-name">Roll Ball Starter</p>
-             <p class="dish-price">19.39 $</p>
-            </div>
-           </div>
-           <div class="dish">
-            <div class="dish-img-container">
-             <img class="dish-img" src="./assets/starter/starter4.png" alt="">
-            </div>
-            <div class="dish-text-container">
-             <p class="dish-name">Organic Mix Starter</p>
-             <p class="dish-price">60.30 $</p>
-            </div>
-           </div>
-           <div class="dish">
-            <div class="dish-img-container">
-             <img class="dish-img" src="./assets/starter/starter5.png" alt="">
-            </div>
-            <div class="dish-text-container">
-             <p class="dish-name">Quinoa Starter</p>
-             <p class="dish-price">21.10 $</p>
-            </div>
-           </div>
-           <div class="dish">
-            <div class="dish-img-container">
-             <img class="dish-img" src="./assets/starter/starter6.png" alt="">
-            </div>
-            <div class="dish-text-container">
-             <p class="dish-name">Asparagus Starter</p>
-             <p class="dish-price">41.10 $</p>
-            </div>
-           </div>
+        </div>
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-new" src="./assets/new.png" alt="">
+            <img class="dish-img" src="./assets/starter/starter2.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">Israeli Starter</p>
+            <p class="dish-price">12.30 $</p>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-img" src="./assets/starter/starter3.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">Roll Ball Starter</p>
+            <p class="dish-price">19.39 $</p>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-img" src="./assets/starter/starter4.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">Organic Mix Starter</p>
+            <p class="dish-price">60.30 $</p>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-img" src="./assets/starter/starter5.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">Quinoa Starter</p>
+            <p class="dish-price">21.10 $</p>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-img" src="./assets/starter/starter6.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">Asparagus Starter</p>
+            <p class="dish-price">41.10 $</p>
+          </div>
         </div>
       </div>
-      <!-- Salad -->
-      <div class="m-items-slide m-items-slide2">
-        <div class="m-items-container">
-          <div class="dish">
-           <div class="dish-img-container">
+    </div>
+    <!-- Salad -->
+    <div class="m-items-slide m-items-slide2">
+      <div class="m-items-container">
+        <div class="dish">
+          <div class="dish-img-container">
             <img class="dish-new" src="./assets/new.png" alt="">
             <img class="dish-img" src="./assets/salad/salad1.png" alt="">
-           </div>
-           <div class="dish-text-container">
+          </div>
+          <div class="dish-text-container">
             <p class="dish-name">Asian Salad</p>
             <p class="dish-price">20.40 $</p>
-           </div>
           </div>
-          <div class="dish">
-            <div class="dish-img-container">
-             <img class="dish-new" src="./assets/new.png" alt="">
-             <img class="dish-img" src="./assets/salad/salad2.png" alt="">
-            </div>
-            <div class="dish-text-container">
-             <p class="dish-name">Spinach Salad</p>
-             <p class="dish-price">17.10 $</p>
-            </div>
-           </div>
-           <div class="dish">
-            <div class="dish-img-container">
-             <img class="dish-img" src="./assets/salad/salad3.png" alt="">
-            </div>
-            <div class="dish-text-container">
-             <p class="dish-name">Mexican Salad</p>
-             <p class="dish-price">11.47 $</p>
-            </div>
-           </div>
-           <div class="dish">
-            <div class="dish-img-container">
-             <img class="dish-img" src="./assets/salad/salad4.png" alt="">
-            </div>
-            <div class="dish-text-container">
-             <p class="dish-name">Quinoa Salad</p>
-             <p class="dish-price">91.30 $</p>
-            </div>
-           </div>
-           <div class="dish">
-            <div class="dish-img-container">
-             <img class="dish-img" src="./assets/salad/salad5.png" alt="">
-            </div>
-            <div class="dish-text-container">
-             <p class="dish-name">Tabbouleh Salad</p>
-             <p class="dish-price">56.25 $</p>
-            </div>
-           </div>
-           <div class="dish">
-            <div class="dish-img-container">
-             <img class="dish-img" src="./assets/salad/salad6.png" alt="">
-            </div>
-            <div class="dish-text-container">
-             <p class="dish-name">LentilSalad</p>
-             <p class="dish-price">31.91 $</p>
-            </div>
-           </div>
+        </div>
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-new" src="./assets/new.png" alt="">
+            <img class="dish-img" src="./assets/salad/salad2.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">Spinach Salad</p>
+            <p class="dish-price">17.10 $</p>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-img" src="./assets/salad/salad3.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">Mexican Salad</p>
+            <p class="dish-price">11.47 $</p>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-img" src="./assets/salad/salad4.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">Quinoa Salad</p>
+            <p class="dish-price">91.30 $</p>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-img" src="./assets/salad/salad5.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">Tabbouleh Salad</p>
+            <p class="dish-price">56.25 $</p>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-img" src="./assets/salad/salad6.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">LentilSalad</p>
+            <p class="dish-price">31.91 $</p>
+          </div>
         </div>
       </div>
-      <!-- Dessert -->
-      <div class="m-items-slide m-items-slide3">
-        <div class="m-items-container">
-          <div class="dish">
-           <div class="dish-img-container">
+    </div>
+    <!-- Dessert -->
+    <div class="m-items-slide m-items-slide3">
+      <div class="m-items-container">
+        <div class="dish">
+          <div class="dish-img-container">
             <img class="dish-new" src="./assets/new.png" alt="">
             <img class="dish-img" src="./assets/dessert/dessert1.png" alt="">
-           </div>
-           <div class="dish-text-container">
+          </div>
+          <div class="dish-text-container">
             <p class="dish-name">Pantua Dessert</p>
             <p class="dish-price">60.50 $</p>
-           </div>
           </div>
-          <div class="dish">
-            <div class="dish-img-container">
-             <img class="dish-new" src="./assets/new.png" alt="">
-             <img class="dish-img" src="./assets/dessert/dessert2.png" alt="">
-            </div>
-            <div class="dish-text-container">
-             <p class="dish-name">Panna Dessert</p>
-             <p class="dish-price">32.20 $</p>
-            </div>
-           </div>
-           <div class="dish">
-            <div class="dish-img-container">
-             <img class="dish-img" src="./assets/dessert/dessert3.png" alt="">
-            </div>
-            <div class="dish-text-container">
-             <p class="dish-name">Pecan Pie</p>
-             <p class="dish-price">41.97 $</p>
-            </div>
-           </div>
-           <div class="dish">
-            <div class="dish-img-container">
-             <img class="dish-img" src="./assets/dessert/dessert4.png" alt="">
-            </div>
-            <div class="dish-text-container">
-             <p class="dish-name">Fruit Dessert</p>
-             <p class="dish-price">19.20 $</p>
-            </div>
-           </div>
-           <div class="dish">
-            <div class="dish-img-container">
-             <img class="dish-img" src="./assets/dessert/dessert5.png" alt="">
-            </div>
-            <div class="dish-text-container">
-             <p class="dish-name">Pineapple Dessert</p>
-             <p class="dish-price">21.10 $</p>
-            </div>
-           </div>
-           <div class="dish">
-            <div class="dish-img-container">
-             <img class="dish-img" src="./assets/dessert/dessert6.png" alt="">
-            </div>
-            <div class="dish-text-container">
-             <p class="dish-name">Chocolate Dessert</p>
-             <p class="dish-price">41.10 $</p>
-            </div>
-           </div>
+        </div>
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-new" src="./assets/new.png" alt="">
+            <img class="dish-img" src="./assets/dessert/dessert2.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">Panna Dessert</p>
+            <p class="dish-price">32.20 $</p>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-img" src="./assets/dessert/dessert3.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">Pecan Pie</p>
+            <p class="dish-price">41.97 $</p>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-img" src="./assets/dessert/dessert4.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">Fruit Dessert</p>
+            <p class="dish-price">19.20 $</p>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-img" src="./assets/dessert/dessert5.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">Pineapple Dessert</p>
+            <p class="dish-price">21.10 $</p>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-img" src="./assets/dessert/dessert6.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">Chocolate Dessert</p>
+            <p class="dish-price">41.10 $</p>
+          </div>
         </div>
       </div>
-      <!-- Soup -->
-      <div class="m-items-slide m-items-slide4">
-        <div class="m-items-container">
-          <div class="dish">
-           <div class="dish-img-container">
+    </div>
+    <!-- Soup -->
+    <div class="m-items-slide m-items-slide4">
+      <div class="m-items-container">
+        <div class="dish">
+          <div class="dish-img-container">
             <img class="dish-new" src="./assets/new.png" alt="">
             <img class="dish-img" src="./assets/soup/soup1.png" alt="">
-           </div>
-           <div class="dish-text-container">
+          </div>
+          <div class="dish-text-container">
             <p class="dish-name">Butternut Soup</p>
             <p class="dish-price">10.30 $</p>
-           </div>
           </div>
-          <div class="dish">
-            <div class="dish-img-container">
-             <img class="dish-new" src="./assets/new.png" alt="">
-             <img class="dish-img" src="./assets/soup/soup2.png" alt="">
-            </div>
-            <div class="dish-text-container">
-             <p class="dish-name">Italian Mix Soup</p>
-             <p class="dish-price">12.30 $</p>
-            </div>
-           </div>
-           <div class="dish">
-            <div class="dish-img-container">
-             <img class="dish-img" src="./assets/soup/soup3.png" alt="">
-            </div>
-            <div class="dish-text-container">
-             <p class="dish-name">Hot Pasta Soup</p>
-             <p class="dish-price">19.39 $</p>
-            </div>
-           </div>
-           <div class="dish">
-            <div class="dish-img-container">
-             <img class="dish-img" src="./assets/soup/soup4.png" alt="">
-            </div>
-            <div class="dish-text-container">
-             <p class="dish-name">Miso Soup</p>
-             <p class="dish-price">60.30 $</p>
-            </div>
-           </div>
-           <div class="dish">
-            <div class="dish-img-container">
-             <img class="dish-img" src="./assets/soup/soup5.png" alt="">
-            </div>
-            <div class="dish-text-container">
-             <p class="dish-name">Thai Soup</p>
-             <p class="dish-price">69.55 $</p>
-            </div>
-           </div>
-           <div class="dish">
-            <div class="dish-img-container">
-             <img class="dish-img" src="./assets/soup/soup6.png" alt="">
-            </div>
-            <div class="dish-text-container">
-             <p class="dish-name">Tomato Soup</p>
-             <p class="dish-price">21.31 $</p>
-            </div>
-           </div>
+        </div>
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-new" src="./assets/new.png" alt="">
+            <img class="dish-img" src="./assets/soup/soup2.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">Italian Mix Soup</p>
+            <p class="dish-price">12.30 $</p>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-img" src="./assets/soup/soup3.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">Hot Pasta Soup</p>
+            <p class="dish-price">19.39 $</p>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-img" src="./assets/soup/soup4.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">Miso Soup</p>
+            <p class="dish-price">60.30 $</p>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-img" src="./assets/soup/soup5.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">Thai Soup</p>
+            <p class="dish-price">69.55 $</p>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-img" src="./assets/soup/soup6.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">Tomato Soup</p>
+            <p class="dish-price">21.31 $</p>
+          </div>
         </div>
       </div>
-      <!-- Spaghetti -->
-      <div class="m-items-slide m-items-slide5">
-        <div class="m-items-container">
-          <div class="dish">
-           <div class="dish-img-container">
+    </div>
+    <!-- Spaghetti -->
+    <div class="m-items-slide m-items-slide5">
+      <div class="m-items-container">
+        <div class="dish">
+          <div class="dish-img-container">
             <img class="dish-new" src="./assets/new.png" alt="">
             <img class="dish-img" src="./assets/spaghetti/spaghetti1.png" alt="">
-           </div>
-           <div class="dish-text-container">
+          </div>
+          <div class="dish-text-container">
             <p class="dish-name">Mixed Spaghetti</p>
             <p class="dish-price">10.30 $</p>
-           </div>
           </div>
-          <div class="dish">
-            <div class="dish-img-container">
-             <img class="dish-new" src="./assets/new.png" alt="">
-             <img class="dish-img" src="./assets/spaghetti/spaghetti2.png" alt="">
-            </div>
-            <div class="dish-text-container">
-             <p class="dish-name">Spicy Spaghetti</p>
-             <p class="dish-price">12.30 $</p>
-            </div>
-           </div>
-           <div class="dish">
-            <div class="dish-img-container">
-             <img class="dish-img" src="./assets/spaghetti/spaghetti3.png" alt="">
-            </div>
-            <div class="dish-text-container">
-             <p class="dish-name">Creamy Spaghetti</p>
-             <p class="dish-price">19.39 $</p>
-            </div>
-           </div>
-           <div class="dish">
-            <div class="dish-img-container">
-             <img class="dish-img" src="./assets/spaghetti/spaghetti4.png" alt="">
-            </div>
-            <div class="dish-text-container">
-             <p class="dish-name">Simple Spaghetti</p>
-             <p class="dish-price">60.30 $</p>
-            </div>
-           </div>
-           <div class="dish">
-            <div class="dish-img-container">
-             <img class="dish-img" src="./assets/spaghetti/spaghetti5.png" alt="">
-            </div>
-            <div class="dish-text-container">
-             <p class="dish-name">Cheesy Spaghetti</p>
-             <p class="dish-price">21.10 $</p>
-            </div>
-           </div>
-           <div class="dish">
-            <div class="dish-img-container">
-             <img class="dish-img" src="./assets/spaghetti/spaghetti6.png" alt="">
-            </div>
-            <div class="dish-text-container">
-             <p class="dish-name">Roasted Spaghetti</p>
-             <p class="dish-price">41.10 $</p>
-            </div>
-           </div>
+        </div>
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-new" src="./assets/new.png" alt="">
+            <img class="dish-img" src="./assets/spaghetti/spaghetti2.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">Spicy Spaghetti</p>
+            <p class="dish-price">12.30 $</p>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-img" src="./assets/spaghetti/spaghetti3.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">Creamy Spaghetti</p>
+            <p class="dish-price">19.39 $</p>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-img" src="./assets/spaghetti/spaghetti4.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">Simple Spaghetti</p>
+            <p class="dish-price">60.30 $</p>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-img" src="./assets/spaghetti/spaghetti5.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">Cheesy Spaghetti</p>
+            <p class="dish-price">21.10 $</p>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-img" src="./assets/spaghetti/spaghetti6.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">Roasted Spaghetti</p>
+            <p class="dish-price">41.10 $</p>
+          </div>
         </div>
       </div>
-      <!-- Drinks -->
-      <div class="m-items-slide m-items-slide6">
-        <div class="m-items-container">
-          <div class="dish">
-           <div class="dish-img-container">
+    </div>
+    <!-- Drinks -->
+    <div class="m-items-slide m-items-slide6">
+      <div class="m-items-container">
+        <div class="dish">
+          <div class="dish-img-container">
             <img class="dish-new" src="./assets/new.png" alt="">
             <img class="dish-img" src="./assets/drinks/drinks1.png" alt="">
-           </div>
-           <div class="dish-text-container">
+          </div>
+          <div class="dish-text-container">
             <p class="dish-name">Saffron Shake</p>
             <p class="dish-price">10.30 $</p>
-           </div>
           </div>
-          <div class="dish">
-            <div class="dish-img-container">
-             <img class="dish-new" src="./assets/new.png" alt="">
-             <img class="dish-img" src="./assets/drinks/drinks2.png" alt="">
-            </div>
-            <div class="dish-text-container">
-             <p class="dish-name">Orange Juice</p>
-             <p class="dish-price">12.30 $</p>
-            </div>
-           </div>
-           <div class="dish">
-            <div class="dish-img-container">
-             <img class="dish-img" src="./assets/drinks/drinks3.png" alt="">
-            </div>
-            <div class="dish-text-container">
-             <p class="dish-name">Strawberry Juice</p>
-             <p class="dish-price">19.39 $</p>
-            </div>
-           </div>
-           <div class="dish">
-            <div class="dish-img-container">
-             <img class="dish-img" src="./assets/drinks/drinks4.png" alt="">
-            </div>
-            <div class="dish-text-container">
-             <p class="dish-name">Avocado Smoothie</p>
-             <p class="dish-price">60.30 $</p>
-            </div>
-           </div>
-           <div class="dish">
-            <div class="dish-img-container">
-             <img class="dish-img" src="./assets/drinks/drinks5.png" alt="">
-            </div>
-            <div class="dish-text-container">
-             <p class="dish-name">Malted Drink</p>
-             <p class="dish-price">21.10 $</p>
-            </div>
-           </div>
-           <div class="dish">
-            <div class="dish-img-container">
-             <img class="dish-img" src="./assets/drinks/drinks6.png" alt="">
-            </div>
-            <div class="dish-text-container">
-             <p class="dish-name">Special Juice</p>
-             <p class="dish-price">41.10 $</p>
-            </div>
-           </div>
+        </div>
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-new" src="./assets/new.png" alt="">
+            <img class="dish-img" src="./assets/drinks/drinks2.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">Orange Juice</p>
+            <p class="dish-price">12.30 $</p>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-img" src="./assets/drinks/drinks3.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">Strawberry Juice</p>
+            <p class="dish-price">19.39 $</p>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-img" src="./assets/drinks/drinks4.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">Avocado Smoothie</p>
+            <p class="dish-price">60.30 $</p>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-img" src="./assets/drinks/drinks5.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">Malted Drink</p>
+            <p class="dish-price">21.10 $</p>
+          </div>
+        </div>
+        <div class="dish">
+          <div class="dish-img-container">
+            <img class="dish-img" src="./assets/drinks/drinks6.png" alt="">
+          </div>
+          <div class="dish-text-container">
+            <p class="dish-name">Special Juice</p>
+            <p class="dish-price">41.10 $</p>
+          </div>
         </div>
       </div>
-    </div>  
+    </div>
+  </div>
 
-  
+
   <div id="dotta2" class="ahead">
     <h1 class="antop">Order History</h1>
     <div class="orderresponse">
-    <div>
-     
-        <span class="ansearch1">By Date:  <input class="orinput" type="date" id="datePicker">
-      <button id="searchButton">Search</button></span>
-  
-    </div> 
       <div>
-        
-      <span class="ansearch2">By Cafe: <input class="orinput" type="text" placeholder="">
-      <button id="searchButton">Search</button> </span>
-  
-    </div>  
+
+        <span class="ansearch1">By Date: <input class="orinput" type="date" id="datePicker">
+          <button id="searchButton">Search</button></span>
+
+      </div>
+      <div>
+
+        <span class="ansearch2">By Cafe: <input class="orinput" type="text" placeholder="">
+          <button id="searchButton">Search</button> </span>
+
+      </div>
     </div>
-<div id="orderHistory"></div>
-</div>
+    <div id="orderHistory"></div>
+  </div>
 
-  
 
-  
+
+
   <section id="allaboutus">
     <div class="close-button" id="closeButton">X</div>
-  <div class="allcontainer">
-   
-    <h2 class="allh2">About Us</h2>
+    <div class="allcontainer">
 
-   
-    <div class="allsection">
-      <img class="allimg" src="./Resources/About-us-page/contentImg1.jpg" alt="Image 1">
-      <div class="allcontent">
-        <h3 class="allh3">Nurtured by Local Farmers</h3>
-        <p class="allp">At Harvest Haven, we believe in the symbiotic relationship between the land and our tables. Our restaurant's foundation rests upon the hard work and dedication of local farmers who cultivate the organic produce we proudly serve. We collaborate closely with these passionate individuals who share our commitment to sustainable practices, ensuring that every dish tells a story of community, growth, and respect for nature.</p>
+      <h2 class="allh2">About Us</h2>
+
+
+      <div class="allsection">
+        <img class="allimg" src="./Resources/About-us-page/contentImg1.jpg" alt="Image 1">
+        <div class="allcontent">
+          <h3 class="allh3">Nurtured by Local Farmers</h3>
+          <p class="allp">At Harvest Haven, we believe in the symbiotic relationship between the land and our tables.
+            Our restaurant's foundation rests upon the hard work and dedication of local farmers who cultivate the
+            organic produce we proudly serve. We collaborate closely with these passionate individuals who share our
+            commitment to sustainable practices, ensuring that every dish tells a story of community, growth, and
+            respect for nature.</p>
+        </div>
       </div>
-    </div>
-    <hr>
-    
-   
-    <div class="allsection allanay2">
-      <div class="allcontent">
-        <h3 class="allh3">Cultivating Goodness from Seed to Plate</h3>
-        <p class="allp">Our restaurant embodies a living testament to the cycle of growth and harvest. Step into our garden, where rows of vibrant greens and fragrant herbs flourish under the sun's embrace. We take immense pride in cultivating our own organic produce, carefully tending to each plant from seed to plate.</p> 
+      <hr>
+
+
+      <div class="allsection allanay2">
+        <div class="allcontent">
+          <h3 class="allh3">Cultivating Goodness from Seed to Plate</h3>
+          <p class="allp">Our restaurant embodies a living testament to the cycle of growth and harvest. Step into our
+            garden, where rows of vibrant greens and fragrant herbs flourish under the sun's embrace. We take immense
+            pride in cultivating our own organic produce, carefully tending to each plant from seed to plate.</p>
+        </div>
+        <img class="allimg" src="./Resources/About-us-page/contentImg3.jpg" alt="Image 3">
       </div>
-      <img class="allimg"  src="./Resources/About-us-page/contentImg3.jpg" alt="Image 3">
-    </div>
-    <hr>
-    
-   
-    <div class="allsection">
-      <img class="allimg" src="./Resources/About-us-page/contentImg2.jpg" alt="Image 2">
-      <div class="allcontent">
-        <h3 class="allh3">The Essence of Organic Ingredients</h3>
-        <p class="allp">Nature's bounty takes center stage in our culinary creations. We source only the finest organic ingredients, meticulously selected to bring you flavors that burst with authenticity and nourishment. </p>
+      <hr>
+
+
+      <div class="allsection">
+        <img class="allimg" src="./Resources/About-us-page/contentImg2.jpg" alt="Image 2">
+        <div class="allcontent">
+          <h3 class="allh3">The Essence of Organic Ingredients</h3>
+          <p class="allp">Nature's bounty takes center stage in our culinary creations. We source only the finest
+            organic ingredients, meticulously selected to bring you flavors that burst with authenticity and
+            nourishment. </p>
+        </div>
       </div>
-    </div>
     </div>
   </section>
 
 
-<footer class="footer section">
-  <div class="footer__container bd-container bd-grid">
-    <div class="footer__content">
-      <h3 class="footer__title">
-        <a href="#" class="footer__logo">FlavorFusion</a>
-      </h3>
-      <p class="footer__description">Providing Quality!</p>
+  <footer class="footer section">
+    <div class="footer__container bd-container bd-grid">
+      <div class="footer__content">
+        <h3 class="footer__title">
+          <a href="#" class="footer__logo">FlavorFusion</a>
+        </h3>
+        <p class="footer__description">Providing Quality!</p>
+      </div>
+
+      <div class="footer__content">
+        <h3 class="footer__title">Explore</h3>
+        <ul>
+          <li><a href="#" id="menu-footer-btn" class="footer__link">Menu</a></li>
+          <li><a href="#order-landing" id="order-footer-btn" class="footer__link">Orders</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__content">
+        <h3 class="footer__title">Our Company</h3>
+        <ul>
+          <li><a href="#" id="aboutFbtn" class="footer__link">About Us</a></li>
+          <li><a href="#" id="homeFbtn" class="footer__link">Home</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__content">
+        <h3 class="footer__title">Social</h3>
+        <a href="https://www.facebook.com" class="footer__social"><i class="bx bxl-facebook-circle"></i></a>
+        <a href="https://www.twitter.com" class="footer__social"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.instagram.com" class="footer__social"><i class="bx bxl-instagram-alt"></i></a>
+      </div>
     </div>
 
-    <div class="footer__content">
-      <h3 class="footer__title">Explore</h3>
-      <ul>
-        <li><a href="#" id="menu-footer-btn" class="footer__link">Menu</a></li>
-        <li><a href="#order-landing" id="order-footer-btn" class="footer__link">Orders</a></li>
-      </ul>
-    </div>
+    <p class="footer__copy">&#169; 2023 FlavorFusion. All right reserved</p>
+  </footer>
 
-    <div class="footer__content">
-      <h3 class="footer__title">Our Company</h3>
-      <ul>
-        <li><a href="#" id="aboutFbtn" class="footer__link">About Us</a></li>
-        <li><a href="#" id="homeFbtn" class="footer__link">Home</a></li>
-      </ul>
-    </div>
-
-    <div class="footer__content">
-      <h3 class="footer__title">Social</h3>
-      <a href="https://www.facebook.com" class="footer__social"><i class="bx bxl-facebook-circle"></i></a>
-      <a href="https://www.twitter.com" class="footer__social"><i class="bx bxl-twitter"></i></a>
-      <a href="https://www.instagram.com" class="footer__social"><i class="bx bxl-instagram-alt"></i></a>
-    </div>
-  </div>
-
-  <p class="footer__copy">&#169; 2023 FlavorFusion. All right reserved</p>
-</footer>
-  
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
