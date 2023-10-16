@@ -942,7 +942,7 @@
       </div>
     </div>
 
-    <p class="footer__copy">&#169; 2023 FlavorFusion. All right reserved</p>
+    <p class="footer__copy">&#169; <span class="year"></span> FlavorFusion. All right reserved</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
@@ -996,6 +996,11 @@
         }
       });
     }
+    
+    // code for dynamic year 
+    const year = document.querySelector('.year');
+    const currentYear = new Date().getFullYear();
+    year.innerHTML = currentYear
   </script>
 
 </body>
