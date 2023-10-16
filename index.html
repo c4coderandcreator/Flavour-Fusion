@@ -942,7 +942,7 @@
       </div>
     </div>
 
-    <p class="footer__copy">&#169; 2023 FlavorFusion. All right reserved</p>
+    <p class="footer__copy">&#169; <span class="year"></span> FlavorFusion. All right reserved</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
@@ -995,7 +995,13 @@
           element.style.color = color;
         }
       });
+
     }
+      // for footer year code 
+      const year = document.querySelector('.year');
+      const getyear = new Date().getFullYear()
+      console.log(getyear)
+      year.innerHTML = getyear
   </script>
 
 </body>
