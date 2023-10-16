@@ -389,6 +389,7 @@ img {
   width: 180px;
   transform: translateZ(20px); /*Tilt JS*/
   height: 180px;
+  margin-bottom: 1rem;
 }
 
 .order-landing__title {
@@ -396,6 +397,7 @@ img {
   margin-bottom: var(--mb-1);
   transform: translateZ(20px); /*Tilt JS*/
   cursor: default;
+  margin-bottom: 1rem;
 }
 
 /*========== FOOTER ==========*/
