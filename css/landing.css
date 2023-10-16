@@ -365,11 +365,29 @@ img {
   display: inline-block;
   margin-bottom: .75rem;
   color: var(--text-color);
+ 
+      text-decoration: none;
+      cursor: pointer;
+}
+.footer__link:hover{
+  color: rgb(155, 133, 5);
 }
 
-.footer__link:hover {
-  color: rgba(0, 255, 0, 0.575);
+.footer__link::after {
+  content: '';
+  display: block;
+  margin-top: 4px;
+  width: 0;
+  height: 2px;
+
+  background: #e7d442;
+  transition: width .3s;
 }
+.footer__link:hover::after {
+  width: 100%;
+ 
+}
+
 
 .footer__social {
   font-size: 1.5rem;
