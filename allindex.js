@@ -4,6 +4,7 @@ const targetDiv = document.getElementById("allaboutus");
 const about = document.getElementById("allab");
 const aboutf = document.querySelector("#aboutFbtn")
 const alhome = document.getElementById("home-btn");
+const flavorBtn = document.getElementById("flavor-fusion-btn");
 const homeFbtn = document.querySelector("#homeFbtn")
 const targetItem = document.querySelector(".l-main");
 const targetFoot = document.querySelector(".footer");
@@ -32,6 +33,9 @@ const orderbtnf = document.querySelector("#order-footer-btn")
             targetDiv.style.display = "block"; 
             orderHistory.style.display = "none";
           };
+    flavorBtn.onclick = function () {
+      alhome.click()
+    };
     alhome.onclick = function () {
             targetDiv.style.display = "none";
             targetFoot.style.display = "block";
