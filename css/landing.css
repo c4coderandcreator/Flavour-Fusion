@@ -306,8 +306,27 @@ img {
 }
 
 .landing-button-link:hover {
+  background-color: #FFF;
+  color: black;
+}
+
+#theme-toggle-button{
+  padding: 3px 6px;
+  border-radius: 10px;
+  border: none;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  transition: all ease-in-out 0.2s;
+}
+#theme-toggle-button:hover{
+  padding: 3px 6px;
+  border-radius: 10px;
+  border: none;
+  border: 1px solid #050505;
   background-color: transparent;
   color: black;
+  transform: scale(1.1);
 }
 
 #theme-toggle-button{
@@ -356,10 +375,13 @@ img {
   border-radius: 1rem;
   transform-style: preserve-3d;
   perspective: 1000px;
+
 }
 
 .order-landing__data:hover {
-  box-shadow: 0 3px 12px rgba(65, 11, 16, .15);
+  background-color: rgb(247, 231, 143);
+  box-shadow: 0 3px 12px rgba(65, 11, 16, 0.15);
+  transform: scale(1.1);
 }
 
 .order-landing__img {

@@ -28,10 +28,11 @@
   </script>
   <style>
     body.dark-theme {
-      background-color: #333; /* Update with your dark theme color */
-      color: #fff; /* Update with your dark theme color */
+      background-color: #333;
+      /* Update with your dark theme color */
+      color: #fff;
+      /* Update with your dark theme color */
     }
-   
   </style>
 </head>
 
@@ -61,13 +62,14 @@
             <a href="#sign-in" onClick="clickSignInButton()" class="nav__link sign-in-btn-nav" id="sign-in-btn">Sign
               In</a>
           </li>
-          <li class="nav__item">   <div class="theme-toggle">
-            <li class="nav__item">
-              <button onclick="toggleTheme()" class="theme-toggle-button" id="theme-toggle-button">Dark Theme
-              </button>
-            </li>
-          </div>
-        </ul>
+          <li class="nav__item">
+            <div class="theme-toggle">
+          <li class="nav__item">
+            <button onclick="toggleTheme()" class="theme-toggle-button" id="theme-toggle-button">Dark Theme
+            </button>
+          </li>
+      </div>
+      </ul>
       </div>
 
       <div class="nav__toggle" id="nav-toggle">
@@ -324,7 +326,7 @@
     </section>
 
     <section class="track-container-sam" id="track-container-sam">
-      <button id="close-track-section">X</button>
+      <button id="close-track-section"></button>
       <div class="track-top">
         <h1>Order id: <span class="colored">ABCD0123</span></h1>
         <div class="track-top-textContent">
@@ -371,7 +373,7 @@
       <h2 class="section-title">Orders</h2>
       <div class="order-landing__container bd-grid">
         <div class="order-landing__data" data-tilt data-tilt-scale="1.1">
-          <img src="./assets/order-history-image-landing.jpg" alt="history" class="order-landing__img" />
+          <img src="./assets/order-history-image-landing.png" alt="history" class="order-landing__img" />
           <h3 class="order-landing__title">See What You've Ordered!</h3>
           <a href="#" class="anorderlink landing-button landing-button-link">Order History</a>
         </div>
@@ -862,7 +864,7 @@
 
 
   <section id="allaboutus">
-    <div class="close-button" id="closeButton">X</div>
+    <div class="close-button" id="closeButton"></div>
     <div class="allcontainer">
 
       <h2 class="allh2">About Us</h2>
@@ -966,10 +968,10 @@
     function toggleTheme() {
       const body = document.body;
       body.classList.toggle('dark-theme');
-    
+
       const themeToggleButton = document.getElementById('theme-toggle-button');
       const header = document.querySelector('header');
-    
+
       if (body.classList.contains('dark-theme')) {
         themeToggleButton.textContent = 'Bright Theme';
         changeTextColors('white');
@@ -980,22 +982,22 @@
         header.style.color = 'black';  // Change header text color to black
       }
     }
-      function changeTextColors(color) {
+    function changeTextColors(color) {
       const allTextElements = document.querySelectorAll('body *');  // Select all elements
-    
+
       // Exclude header elements and buttons from color change
       const headerElements = document.querySelectorAll('header *');
       const buttonElements = document.querySelectorAll('button');
       const elementsToExclude = Array.from(headerElements).concat(Array.from(buttonElements));
-    
+
       allTextElements.forEach(element => {
         if (!elementsToExclude.includes(element)) {
           element.style.color = color;
         }
       });
     }
-      </script>
-    
+  </script>
+
 </body>
 
 </html>
