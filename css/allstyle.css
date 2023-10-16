@@ -98,3 +98,29 @@
     margin-bottom: 9.69%;
   }
   }
+
+  .theme-toggle-button {
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .theme-toggle-button .fas {
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  /* Dark theme */
+  @media (prefers-color-scheme: dark) {
+    .theme-toggle-button .fas {
+      color: #000;
+      animation: blink 1s infinite;
+    }
+  }
+  
+ 
+  
+  

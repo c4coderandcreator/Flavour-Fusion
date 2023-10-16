@@ -99,3 +99,6 @@ menuF.onclick = function () {
     targetOrder.style.display = "block" 
     targetFoot.style.display = "block";
     orderHistory.style.display = "none"; }
+
+   
+    
