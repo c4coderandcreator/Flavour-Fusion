@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   width: 100%;
   position: relative;
@@ -45,19 +46,41 @@ body {
   padding-top: 25px;
 }
 
+#close-sam-section p {
+  color: white;
+}
+
+.close-icon {
+  font-size: 24px;
+  line-height: 24px;
+  transform: rotate(45deg);
+
+}
+
 .container-sam {
-  overflow: hidden;
   width: 100%;
   background-color: white;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 69;
-  gap: 10px;
+  gap: 8px;
   position: absolute;
   margin-top: 100px; 
 height: 800px;
+}
+
+.container-sam-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 432px;
+  height: 535px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 0 16px;
 }
 
 .main-head-sam {
@@ -66,37 +89,40 @@ height: 800px;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-  width: 40%;
-  height: 90%;
-  padding: 20px;  
+  box-shadow: 0 16px 24px #eaeaea;
 }
+
 .head-content-sam {
-  border-radius: 10px;
-  height: 13%;
   width: 100%;
   background-color: #f9f2b9;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 0px 20px;
-  border-bottom: 1px solid grey;
+  gap: 8px;
+  padding: 16px 0;
 }
+
 .head-content-sam i {
   font-size: 1.69rem;
+  color: #aea76f;
 }
+
 #search-box-sam {
   width: 80%;
-  height: 65%;
-  border-radius: 12px;
+  border-radius: 99px;
+  /* 99px for max without having to use 50% which can cause a visual bug */
   border: none;
   outline: none;
   font-size: 1.2rem;
   font-family: Poppins ;
   padding:10px 10px ;
 }
+
+#search-box-sam::placeholder {
+  color: #6d6840;
+}
+
 .food-items-sam {
   height: 90%;
   width: 100%;
@@ -104,10 +130,11 @@ height: 800px;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: 12px;
+  gap: 8px;
   overflow-y: scroll;
   padding: 5px 0;
 }
+
 .food-content-sam {
   height: 30%;
   width: 100%;
@@ -119,61 +146,58 @@ height: 800px;
   position: relative;
   padding: 10px;
 }
+
 .food-content-sam img {
-  height: 110%;
+  width: 75px;
+  height: 75px;
   z-index: 1;
 }
+
 .food-content-sam-description {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  width: 75%;
-  height: 70%;
-  border: 1px solid black;
+  justify-content: space-between;
+  width: 100%;
+  border: 2px solid black;
   border-radius: 12px;
-  position: absolute;
-  left: 22%;
-  padding: 10px;
-  box-shadow: 0px 0px 2px 1px black;
+  padding: 8px;
 }
+
 .description-sam {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  width: 70%;
-  height: 70%;
-  padding-left: 15%;
 }
+
 .description-sam h3 {
   font-size: 0.8rem;
   font-weight: 600;
   padding: 0 !important;
   text-align: left;
 }
+
 .description-sam p {
   font-size: 0.8rem;
   font-weight: 400;
   margin: 0 !important;
 }
+
 .item-sam {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  gap: 30%;
-  padding: 0 7%;
+  gap: 6px;
 }
+
 .item-sam button {
   border: none;
   outline: none;
-  border-radius: 50%;
+  border-radius: 99px;
   background-color: black;
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
-  padding: 20% 25%;
+  padding: 8px 16px;
   color: white;
 }
 
@@ -181,213 +205,95 @@ height: 800px;
   display: none;
   transition: 0.49s ease-in-out;
 }
+
 .container-sam.active-sam {
   display: flex;
   transition: 0.49s ease-in-out;
 }
+
 .order-sam {
   padding: 10px 20px;
   font-size: 24px;
   margin: 50px;
 }
+
 .quantity {
+  width: 32px;
   font-size: 1.2rem;
   font-weight: 600;
+  text-align: center;
 }
+
 .checkout-sam {
-  margin-left: 5rem;
+  margin-left: 5rem
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: white;
+  width: 100%;
+  background-color: #fff;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  gap: 5%;
-  padding: 1.5% 0;
-  width: 40%;
-  height: 90%;
-
+  box-shadow: 0 16px 24px #eaeaea;
+  padding: 16px;
+  gap: 8px;
 }
+
 .checkout-sam h1 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
   padding: 10px 0px;
 }
-.checkout-sam h2 {
-  font-size: 1.1rem;
-  font-weight: 400;
-  padding: 10px 20px;
+
+#totalPrice {
+  font-weight: 500;
 }
+
+.checkout-btn-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
 .text-content-sam {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 80%;
-  padding: 10px 20px;
-  border: 2px solid black;
+  width: 100%;
+  /* border: 2px solid black; */
+  border-radius: 12px;
 }
+
 .checkout-btn-sam {
-  height: max-content;
-  width: 50%;
+  width: 100%;
   background-color: black;
   color: white;
-  padding: 3% 5%;
-  border: none;
+  padding: 8px 16px;
+  border: 2px solid transparent;
   outline: none;
   border-radius: 12px;
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 500;
   cursor: pointer;
 }
+
 .checkout-btn-sam:hover {
   background-color: white;
   color: black;
   border: 2px solid black;
 }
+
 #order-sam {
   cursor: pointer;
 }
 
-@media (max-width: 1280px) and (min-width: 1024px) {
-  .main-head-sam {
-    height: 75%;
-    width: 45%;
-  }
-  .checkout-sam {
-    margin-left: 0rem;
-    height: 35%;
-    width: 30%;
-  }
-}
-@media (max-width: 1024px) and (min-width: 780px) {
-  #close-sam-section {
-    top: 25%;
-    right: 10%;
-  }
-  .head-content-sam {
-    padding: 5px;
-  }
-  .container-sam.active-sam {
-    height: 100vh;
-  }
-  .main-head-sam {
-    height: 50%;
-    width: 50%;
-  }
-  .checkout-sam {
-    margin-left: 0rem;
-    height: 40%;
-    width: 35%;
-  }
-  .checkout-sam h1 {
-    padding: 0;
-  }
-}
-@media (max-width: 780px) and (min-width: 612px) {
-  .container-sam.active-sam {
-    width: 100%;
-    height: 100vh;
-  }
-  .main-head-sam {
-    width: 80%;
-  }
-  .checkout-sam {
-    margin-left: 0rem;
-    width: 80%;
-  }
-  .description-sam h3 {
-    font-size: 1rem;
-  }
-  .description-sam p {
-    font-size: 0.8rem;
-  }
-  .item-sam button {
-    font-size: 0.8rem;
-  }
-  .food-content-sam-description {
-    padding: 10% 0;
-  }
-  .checkout-sam h1 {
-    font-size: 1.1rem;
-  }
-  .checkout-sam h2 {
-    font-size: 0.9rem;
-  }
-  .checkout-btn-sam {
-    font-size: 0.9rem;
-  }
-  .food-content-sam img {
-    height: 85% !important;
-  }
-}
-@media (max-width: 612px) {
-  .main-head-sam {
-    width: 85%;
-    height: 60%;
-  }
-  #close-sam-section {
-    top: 6%;
-    right: 10%;
-  }
-  .food-content-sam img {
-    height: 100% !important;
-  }
+/* Media Queries */
+@media (max-width: 1280px) and (min-width: 1024px) {}
 
-  .container-sam.active-sam {
-    width: 100%;
-    height: 100vh;
-    flex-direction: column;
-  }
-  .main-head-sam {
-    width: 80%;
-    height: 60%;
-  }
-  .checkout-sam {
-    margin-left: 0rem;
-    width: 80%;
-    height: 30%;
-  }
-  .checkout-sam h1 {
-    font-size: 1.1rem;
-    padding: 0;
-  }
-  .description-sam h3 {
-    font-size: 0.7rem !important;
-    line-height: 100%;
-    padding: 5% !important;
-  }
-  .description-sam p {
-    font-size: 0.8rem;
-    line-height: 100%;
-  }
-  .item-sam button {
-    font-size: 0.8rem;
-    padding: 15% 20%;
-  }
-  .food-content-sam-description {
-    height: 90%;
-    padding: 10px;
-  }
-  #search-box-sam {
-    font-size: 1.1rem;
-  }
-  .checkout-btn-sam {
-    font-size: 0.9rem;
-  }
-  .checkout-sam h2 {
-    font-size: 0.9rem;
-  }
-  .item-sam button {
-    border: none;
-    outline: none;
-    border-radius: 50%;
-    background-color: black;
-    font-size: 0.6rem !important;
-    font-weight: 500;
-    cursor: pointer;
-    padding: 20% 25%;
-    color: white;
-  }
-}
+@media (max-width: 1024px) and (min-width: 780px) {}
+
+@media (max-width: 780px) and (min-width: 612px) {}
+
+@media (max-width: 612px) {}
