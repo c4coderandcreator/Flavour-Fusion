@@ -137,18 +137,18 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 30%;
-  padding: 0 7%;
+  width: 100%;
+  gap: 8px;
 }
 .item-sam button {
   border: none;
   outline: none;
-  border-radius: 50%;
+  border-radius: 99px;
   background-color: black;
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
-  padding: 20% 25%;
+  padding: 8px 16px;
   color: white;
 }
 
@@ -166,8 +166,10 @@ body {
   margin: 50px;
 }
 .quantity {
+  width: 32px;
   font-size: 1.2rem;
   font-weight: 600;
+  text-align: center;
 }
 .checkout-sam {
   margin-left: 5rem;
