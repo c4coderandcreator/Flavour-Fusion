@@ -263,6 +263,12 @@ img {
   width: 280px;
   justify-self: center;
 }
+.home_img{
+  border-radius: 20px;
+}
+.home_img2{
+  border-radius: 20px;
+}
 
 .home__title {
   font-size: var(--biggest-font-size);
@@ -296,11 +302,50 @@ img {
   padding: 10px;
   color: black !important;
   background-color: #F9F2B9;
+  transform: translateZ(20px);
 }
 
 .landing-button-link:hover {
+  background-color: #FFF;
+  color: black;
+}
+
+#theme-toggle-button{
+  padding: 3px 6px;
+  border-radius: 10px;
+  border: none;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  transition: all ease-in-out 0.2s;
+}
+#theme-toggle-button:hover{
+  padding: 3px 6px;
+  border-radius: 10px;
+  border: none;
+  border: 1px solid #050505;
   background-color: transparent;
   color: black;
+  transform: scale(1.1);
+}
+
+#theme-toggle-button{
+  padding: 3px 6px;
+  border-radius: 10px;
+  border: none;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  transition: all ease-in-out 0.2s;
+}
+#theme-toggle-button:hover{
+  padding: 3px 6px;
+  border-radius: 10px;
+  border: none;
+  border: 1px solid #050505;
+  background-color: transparent;
+  color: black;
+  transform: scale(1.1);
 }
 
 /*========== food-fact ==========*/
@@ -328,19 +373,27 @@ img {
   background-color: var(--container-color);
   box-shadow: 0 2px 6px rgba(65, 11, 16, .15);
   border-radius: 1rem;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+
 }
 
 .order-landing__data:hover {
-  box-shadow: 0 3px 12px rgba(65, 11, 16, .15);
+  background-color: rgb(247, 231, 143);
+  box-shadow: 0 3px 12px rgba(65, 11, 16, 0.15);
+  transform: scale(1.1);
 }
 
 .order-landing__img {
   width: 180px;
+  transform: translateZ(20px); /*Tilt JS*/
+  height: 180px;
 }
 
 .order-landing__title {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1);
+  transform: translateZ(20px); /*Tilt JS*/
 }
 
 /*========== FOOTER ==========*/
@@ -365,11 +418,29 @@ img {
   display: inline-block;
   margin-bottom: .75rem;
   color: var(--text-color);
+ 
+      text-decoration: none;
+      cursor: pointer;
+}
+.footer__link:hover{
+  color: rgb(155, 133, 5);
 }
 
-.footer__link:hover {
-  color: rgba(0, 255, 0, 0.575);
+.footer__link::after {
+  content: '';
+  display: block;
+  margin-top: 4px;
+  width: 0;
+  height: 2px;
+
+  background: #e7d442;
+  transition: width .3s;
 }
+.footer__link:hover::after {
+  width: 100%;
+ 
+}
+
 
 .footer__social {
   font-size: 1.5rem;
