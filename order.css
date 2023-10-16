@@ -12,20 +12,42 @@ body {
 }
 
 #close-sam-section {
-  position: absolute;
-  top: 15%;
-  right: 20%;
-  background-color: black;
-  color: white;
-  padding: 5px 7px;
-  border-radius: 5px;
-  border: 1px solid black;
   cursor: pointer;
+  justify-self: flex-end;
+  padding: 20px;
+  margin-inline-start: auto;
+  background-color: #f9f2b9;
+  color: #f9f2b9;
 }
+
+
+#closeh1id {
+  width: 90%;
+  height: 12%;
+  display: flex;
+  align-items: stretch;
+  margin-block-end: auto;
+  background-color: #f9f2b9;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  font-family: Poppins;
+}
+
+
+#closeh1id >div {
+ text-align: center;
+ justify-items: center;
+}
+
+#closeh1center {
+  padding-top: 25px;
+}
+
 .container-sam {
   overflow: hidden;
   width: 100%;
-  height: 600px;
   background-color: white;
   display: flex;
   flex-direction: row;
@@ -34,17 +56,20 @@ body {
   z-index: 69;
   gap: 10px;
   position: absolute;
+  margin-top: 100px; 
+height: 800px;
 }
 
 .main-head-sam {
   overflow: hidden;
-  height: 70%;
-  width: 30%;
   background-color: white;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  width: 40%;
+  height: 90%;
+  padding: 20px;  
 }
 .head-content-sam {
   border-radius: 10px;
@@ -68,9 +93,9 @@ body {
   border-radius: 12px;
   border: none;
   outline: none;
-  padding: 0 10px;
   font-size: 1.2rem;
-  font-family: Poppins;
+  font-family: Poppins ;
+  padding:10px 10px ;
 }
 .food-items-sam {
   height: 90%;
@@ -84,15 +109,15 @@ body {
   padding: 5px 0;
 }
 .food-content-sam {
-  height: 20%;
+  height: 30%;
   width: 100%;
   border-radius: 12px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0 10px;
   position: relative;
+  padding: 10px;
 }
 .food-content-sam img {
   height: 110%;
@@ -171,8 +196,6 @@ body {
 }
 .checkout-sam {
   margin-left: 5rem;
-  height: 30%;
-  width: 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -180,8 +203,11 @@ body {
   background: white;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  padding: 2% 0;
   gap: 5%;
+  padding: 1.5% 0;
+  width: 40%;
+  height: 90%;
+
 }
 .checkout-sam h1 {
   font-size: 1.2rem;
