@@ -965,37 +965,61 @@
   <script src="vanilla-tilt.js"></script>
 
   <script>
-    function toggleTheme() {
-      const body = document.body;
-      body.classList.toggle('dark-theme');
+       
+ function toggleTheme() {
+  const body = document.body;
+  body.classList.toggle('dark-theme');
 
-      const themeToggleButton = document.getElementById('theme-toggle-button');
-      const header = document.querySelector('header');
+  const themeToggleButton = document.getElementById('theme-toggle-button');
+  const header = document.querySelector('header');
+  const navigation = document.querySelector('.nav');
+  const signInButton = document.querySelector('.sign-in-btn-nav'); // Select sign-in button
 
-      if (body.classList.contains('dark-theme')) {
-        themeToggleButton.textContent = 'Bright Theme';
-        changeTextColors('white');
-        header.style.color = 'white';  // Change header text color to white
-      } else {
-        themeToggleButton.textContent = 'Dark Theme';
-        changeTextColors('black');
-        header.style.color = 'black';  // Change header text color to black
-      }
+  if (body.classList.contains('dark-theme')) {
+    themeToggleButton.textContent = 'Bright Theme';
+    changeTextColors('white');
+    header.style.color = 'white'; // Change header text color to white
+    header.style.backgroundColor = '#333'; // Change header background color to match dark theme
+    navigation.style.backgroundColor = '#333'; // Change navigation background color to match dark theme
+    navigation.style.color = 'white'; // Change navigation text color to white
+    signInButton.style.color = 'white'; // Change sign-in button text color to white
+    signInButton.style.backgroundColor = '#333'; // Change sign-in button background color to black
+  } else {
+    themeToggleButton.textContent = 'Dark Theme';
+    changeTextColors('black');
+    header.style.color = 'black'; // Change header text color to black
+    header.style.backgroundColor = 'white'; // Reset header background color
+    navigation.style.backgroundColor = 'white'; // Reset navigation background color
+    navigation.style.color = 'initial'; // Reset navigation text color
+    signInButton.style.color = 'initial'; // Reset sign-in button text color
+    signInButton.style.backgroundColor = 'white'; // Change sign-in button background color to white
+  }
+}
+
+
+
+function changeTextColors(color) {
+  const allTextElements = document.querySelectorAll('body *');  // Select all elements
+  const navTextElements = document.querySelectorAll('.nav *');  // Select all elements inside navigation
+
+  // Exclude header elements, buttons and sign-in button from color change
+  const headerElements = document.querySelectorAll('header *');
+  const buttonElements = document.querySelectorAll('button');
+  const signInButton = document.querySelector('.sign-in-btn-nav'); // Select sign-in button
+  const elementsToExclude = Array.from(headerElements).concat(Array.from(buttonElements)).concat(signInButton);
+
+  allTextElements.forEach(element => {
+    if (!elementsToExclude.includes(element)) {
+      element.style.color = color;
     }
-    function changeTextColors(color) {
-      const allTextElements = document.querySelectorAll('body *');  // Select all elements
+  });
 
-      // Exclude header elements and buttons from color change
-      const headerElements = document.querySelectorAll('header *');
-      const buttonElements = document.querySelectorAll('button');
-      const elementsToExclude = Array.from(headerElements).concat(Array.from(buttonElements));
+  // Change color of text inside navigation
+  navTextElements.forEach(element => {
+    element.style.color = color;
+  });
+}
 
-      allTextElements.forEach(element => {
-        if (!elementsToExclude.includes(element)) {
-          element.style.color = color;
-        }
-      });
-    }
   </script>
 
 </body>
