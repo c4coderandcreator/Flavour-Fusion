@@ -33,6 +33,12 @@ To get started with contributing, please read our [Contributing Guidelines](CONT
 
 Feel free to contribute to this project
 
+## Security Policy
+we take the security of Flavour Fusion seriously. We appreciate your efforts to responsibly disclose your findings, 
+and we will work to promptly address and resolve any reported security issues.
+Found some Security Issue ? want to report ? Please read [Security Policy](SECURITY.md)
+
+
 ## Thanks to all Contributors 💪
 Your contribution is the root of success of this project.
 
