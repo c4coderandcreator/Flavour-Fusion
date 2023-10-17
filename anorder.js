@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const searchButton = document.getElementById("searchButton");
+    const searchButtonDate = document.getElementById("searchButtonDate");
+    const searchButtonCafe = document.getElementById("searchButtonCafe");
     const datePicker = document.getElementById("datePicker");
+    const cafeInput = document.getElementById("cafeInput");
     const orderHistoryContainer = document.getElementById("orderHistory");
   
     // Get the current date in the format yyyy-mm-dd
@@ -9,45 +11,58 @@ document.addEventListener("DOMContentLoaded", function() {
   
     // Simulated order history data
     const orderHistoryData = [
-      { date: "2023-08-17", order: " #12345 Salmon Salad x2, StoreName: FlavorFusion" },
-      { date: "2023-08-17", order: " #12345 Fruit Salad x2,  StoreName: FlavorFusion" },
-      { date: "2023-08-16", order: " #12345 Salmon Salad x2, StoreName: FlavorFusion" },
-      { date: "2023-08-16", order: " #12345 Fruit Salad x2,  StoreName: FlavorFusion" },
-      { date: "2023-08-16", order: " #12345 Spaghetti x3,     StoreName: FlavorFusion" },
-      { date: "2023-08-16", order: " #12345 Pizza x3,        StoreName: FlavorFusion" },
-      { date: "2023-08-18", order: " #12345 Fruit Salad x2,  StoreName: FlavorFusion" },
-      { date: "2023-08-18", order: " #12345 Spaghetti x3,     StoreName: FlavorFusion" },
-      { date: "2023-08-18", order: " #12345 Pizza x3,        StoreName: FlavorFusion" },
+      { date: "2023-08-17", order: " #12345 Salmon Salad x2", StoreName: "FlavorFusion" },
+      { date: "2023-08-17", order: " #12345 Fruit Salad x2",  StoreName: "FlavorFusion" },
+      { date: "2023-08-16", order: " #12345 Salmon Salad x2", StoreName: "FlavorFusion" },
+      { date: "2023-08-16", order: " #12345 Fruit Salad x2",  StoreName: "FlavorFusion" },
+      { date: "2023-08-16", order: " #12345 Spaghetti x3",     StoreName: "FlavorFusion" },
+      { date: "2023-08-16", order: " #12345 Pizza x3",        StoreName: "FlavorFusion" },
+      { date: "2023-08-18", order: " #12345 Fruit Salad x2",  StoreName: "FlavorFusion" },
+      { date: "2023-08-18", order: " #12345 Spaghetti x3",     StoreName: "FlavorFusion" },
+      { date: "2023-08-18", order: " #12345 Pizza x3",        StoreName: "FlavorFusion" },
       // .... (more data)
     ];
     // Function to filter orders and update the order history
-    function updateOrderHistory(selectedDate) {
+    function updateOrderHistory(selectedDate, selectedCafe=false) {
       orderHistoryContainer.innerHTML = ""; // Clear previous results
-  
-      const filteredOrders = orderHistoryData.filter(order => order.date === selectedDate);
-  
+      let filteredOrders;
+      const orderHeader = document.createElement("p");
+      if (!selectedCafe){ // if not searching by cafe the date filtering runs
+        filteredOrders = orderHistoryData.filter(order => order.date === selectedDate);
+        orderHeader.textContent = `Date: ${selectedDate}`;
+      } else {      // when searching by cafe this code will run
+        filteredOrders = orderHistoryData.filter(order => order.StoreName.includes(selectedCafe));
+        orderHeader.textContent = `Cafe: ${selectedCafe}`;
+      }
+      orderHeader.classList.add("highlighted");
       if (filteredOrders.length === 0) {
-        orderHistoryContainer.textContent = "No orders found for the selected date.";
+        orderHistoryContainer.textContent = "No orders found.";
       } else {
         const orderList = document.createElement("ul");
         filteredOrders.forEach(order => {
           const orderItem = document.createElement("ul");
-          orderItem.textContent = `Order: ${order.order}`;
+          orderItem.textContent = `Order: ${order.order} Store Name: ${order.StoreName}`;
           orderList.appendChild(orderItem);
         });
-        const orderDate = document.createElement("p");
-        orderDate.textContent = `Date: ${selectedDate}`;
-        orderDate.classList.add("highlighted");
-        orderHistoryContainer.appendChild(orderDate);
+        orderHistoryContainer.appendChild(orderHeader);
         orderHistoryContainer.appendChild(orderList);
       }
+     // when searching by cafe this code will run
+
     }
     // Set up the initial order history display
     updateOrderHistory(currentDate);
   
-    searchButton.addEventListener("click", function() {
+    searchButtonDate.addEventListener("click", function() {
       const selectedDate = datePicker.value;
       updateOrderHistory(selectedDate);
     });
+    
+    searchButtonCafe.addEventListener("click", function () {
+      const selectedCafe = cafeInput.value;
+      updateOrderHistory(Date.now(), selectedCafe);
+
+    })
+
   });
   
