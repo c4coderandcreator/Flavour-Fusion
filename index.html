@@ -62,13 +62,10 @@
             <a href="#sign-in" onClick="clickSignInButton()" class="nav__link sign-in-btn-nav" id="sign-in-btn">Sign
               In</a>
           </li>
-          <li class="nav__item">
-            <div class="theme-toggle">
-          <li class="nav__item">
+          <li class="nav__item theme-toggle">
             <button onclick="toggleTheme()" class="theme-toggle-button" id="theme-toggle-button">&#9728;
             </button>
           </li>
-      </div>
       </ul>
       </div>
 
@@ -132,8 +129,7 @@
         <div class="d-none sign-in-loco" id="signIn-Up-hd4">
           <img src="./assets/logoSignInUp.png" alt="FlavorFusion-Logo" width="100%" height="auto">
         </div>
-        <button type="button" onClick="clickSignInButton()"
-          class="btn btn-dark btn-square-md closeBtn">x</button>
+        <button type="button" onClick="clickSignInButton()" class="btn btn-dark btn-square-md closeBtn">x</button>
       </div>
     </div>
   </header>
@@ -143,7 +139,7 @@
     <section class="home" id="home">
       <div class="home__container bd-container bd-grid">
         <div class="home__img">
-          <img src="./assets/salmon-salad.png" alt="" class="home_img" data-tilt data-tilt-scale="1.1"/>
+          <img src="./assets/salmon-salad.png" alt="" class="home_img" data-tilt data-tilt-scale="1.1" />
         </div>
 
         <div class="home__data">
@@ -175,7 +171,8 @@
         </div>
 
         <div class="landing-s2-main__img">
-          <img src="./assets/healthyhappyfood.jpg" alt="healthy-happy-food" class="home_img2" data-tilt data-tilt-scale="1.1" />
+          <img src="./assets/healthyhappyfood.jpg" alt="healthy-happy-food" class="home_img2" data-tilt
+            data-tilt-scale="1.1" />
         </div>
       </div>
     </section>
@@ -871,7 +868,8 @@
 
 
       <div class="allsection">
-        <img class="allimg" src="./Resources/About-us-page/contentImg1.jpg" alt="Image 1" data-tilt data-tilt-scale="1.1">
+        <img class="allimg" src="./Resources/About-us-page/contentImg1.jpg" alt="Image 1" data-tilt
+          data-tilt-scale="1.1">
         <div class="allcontent">
           <h3 class="allh3">Nurtured by Local Farmers</h3>
           <p class="allp">At Harvest Haven, we believe in the symbiotic relationship between the land and our tables.
@@ -891,13 +889,15 @@
             garden, where rows of vibrant greens and fragrant herbs flourish under the sun's embrace. We take immense
             pride in cultivating our own organic produce, carefully tending to each plant from seed to plate.</p>
         </div>
-        <img class="allimg" src="./Resources/About-us-page/contentImg3.jpg" alt="Image 3" data-tilt data-tilt-scale="1.1">
+        <img class="allimg" src="./Resources/About-us-page/contentImg3.jpg" alt="Image 3" data-tilt
+          data-tilt-scale="1.1">
       </div>
       <hr>
 
 
       <div class="allsection">
-        <img class="allimg" src="./Resources/About-us-page/contentImg2.jpg" alt="Image 2" data-tilt data-tilt-scale="1.1">
+        <img class="allimg" src="./Resources/About-us-page/contentImg2.jpg" alt="Image 2" data-tilt
+          data-tilt-scale="1.1">
         <div class="allcontent">
           <h3 class="allh3">The Essence of Organic Ingredients</h3>
           <p class="allp">Nature's bounty takes center stage in our culinary creations. We source only the finest
@@ -966,45 +966,45 @@
 
   <script>
     function toggleTheme() {
-  const body = document.body;
-  body.classList.toggle('dark-theme');
+      const body = document.body;
+      body.classList.toggle('dark-theme');
 
-  const themeToggleButton = document.getElementById('theme-toggle-button');
-  const header = document.querySelector('header');
-  const sunSymbol = "&#9728;";
-  const moonSymbol = "&#9790;";
+      const themeToggleButton = document.getElementById('theme-toggle-button');
+      const header = document.querySelector('header');
+      const sunSymbol = "&#9728;";
+      const moonSymbol = "&#9790;";
 
-  if (body.classList.contains('dark-theme')) {
-    themeToggleButton.innerHTML = moonSymbol ;
-    changeTextColors('white');
-    header.style.color = 'white';  // Change header text color to white
-  } else {
-    themeToggleButton.innerHTML = sunSymbol ;
-    changeTextColors('black');
-    header.style.color = 'black';  // Change header text color to black
-  }
-}
-
-function changeTextColors(color) {
-  const allTextElements = document.querySelectorAll('body *');  // Select all elements
-
-  // Exclude header elements and buttons from color change
-  const headerElements = document.querySelectorAll('header *');
-  const buttonElements = document.querySelectorAll('button');
-  const orderlandingtitle = document.querySelectorAll('.order-landing__title');
-  const elementsToExclude = Array.from(headerElements).concat(Array.from(buttonElements)).concat(Array.from(orderlandingtitle));
-
-  allTextElements.forEach(element => {
-    if (!elementsToExclude.includes(element)) {
-      element.style.color = color;
+      if (body.classList.contains('dark-theme')) {
+        themeToggleButton.innerHTML = moonSymbol;
+        changeTextColors('white');
+        header.style.color = 'white';  // Change header text color to white
+      } else {
+        themeToggleButton.innerHTML = sunSymbol;
+        changeTextColors('black');
+        header.style.color = 'black';  // Change header text color to black
+      }
     }
-  });
-}
 
-// code for dynamic year
-const year = document.querySelector('.year');
-const currentYear = new Date().getFullYear();
-year.innerHTML = currentYear;
+    function changeTextColors(color) {
+      const allTextElements = document.querySelectorAll('body *');  // Select all elements
+
+      // Exclude header elements and buttons from color change
+      const headerElements = document.querySelectorAll('header *');
+      const buttonElements = document.querySelectorAll('button');
+      const orderlandingtitle = document.querySelectorAll('.order-landing__title');
+      const elementsToExclude = Array.from(headerElements).concat(Array.from(buttonElements)).concat(Array.from(orderlandingtitle));
+
+      allTextElements.forEach(element => {
+        if (!elementsToExclude.includes(element)) {
+          element.style.color = color;
+        }
+      });
+    }
+
+    // code for dynamic year
+    const year = document.querySelector('.year');
+    const currentYear = new Date().getFullYear();
+    year.innerHTML = currentYear;
 
   </script>
 
