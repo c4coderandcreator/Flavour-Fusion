@@ -35,7 +35,7 @@ flex-wrap: wrap;
   margin-right: 10px;
   border-style: none;
 }
-#searchButton {
+.searchButton {
   border-radius: 12px;
   justify-content: center;
   align-items: center;
@@ -44,7 +44,7 @@ flex-wrap: wrap;
   padding: 1.5%;
   font-size: 12px;
 }
-#searchButton:hover{
+.searchButton:hover{
   background-color:#46945c ;
   cursor: pointer;
 }
@@ -119,7 +119,7 @@ flex-wrap: wrap;
       padding: 0%;
       line-height: 1rem;
     }
-    #searchButton{
+    .searchButton{
       margin: 5% auto;
     }
     ul{
