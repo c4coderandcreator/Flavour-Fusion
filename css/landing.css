@@ -314,7 +314,7 @@ img {
   color: black;
 }
 
-#theme-toggle-button{
+/*#theme-toggle-button{
   padding: 3px 6px;
   border-radius: 10px;
   border: none;
@@ -350,7 +350,31 @@ img {
   background-color: transparent;
   color: black;
   transform: scale(1.1);
+}*/
+#theme-toggle-button {
+  width: 40px; /* Set the width and height to create a circular button */
+  height: 40px;
+  border-radius: 50%; /* Make it circular */
+  border: none;
+  background-color: black;
+  color: white;
+  transition: all ease-in-out 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px; 
+  transform: rotate(-30deg);
+  /* Adjust the font size to make the symbol fit nicely */
 }
+
+#theme-toggle-button:hover {
+  border: 1px solid #050505;
+  background-color: transparent;
+  color: black;
+  transform: scale(1.1);
+}
+
 
 /*========== food-fact ==========*/
 .food-fact__data {

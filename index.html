@@ -966,42 +966,46 @@
 
   <script>
     function toggleTheme() {
-      const body = document.body;
-      body.classList.toggle('dark-theme');
+  const body = document.body;
+  body.classList.toggle('dark-theme');
 
-      const themeToggleButton = document.getElementById('theme-toggle-button');
-      const header = document.querySelector('header');
+  const themeToggleButton = document.getElementById('theme-toggle-button');
+  const header = document.querySelector('header');
+  const sunSymbol = "&#9728;";
+  const moonSymbol = "&#9790;";
 
-      if (body.classList.contains('dark-theme')) {
-        themeToggleButton.textContent = 'Bright Theme';
-        changeTextColors('white');
-        header.style.color = 'white';  // Change header text color to white
-      } else {
-        themeToggleButton.textContent = 'Dark Theme';
-        changeTextColors('black');
-        header.style.color = 'black';  // Change header text color to black
-      }
+  if (body.classList.contains('dark-theme')) {
+    themeToggleButton.innerHTML = moonSymbol ;
+    changeTextColors('white');
+    header.style.color = 'white';  // Change header text color to white
+  } else {
+    themeToggleButton.innerHTML = sunSymbol ;
+    changeTextColors('black');
+    header.style.color = 'black';  // Change header text color to black
+  }
+}
+
+function changeTextColors(color) {
+  const allTextElements = document.querySelectorAll('body *');  // Select all elements
+
+  // Exclude header elements and buttons from color change
+  const headerElements = document.querySelectorAll('header *');
+  const buttonElements = document.querySelectorAll('button');
+  const orderlandingtitle = document.querySelectorAll('.order-landing__title');
+  const elementsToExclude = Array.from(headerElements).concat(Array.from(buttonElements)).concat(Array.from(orderlandingtitle));
+
+  allTextElements.forEach(element => {
+    if (!elementsToExclude.includes(element)) {
+      element.style.color = color;
     }
-    function changeTextColors(color) {
-      const allTextElements = document.querySelectorAll('body *');  // Select all elements
+  });
+}
 
-      // Exclude header elements and buttons from color change
-      const headerElements = document.querySelectorAll('header *');
-      const buttonElements = document.querySelectorAll('button');
-      const orderlandingtitle = document.querySelectorAll('.order-landing__title');
-      const elementsToExclude = Array.from(headerElements).concat(Array.from(buttonElements)).concat(Array.from(orderlandingtitle));
+// code for dynamic year
+const year = document.querySelector('.year');
+const currentYear = new Date().getFullYear();
+year.innerHTML = currentYear;
 
-      allTextElements.forEach(element => {
-        if (!elementsToExclude.includes(element)) {
-          element.style.color = color;
-        }
-      });
-    }
-    
-    // code for dynamic year 
-    const year = document.querySelector('.year');
-    const currentYear = new Date().getFullYear();
-    year.innerHTML = currentYear
   </script>
 
 </body>
