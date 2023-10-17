@@ -1,4 +1,3 @@
-
 #bg-sign-in {
   background-image: url("https://images.unsplash.com/photo-1524222717473-730000096953?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80%22");
   background-repeat: no-repeat;
@@ -75,7 +74,7 @@
 }
 
 .animationSignIn {
-  animation: animationRightToMiddle 1.5s;  
+  animation: animationRightToMiddle 1.5s;
 }
 
 .animationOffSignIn {
@@ -83,12 +82,14 @@
 }
 
 .closeBtn {
-  top: 23%;
-  right: 24rem;
+  position: relative;
+  padding: 0.5rem 1rem;
+  right: 0rem;
+  margin-top: 2.5rem;
+  margin-bottom: auto;
 }
 
 @keyframes animationRightToMiddle {
-  
   0% {
     right: 100%;
   }
@@ -96,11 +97,9 @@
   100% {
     right: 0%;
   }
-
 }
 
 @keyframes animationMiddleToRight {
-  
   0% {
     right: 0%;
   }
@@ -108,7 +107,6 @@
   100% {
     right: 100%;
   }
-
 }
 
 @keyframes fadeIn {
@@ -132,34 +130,17 @@
 }
 
 @media (max-width: 1600px) {
-  .closeBtn {
-    top: 23%;
-    right: 22rem;
-  }
 }
 
 @media (max-width: 1500px) {
-  .closeBtn {
-    top: 23%;
-    right: 22rem;
-  }
 }
 
 @media (max-width: 1400px) {
-  .closeBtn {
-     left: -6rem;
-     margin-bottom: 56.5%;
-  }
 }
 
 @media (max-width: 1330px) {
   #sign-in-content {
     width: 70%;
-  }
-
-  .closeBtn {
-    top: 23%;
-    right: 17rem;
   }
 }
 
@@ -168,11 +149,6 @@
     width: 70%;
     margin-top: 10%;
   }
-
-  .closeBtn {
-    top: 23%;
-    right: 15rem;
-  }
 }
 
 @media (max-width: 980px) {
@@ -180,18 +156,12 @@
     width: 80%;
     margin-top: 7%;
   }
-
-  .closeBtn {
-    top: 21%;
-    right: 11rem;
-  }
 }
 
 @media (max-width: 915px) {
   #sign-in-content {
     width: 100%;
     margin: 0%;
-
   }
 
   .sign-in-element,
@@ -200,17 +170,17 @@
   }
 
   .closeBtn {
-    top: 23%;
-    right: 3rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    margin-top: 0;
   }
-
 }
 
 @media (max-width: 705px) {
   #sign-in-content {
     width: 100%;
     margin: 0%;
-
   }
 
   .sign-in-element {
@@ -218,32 +188,17 @@
     margin-left: 5%;
     margin-right: 5%;
   }
-
-  .closeBtn {
-    top: 23%;
-    right: 3rem;
-  }
-
 }
 
 @media (max-width: 680px) {
-
   .sign-in-loco,
   #sign-in-line {
     display: none;
     margin-bottom: 5%;
   }
-
-  .closeBtn {
-    top: 23%;
-    right: 3rem;
-  }
-
-
 }
 
 @media (max-width: 570px) {
-
   .sign-in-loco,
   #sign-in-line {
     display: none;
@@ -255,16 +210,9 @@
     margin-left: 5%;
     margin-right: 5%;
   }
-
-  .closeBtn {
-    top: 23%;
-    right: 3rem;
-  }
-
 }
 
 @media (max-width: 280px) {
-
   .sign-in-loco,
   #sign-in-line {
     display: none;
@@ -276,10 +224,4 @@
     margin-left: 5%;
     margin-right: 5%;
   }
-
-  .closeBtn {
-    top: 23%;
-    right: 2rem;
-  }
-
 }

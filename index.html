@@ -133,7 +133,7 @@
           <img src="./assets/logoSignInUp.png" alt="FlavorFusion-Logo" width="100%" height="auto">
         </div>
         <button type="button" onClick="clickSignInButton()"
-          class="btn btn-dark btn-square-md position-relative closeBtn">x</button>
+          class="btn btn-dark btn-square-md closeBtn">x</button>
       </div>
     </div>
   </header>
@@ -871,7 +871,7 @@
 
 
       <div class="allsection">
-        <img class="allimg" src="./Resources/About-us-page/contentImg1.jpg" alt="Image 1">
+        <img class="allimg" src="./Resources/About-us-page/contentImg1.jpg" alt="Image 1" data-tilt data-tilt-scale="1.1">
         <div class="allcontent">
           <h3 class="allh3">Nurtured by Local Farmers</h3>
           <p class="allp">At Harvest Haven, we believe in the symbiotic relationship between the land and our tables.
@@ -891,13 +891,13 @@
             garden, where rows of vibrant greens and fragrant herbs flourish under the sun's embrace. We take immense
             pride in cultivating our own organic produce, carefully tending to each plant from seed to plate.</p>
         </div>
-        <img class="allimg" src="./Resources/About-us-page/contentImg3.jpg" alt="Image 3">
+        <img class="allimg" src="./Resources/About-us-page/contentImg3.jpg" alt="Image 3" data-tilt data-tilt-scale="1.1">
       </div>
       <hr>
 
 
       <div class="allsection">
-        <img class="allimg" src="./Resources/About-us-page/contentImg2.jpg" alt="Image 2">
+        <img class="allimg" src="./Resources/About-us-page/contentImg2.jpg" alt="Image 2" data-tilt data-tilt-scale="1.1">
         <div class="allcontent">
           <h3 class="allh3">The Essence of Organic Ingredients</h3>
           <p class="allp">Nature's bounty takes center stage in our culinary creations. We source only the finest
@@ -988,7 +988,8 @@
       // Exclude header elements and buttons from color change
       const headerElements = document.querySelectorAll('header *');
       const buttonElements = document.querySelectorAll('button');
-      const elementsToExclude = Array.from(headerElements).concat(Array.from(buttonElements));
+      const orderlandingtitle = document.querySelectorAll('.order-landing__title');
+      const elementsToExclude = Array.from(headerElements).concat(Array.from(buttonElements)).concat(Array.from(orderlandingtitle));
 
       allTextElements.forEach(element => {
         if (!elementsToExclude.includes(element)) {
