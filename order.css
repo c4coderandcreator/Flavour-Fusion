@@ -13,12 +13,35 @@ body {
 }
 
 #close-sam-section {
-  width: fit-content;
-  background-color: black;
-  padding: 8px 12px;
-  border-radius: 12px;
-  border: 1px solid black;
   cursor: pointer;
+  justify-self: flex-end;
+  padding: 20px;
+  margin-inline-start: auto;
+  background-color: #f9f2b9;
+  color: #f9f2b9;
+}
+
+#closeh1id {
+  width: 90%;
+  height: 12%;
+  display: flex;
+  align-items: stretch;
+  margin-block-end: auto;
+  background-color: #f9f2b9;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  font-family: Poppins;
+}
+
+#closeh1id >div {
+  text-align: center;
+  justify-items: center;
+ }
+
+ #closeh1center {
+  padding-top: 25px;
 }
 
 #close-sam-section p {
@@ -33,14 +56,13 @@ body {
 
 .container-sam {
   width: 100%;
-  height: 600px;
   background-color: #fdfbfb;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   z-index: 69;
-  gap: 8px;
+  gap: 10px;
   position: absolute;
   margin-top: 100px; 
   height: 800px;
@@ -61,7 +83,6 @@ body {
 
 .main-head-sam {
   overflow: hidden;
-  width: 100%;
   background-color: white;
   border-radius: 12px;
   display: flex;
@@ -127,9 +148,9 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  gap: 8px;
-  padding: 0 10px;
   position: relative;
+  height: 30%;
+  padding: 10px;
 }
 
 .food-content-sam img {
