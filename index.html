@@ -988,7 +988,8 @@
       // Exclude header elements and buttons from color change
       const headerElements = document.querySelectorAll('header *');
       const buttonElements = document.querySelectorAll('button');
-      const elementsToExclude = Array.from(headerElements).concat(Array.from(buttonElements));
+      const orderlandingtitle = document.querySelectorAll('.order-landing__title');
+      const elementsToExclude = Array.from(headerElements).concat(Array.from(buttonElements)).concat(Array.from(orderlandingtitle));
 
       allTextElements.forEach(element => {
         if (!elementsToExclude.includes(element)) {
