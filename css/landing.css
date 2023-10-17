@@ -183,6 +183,9 @@ img {
   color: rgb(0, 0, 0);
   font-weight: var(--font-semi-bold);
 }
+#flavor-fusion-btn {
+  font-size: 28px;
+}
 
 .nav__logo:hover {
   color: rgb(97, 97, 97);
@@ -418,7 +421,7 @@ img {
   display: inline-block;
   margin-bottom: .75rem;
   color: var(--text-color);
- 
+
       text-decoration: none;
       cursor: pointer;
 }
@@ -438,7 +441,7 @@ img {
 }
 .footer__link:hover::after {
   width: 100%;
- 
+
 }
 
 

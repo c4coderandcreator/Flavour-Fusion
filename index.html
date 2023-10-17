@@ -43,11 +43,11 @@
 
   <header class="l-header" id="header">
     <nav class="nav bd-container">
-      <a href="#" class="nav__logo" id="flavor-fusion-btn">FlavorFusion</a>
+      <a href="/" class="nav__logo" id="flavor-fusion-btn">FlavorFusion</a>
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#home" class="nav__link active-link" id="home-btn">Home</a>
+            <a href="/" class="nav__link active-link" id="home-btn">Home</a>
           </li>
           <li class="nav__item">
             <a href="#" class="nav__link" id="menu-btn">Menu</a>
@@ -319,7 +319,7 @@
             <button >&times;</button>
           </div>
         </div>
-       
+
         <div class="text-content-sam">
           <h1>Total:</h1>
           <h2 id="totalPrice">Rs.0</h2>
@@ -937,7 +937,7 @@
         <h3 class="footer__title">Our Company</h3>
         <ul>
           <li><a href="#" id="aboutFbtn" class="footer__link">About Us</a></li>
-          <li><a href="#" id="homeFbtn" class="footer__link">Home</a></li>
+          <li><a href="/" id="homeFbtn" class="footer__link">Home</a></li>
         </ul>
       </div>
 
@@ -966,7 +966,7 @@
   <script src="./order.js"></script>
   <script src="./track-sam.js"></script>
   <script src="./javascript/signInUp.js"></script>
-  <script src="./javascript/footer.js"></script>
+  <!-- <script src="./javascript/footer.js"></script> -->
   <script src="./allindex.js"></script>
   <script src="./anorder.js"></script>
   <script src="vanilla-tilt.js"></script>
@@ -1003,8 +1003,8 @@
         }
       });
     }
-    
-    // code for dynamic year 
+
+    // code for dynamic year
     const year = document.querySelector('.year');
     const currentYear = new Date().getFullYear();
     year.innerHTML = currentYear
