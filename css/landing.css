@@ -206,6 +206,7 @@ img {
 .sign-in-btn-nav:hover {
   background-color: #ffffff;
   color: #050505;
+  border: #050505 1px solid;
 }
 
 .nav__toggle {
@@ -388,12 +389,15 @@ img {
   width: 180px;
   transform: translateZ(20px); /*Tilt JS*/
   height: 180px;
+  margin-bottom: 1rem;
 }
 
 .order-landing__title {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1);
   transform: translateZ(20px); /*Tilt JS*/
+  cursor: default;
+  margin-bottom: 1rem;
 }
 
 /*========== FOOTER ==========*/
