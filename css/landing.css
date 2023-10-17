@@ -352,6 +352,13 @@ img {
   color: black;
   transform: scale(1.1);
 }*/
+
+.theme-toggle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 0 3.001rem;
+}
 #theme-toggle-button {
   width: 40px; /* Set the width and height to create a circular button */
   height: 40px;
@@ -616,9 +623,12 @@ img {
     padding: 0;
     padding-top: 0.5rem;
   }
+  .theme-toggle{
+    padding: 0;
+  }
 }
 
-@media screen and (min-width: 769px) and (max-width: 835px){
+@media screen and (min-width: 769px) and (max-width: 860px){
   .nav__list {
     gap: 2rem;
   }
@@ -626,6 +636,7 @@ img {
   .nav__item{
     margin-left: 0;
   }
+
 }
 
 /* === For home section === (because it's hiding behind the navbar on smaller screns) */
