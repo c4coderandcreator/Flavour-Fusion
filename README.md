@@ -27,16 +27,16 @@ Open the index.html file in your web browser to start using the application.
 
 
 ## Contributing
-Feel free to contribute to this project by creating a pull request. We welcome any improvements, bug fixes, or new features.
 
-## Why & How to contribute?
-- If you find any bugs then please report them by creating an issue. 
-- If you can make a website look good by modifying then go ahead and describe it in issue and create pull request. 
-- If you can add more functionality, then create an issue and contribute by making pull request.
+We welcome and appreciate contributions from the open-source community to make Flavour Fusion even better. 
+To get started with contributing, please read our [Contributing Guidelines](CONTRIBUTING.md).
+
+Feel free to contribute to this project
 
 ## Thanks to all Contributors 💪
-[![Contributors image](https://contributors-img.com/image?repo=c4coderandcreator/Flavour-Fusion)](https://github.com/c4coderandcreator/Flavour-Fusion/graphs/contributors)
+Your contribution is the root of success of this project.
 
-Also Give it a Star 🌟, If you loved contributing to the project.
+Also Give it a Star 🌟, If you loved contributing to the project. 
+Let's connect on my [Github](https://github.com/c4coderandcreator) for more such projects !!
 
 ## [MIT Licensed](https://github.com/c4coderandcreator/Flavour-Fusion/blob/main/LICENSE)
