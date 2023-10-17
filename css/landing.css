@@ -154,6 +154,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -284,7 +286,7 @@ img {
 /*========== BUTTONS ==========*/
 .landing-button {
   display: inline-block;
-  background-color: #F9F2B9;
+  background-color: #ffe417;
   color: #333;
   padding: 1rem 1.5rem;
   border-radius: 1rem;
@@ -295,7 +297,8 @@ img {
 }
 
 .landing-button:hover {
-  background-color: #fff;
+  background-color: #d8ac4d;
+  color:#050505;
 }
 
 .landing-button-link {
