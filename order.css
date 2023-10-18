@@ -13,10 +13,12 @@ body {
 }
 
 #close-sam-section {
-  width: fit-content;
+  --diameter: 2.5rem;
+  width: var(--diameter);
+  height: var(--diameter);
   background-color: black;
-  padding: 8px 12px;
-  border-radius: 12px;
+  padding: .5em;
+  border-radius: 50%;
   border: 1px solid black;
   cursor: pointer;
 }

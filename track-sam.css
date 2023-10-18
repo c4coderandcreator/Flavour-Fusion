@@ -92,13 +92,16 @@ body {
   cursor: pointer;
 }
 #close-track-section {
+  --diameter: 2.5rem;
+  width: var(--diameter);
+  height: var(--diameter);
+  padding: 0.5em;
   position: absolute;
   top: 15%;
   right: 8%;
   background-color: black;
   color: white;
-  padding: 5px 7px;
-  border-radius: 5px;
+  border-radius: 50%;
   border: 1px solid black;
   cursor: pointer;
 }
