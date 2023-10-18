@@ -287,10 +287,10 @@ img {
 /*========== BUTTONS ==========*/
 .landing-button {
   display: inline-block;
-  background-color: #ffe417;
+  background-color: #e9d855;
   color: #333;
   padding: 1rem 1.5rem;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   border: 1px solid black;
   box-shadow: 1px 1px 2px 0px black;
   font-weight: var(--font-semi-bold);
@@ -298,8 +298,9 @@ img {
 }
 
 .landing-button:hover {
-  background-color: #d8ac4d;
+  background-color: #f0be54;
   color:#050505;
+  transform: scale(1.04);
 }
 
 .landing-button-link {
