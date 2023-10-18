@@ -996,7 +996,8 @@
       const headerElements = document.querySelectorAll('header *');
       const buttonElements = document.querySelectorAll('button');
       const orderlandingtitle = document.querySelectorAll('.order-landing__title');
-      const elementsToExclude = Array.from(headerElements).concat(Array.from(buttonElements)).concat(Array.from(orderlandingtitle));
+      const containerSam = document.querySelectorAll("#sam *") // for order now content
+      const elementsToExclude = Array.from(headerElements).concat(Array.from(buttonElements)).concat(Array.from(orderlandingtitle)).concat(Array.from(containerSam));
 
       allTextElements.forEach(element => {
         if (!elementsToExclude.includes(element)) {
