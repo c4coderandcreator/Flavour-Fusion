@@ -68,7 +68,7 @@ html {
 /*========== Theme ==========*/
 
 body {
-  margin: var(--header-height) 0 0 0;
+  /* margin: var(--header-height) 0 0 0; */
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
@@ -154,6 +154,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -163,7 +165,7 @@ img {
     left: 0;
     right: 0;
     width: 90%;
-    margin: 0 auto;
+    margin: -0.5rem auto;
     padding: 2.5rem 0 0;
     text-align: center;
     background-color: var(--body-color);
@@ -188,8 +190,32 @@ img {
   color: rgb(97, 97, 97);
 }
 
-.nav__link {
-  transition: .5s;
+
+.nav__link:not(.sign-in-btn-nav){
+  transition: .3s;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 0.5rem;
+}
+
+.nav__link:not(.sign-in-btn-nav)::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 10px;
+  left: 0;
+  bottom: 0;
+  transform: translateX(-100%) translateY(100%);
+  background-color: rgb(97, 97, 97);
+  transition: 0.5s;
+
+}
+
+
+.nav__link:hover:not(.sign-in-btn-nav)::after{
+  transform: translateX(0%) translateY(0%);
 }
 
 .nav__link:hover {
@@ -198,19 +224,23 @@ img {
 
 .sign-in-btn-nav {
   background-color: #161212;
+  border: #050505 1px solid;
   color: #FFF;
   padding: 5px 12px;
   border-radius: 10px;
+  transition: 0.3s;
 }
 
 .sign-in-btn-nav:hover {
   background-color: #ffffff;
   color: #050505;
+  border: #050505 1px solid;
 }
 
 .nav__toggle {
   font-size: 1.3rem;
   cursor: pointer;
+  color: var(--title-color);
 }
 
 /* Show menu */
@@ -283,7 +313,7 @@ img {
 /*========== BUTTONS ==========*/
 .landing-button {
   display: inline-block;
-  background-color: #F9F2B9;
+  background-color: #ffe417;
   color: #333;
   padding: 1rem 1.5rem;
   border-radius: 1rem;
@@ -294,7 +324,8 @@ img {
 }
 
 .landing-button:hover {
-  background-color: #fff;
+  background-color: #d8ac4d;
+  color:#050505;
 }
 
 .landing-button-link {
@@ -310,7 +341,7 @@ img {
   color: black;
 }
 
-#theme-toggle-button{
+/*#theme-toggle-button{
   padding: 3px 6px;
   border-radius: 10px;
   border: none;
@@ -346,7 +377,38 @@ img {
   background-color: transparent;
   color: black;
   transform: scale(1.1);
+}*/
+
+.theme-toggle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 0 3.001rem;
 }
+#theme-toggle-button {
+  width: 40px; /* Set the width and height to create a circular button */
+  height: 40px;
+  border-radius: 50%; /* Make it circular */
+  border: none;
+  background-color: black;
+  color: white;
+  transition: all ease-in-out 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px; 
+  transform: rotate(-30deg);
+  /* Adjust the font size to make the symbol fit nicely */
+}
+
+#theme-toggle-button:hover {
+  border: 1px solid #050505;
+  background-color: transparent;
+  color: black;
+  transform: scale(1.1);
+}
+
 
 /*========== food-fact ==========*/
 .food-fact__data {
@@ -388,12 +450,15 @@ img {
   width: 180px;
   transform: translateZ(20px); /*Tilt JS*/
   height: 180px;
+  margin-bottom: 1rem;
 }
 
 .order-landing__title {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1);
   transform: translateZ(20px); /*Tilt JS*/
+  cursor: default;
+  margin-bottom: 1rem;
 }
 
 /*========== FOOTER ==========*/
@@ -505,7 +570,7 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   body {
     margin: 0;
   }
@@ -524,7 +589,7 @@ img {
   }
 
   .nav__item {
-    margin-left: var(--mb-5);
+    margin-left: var(--mb-3);
     margin-bottom: 0;
   }
 
@@ -575,3 +640,42 @@ img {
     column-gap: 5rem;
   }
 }
+
+/* === For Navbar on smaller screens=== */
+
+@media screen and (max-width: 768px){
+  .nav {
+    height: 3.5rem;
+    padding: 0;
+    padding-top: 0.5rem;
+  }
+  .nav__link:not(.sign-in-btn-nav){
+    padding: 0;
+  }
+  .nav__link:not(.sign-in-btn-nav)::after{
+    display: none;
+  }
+  .theme-toggle{
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 860px){
+  .nav__list {
+    gap: 1rem;
+  }
+
+  .nav__item{
+    margin-left: 0;
+  }
+
+}
+
+/* === For home section === (because it's hiding behind the navbar on smaller screns) */
+
+@media screen and (max-width: 575px){
+  .home{
+    padding-top: 4rem;
+  }
+}
+

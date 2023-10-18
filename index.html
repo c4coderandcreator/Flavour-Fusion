@@ -43,7 +43,7 @@
 
   <header class="l-header" id="header">
     <nav class="nav bd-container">
-      <a href="#" class="nav__logo" id="flavor-fusion-btn">FlavorFusion</a>
+      <a href="#" class="nav__logo" id="flavor-fusion-btn" style="font-size: 2rem;">FlavorFusion</a>
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
           <li class="nav__item">
@@ -62,13 +62,10 @@
             <a href="#sign-in" onClick="clickSignInButton()" class="nav__link sign-in-btn-nav" id="sign-in-btn">Sign
               In</a>
           </li>
-          <li class="nav__item">
-            <div class="theme-toggle">
-          <li class="nav__item">
-            <button onclick="toggleTheme()" class="theme-toggle-button" id="theme-toggle-button">Dark Theme
+          <li class="nav__item theme-toggle">
+            <button onclick="toggleTheme()" class="theme-toggle-button" id="theme-toggle-button">&#9728;
             </button>
           </li>
-      </div>
       </ul>
       </div>
 
@@ -132,8 +129,7 @@
         <div class="d-none sign-in-loco" id="signIn-Up-hd4">
           <img src="./assets/logoSignInUp.png" alt="FlavorFusion-Logo" width="100%" height="auto">
         </div>
-        <button type="button" onClick="clickSignInButton()"
-          class="btn btn-dark btn-square-md position-absolute closeBtn">x</button>
+        <button type="button" onClick="clickSignInButton()" class="btn btn-dark btn-square-md closeBtn">x</button>
       </div>
     </div>
   </header>
@@ -143,7 +139,7 @@
     <section class="home" id="home">
       <div class="home__container bd-container bd-grid">
         <div class="home__img">
-          <img src="./assets/salmon-salad.png" alt="" class="home_img" data-tilt data-tilt-scale="1.1"/>
+          <img src="./assets/salmon-salad.png" alt="" class="home_img" data-tilt data-tilt-scale="1.1" />
         </div>
 
         <div class="home__data">
@@ -152,7 +148,7 @@
             Food Fusion Fun<br />
             Where Tradition Meets Innovation and Healthy Meets Tasty!
           </p>
-          <a href="#order-landing" class="landing-button">Order Now</a>
+          <a href="#order-landing" class="landing-button" style="color: black;">Order Now</a>
         </div>
       </div>
     </section>
@@ -175,155 +171,160 @@
         </div>
 
         <div class="landing-s2-main__img">
-          <img src="./assets/healthyhappyfood.jpg" alt="healthy-happy-food" class="home_img2" data-tilt data-tilt-scale="1.1" />
+          <img src="./assets/healthyhappyfood.jpg" alt="healthy-happy-food" class="home_img2" data-tilt
+            data-tilt-scale="1.1" />
         </div>
       </div>
     </section>
+
+    <!-- Order Section -->
 
     <section id="sam" class="container-sam">
-      <div class="container-sam-wrapper">
-        <button id="close-sam-section">
-          <p class="close-icon">+</p>
-        </button>
-        <div class="main-head-sam">
-          <div class="head-content-sam">
-            <i class="bx bx-search-alt-2"></i>
-            <input type="text" id="search-box-sam" placeholder="Search menu" onkeyup="searchSAM()" />
-          </div>
-          <div class="food-items-sam" id="food-items-sam">
-            <div class="food-content-sam">
-              <img src="./assets/image/salad (2).png" alt=" salad-image" />
-              <div class="food-content-sam-description">
-                <div class="description-sam">
-                  <h3>Noodle organica</h3>
-                  <p>Rs. 100</p>
-                </div>
-
-                <div class="item-sam">
-                  <button class="sub">-</button>
-                  <span class="quantity">0</span>
-                  <button class="add">+</button>
-                </div>
-              </div>
-            </div>
-            <div class="food-content-sam">
-              <img src="./assets/image/salad (3).png" alt=" salad-image" />
-              <div class="food-content-sam-description">
-                <div class="description-sam">
-                  <h3>Egg-salad Organica</h3>
-                  <p>Rs. 100</p>
-                </div>
-
-                <div class="item-sam">
-                  <button class="sub">-</button>
-                  <span class="quantity">0</span>
-                  <button class="add">+</button>
-                </div>
-              </div>
-            </div>
-            <div class="food-content-sam">
-              <img src="./assets/image/salad (4).png" alt=" salad-image" />
-              <div class="food-content-sam-description">
-                <div class="description-sam">
-                  <h3>Fruits de fresh</h3>
-                  <p>Rs. 130</p>
-                </div>
-
-                <div class="item-sam">
-                  <button class="sub">-</button>
-                  <span class="quantity">0</span>
-                  <button class="add">+</button>
-                </div>
-              </div>
-            </div>
-            <div class="food-content-sam">
-              <img src="./assets/image/salad (5).png" alt=" salad-image" />
-              <div class="food-content-sam-description">
-                <div class="description-sam">
-                  <h3>Vegetable Mashup</h3>
-                  <p>Rs. 120</p>
-                </div>
-                <div class="item-sam">
-                  <button class="sub">-</button>
-                  <span class="quantity">0</span>
-                  <button class="add">+</button>
-                </div>
-              </div>
-            </div>
-            <div class="food-content-sam">
-              <img src="./assets/image/salad (6).png" alt=" salad-image" />
-              <div class="food-content-sam-description">
-                <div class="description-sam">
-                  <h3>Organica de salad</h3>
-                  <p>Rs. 160</p>
-                </div>
-                <div class="item-sam">
-                  <button class="sub">-</button>
-                  <span class="quantity">0</span>
-                  <button class="add">+</button>
-                </div>
-              </div>
-            </div>
-            <div class="food-content-sam">
-              <img src="./assets/image/salad (7).png" alt=" salad-image" />
-              <div class="food-content-sam-description">
-                <div class="description-sam">
-                  <h3>Nature en salad</h3>
-                  <p>Rs. 170</p>
-                </div>
-                <div class="item-sam">
-                  <button class="sub">-</button>
-                  <span class="quantity">0</span>
-                  <button class="add">+</button>
-                </div>
-              </div>
-            </div>
-            <div class="food-content-sam">
-              <img src="./assets/image/salad (8).png" alt=" salad-image" />
-              <div class="food-content-sam-description">
-                <div class="description-sam">
-                  <h3>Mix-fresh salad</h3>
-                  <p>Rs. 110</p>
-                </div>
-                <div class="item-sam">
-                  <button class="sub">-</button>
-                  <span class="quantity">0</span>
-                  <button class="add">+</button>
-                </div>
-              </div>
-            </div>
-            <div class="food-content-sam">
-              <img src="./assets/image/salad (9).png" alt=" salad-image" />
-              <div class="food-content-sam-description">
-                <div class="description-sam">
-                  <h3>Fruit-e-convoy</h3>
-                  <p>Rs. 210</p>
-                </div>
-                <div class="item-sam">
-                  <button class="sub">-</button>
-                  <span class="quantity">0</span>
-                  <button class="add">+</button>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="main-head-sam">
+        <div class="head-content-sam">
+          <i class="bx bx-search-alt-2"></i>
+          <input type="text" id="search-box-sam" placeholder="Search menu" onkeyup="searchSAM()" />
         </div>
-        <div class="checkout-sam">
-          <div class="text-content-sam">
-            <h1>Total:</h1>
-            <h1 id="totalPrice">
-              <span>Rs.0</span>
-            </h1>
+
+        <div class="food-items-sam" id="food-items-sam">
+          <div class="food-content-sam">
+            <img src="./assets/image/salad (2).png" alt=" salad-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam">
+                <h3>Noodle organica</h3>
+                <p>Rs. 100</p>
+              </div>
+
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
           </div>
-          <div class="checkout-btn-wrapper">
-            <button class="checkout-btn-sam" id="reset-sam">Checkout</button>
-            <button class="checkout-btn-sam" id="reset-cart-sam">
-              Reset cart
-            </button>
+          <div class="food-content-sam">
+            <img src="./assets/image/salad (3).png" alt=" salad-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam">
+                <h3>Egg-salad Organica</h3>
+                <p>Rs. 100</p>
+              </div>
+
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="food-content-sam">
+            <img src="./assets/image/salad (4).png" alt=" salad-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam">
+                <h3>Fruits de fresh</h3>
+                <p>Rs. 130</p>
+              </div>
+
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="food-content-sam">
+            <img src="./assets/image/salad (5).png" alt=" salad-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam">
+                <h3>Vegetable Mashup</h3>
+                <p>Rs. 120</p>
+              </div>
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="food-content-sam">
+            <img src="./assets/image/salad (6).png" alt=" salad-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam">
+                <h3>Organica de salad</h3>
+                <p>Rs. 160</p>
+              </div>
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="food-content-sam">
+            <img src="./assets/image/salad (7).png" alt=" salad-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam">
+                <h3>Nature en salad</h3>
+                <p>Rs. 170</p>
+              </div>
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="food-content-sam">
+            <img src="./assets/image/salad (8).png" alt=" salad-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam">
+                <h3>Mix-fresh salad</h3>
+                <p>Rs. 110</p>
+              </div>
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          <div class="food-content-sam">
+            <img src="./assets/image/salad (9).png" alt=" salad-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam">
+                <h3>Fruit-e-convoy</h3>
+                <p>Rs. 210</p>
+              </div>
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+      <!-- Your Cart -->
+      <div class="checkout-sam">
+        <div id="closeh1id">
+          <div id="closeh1" style="flex-grow: 6">
+            <h1 id="closeh1center" >Your Cart</h1>
+          </div>
+          <div id="close-sam-section" >
+            <button >&times;</button>
+          </div>
+        </div>
+       
+        <div class="text-content-sam">
+          <h1>Total:</h1>
+          <h2 id="totalPrice">Rs.0</h2>
+        </div>
+        <button class="checkout-btn-sam" id="reset-sam">Checkout</button>
+        <button class="checkout-btn-sam" id="reset-cart-sam">
+          Reset cart
+        </button>
+      </div>
+    </section> 
 
     <section class="track-container-sam" id="track-container-sam">
       <button id="close-track-section"></button>
@@ -847,13 +848,13 @@
       <div>
 
         <span class="ansearch1">By Date: <input class="orinput" type="date" id="datePicker">
-          <button id="searchButton">Search</button></span>
+          <button class="searchButton" id="searchButtonDate">Search</button></span>
 
       </div>
       <div>
 
-        <span class="ansearch2">By Cafe: <input class="orinput" type="text" placeholder="">
-          <button id="searchButton">Search</button> </span>
+        <span class="ansearch2">By Cafe: <input class="orinput" type="text" placeholder="" id="cafeInput">
+          <button class="searchButton" id="searchButtonCafe">Search</button> </span>
 
       </div>
     </div>
@@ -871,7 +872,8 @@
 
 
       <div class="allsection">
-        <img class="allimg" src="./Resources/About-us-page/contentImg1.jpg" alt="Image 1">
+        <img class="allimg" src="./Resources/About-us-page/contentImg1.jpg" alt="Image 1" data-tilt
+          data-tilt-scale="1.1">
         <div class="allcontent">
           <h3 class="allh3">Nurtured by Local Farmers</h3>
           <p class="allp">At Harvest Haven, we believe in the symbiotic relationship between the land and our tables.
@@ -891,13 +893,15 @@
             garden, where rows of vibrant greens and fragrant herbs flourish under the sun's embrace. We take immense
             pride in cultivating our own organic produce, carefully tending to each plant from seed to plate.</p>
         </div>
-        <img class="allimg" src="./Resources/About-us-page/contentImg3.jpg" alt="Image 3">
+        <img class="allimg" src="./Resources/About-us-page/contentImg3.jpg" alt="Image 3" data-tilt
+          data-tilt-scale="1.1">
       </div>
       <hr>
 
 
       <div class="allsection">
-        <img class="allimg" src="./Resources/About-us-page/contentImg2.jpg" alt="Image 2">
+        <img class="allimg" src="./Resources/About-us-page/contentImg2.jpg" alt="Image 2" data-tilt
+          data-tilt-scale="1.1">
         <div class="allcontent">
           <h3 class="allh3">The Essence of Organic Ingredients</h3>
           <p class="allp">Nature's bounty takes center stage in our culinary creations. We source only the finest
@@ -971,17 +975,20 @@
 
       const themeToggleButton = document.getElementById('theme-toggle-button');
       const header = document.querySelector('header');
+      const sunSymbol = "&#9728;";
+      const moonSymbol = "&#9790;";
 
       if (body.classList.contains('dark-theme')) {
-        themeToggleButton.textContent = 'Bright Theme';
+        themeToggleButton.innerHTML = moonSymbol;
         changeTextColors('white');
         header.style.color = 'white';  // Change header text color to white
       } else {
-        themeToggleButton.textContent = 'Dark Theme';
+        themeToggleButton.innerHTML = sunSymbol;
         changeTextColors('black');
         header.style.color = 'black';  // Change header text color to black
       }
     }
+
     function changeTextColors(color) {
       const allTextElements = document.querySelectorAll('body *');  // Select all elements
 
@@ -989,19 +996,20 @@
       const headerElements = document.querySelectorAll('header *');
       const buttonElements = document.querySelectorAll('button');
       const containerSam = document.querySelectorAll("#sam *") //selecting all ordernow element
-      const elementsToExclude = Array.from(headerElements).concat(Array.from(buttonElements)).concat(Array.from(containerSam));
-
+      const orderlandingtitle = document.querySelectorAll('.order-landing__title');
+      const elementsToExclude = Array.from(headerElements).concat(Array.from(buttonElements)).concat(Array.from(orderlandingtitle)).concat(Array.from(containerSam));
       allTextElements.forEach(element => {
         if (!elementsToExclude.includes(element)) {
           element.style.color = color;
         }
       });
     }
-    
-    // code for dynamic year 
+
+    // code for dynamic year
     const year = document.querySelector('.year');
     const currentYear = new Date().getFullYear();
-    year.innerHTML = currentYear
+    year.innerHTML = currentYear;
+
   </script>
 
 </body>
