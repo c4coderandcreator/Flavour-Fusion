@@ -156,6 +156,7 @@ body {
   font-size: 0.8rem;
   font-weight: 400;
   margin: 0 !important;
+  color:black;
 }
 
 .item-sam {
@@ -198,6 +199,7 @@ body {
   font-size: 1.2rem;
   font-weight: 600;
   text-align: center;
+  color:black;
 }
 
 .checkout-sam {
