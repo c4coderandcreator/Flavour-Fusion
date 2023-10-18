@@ -22,7 +22,7 @@ body {
 }
 
 #close-sam-section p {
-  color: white;
+  color: white!important;
 }
 
 .close-icon {
@@ -121,6 +121,7 @@ body {
   gap: 8px;
   padding: 0 10px;
   position: relative;
+  /* color: black!important; */
 }
 
 .food-content-sam img {
@@ -143,6 +144,7 @@ body {
 .description-sam {
   display: flex;
   flex-direction: column;
+  color: black!important;
 }
 
 .description-sam h3 {
@@ -150,12 +152,14 @@ body {
   font-weight: 600;
   padding: 0 !important;
   text-align: left;
+  color: black!important;
 }
 
 .description-sam p {
   font-size: 0.8rem;
   font-weight: 400;
   margin: 0 !important;
+  color: black!important;
 }
 
 .item-sam {
@@ -198,6 +202,7 @@ body {
   font-size: 1.2rem;
   font-weight: 600;
   text-align: center;
+  color: black!important;
 }
 
 .checkout-sam {
@@ -211,16 +216,19 @@ body {
   box-shadow: 0 16px 24px #eaeaea;
   padding: 16px;
   gap: 8px;
+  color: black!important;
 }
 
 .checkout-sam h1 {
   font-size: 1rem;
   font-weight: 600;
   padding: 10px 0px;
+  color: black!important;
 }
 
 #totalPrice {
   font-weight: 500;
+  color: black!important;
 }
 
 .checkout-btn-wrapper {
