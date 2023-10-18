@@ -190,8 +190,32 @@ img {
   color: rgb(97, 97, 97);
 }
 
-.nav__link {
-  transition: .5s;
+
+.nav__link:not(.sign-in-btn-nav){
+  transition: .3s;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 0.5rem;
+}
+
+.nav__link:not(.sign-in-btn-nav)::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 10px;
+  left: 0;
+  bottom: 0;
+  transform: translateX(-100%) translateY(100%);
+  background-color: rgb(97, 97, 97);
+  transition: 0.5s;
+
+}
+
+
+.nav__link:hover:not(.sign-in-btn-nav)::after{
+  transform: translateX(0%) translateY(0%);
 }
 
 .nav__link:hover {
@@ -200,9 +224,11 @@ img {
 
 .sign-in-btn-nav {
   background-color: #161212;
+  border: #050505 1px solid;
   color: #FFF;
   padding: 5px 12px;
   border-radius: 10px;
+  transition: 0.3s;
 }
 
 .sign-in-btn-nav:hover {
@@ -563,7 +589,7 @@ img {
   }
 
   .nav__item {
-    margin-left: var(--mb-5);
+    margin-left: var(--mb-3);
     margin-bottom: 0;
   }
 
@@ -623,6 +649,12 @@ img {
     padding: 0;
     padding-top: 0.5rem;
   }
+  .nav__link:not(.sign-in-btn-nav){
+    padding: 0;
+  }
+  .nav__link:not(.sign-in-btn-nav)::after{
+    display: none;
+  }
   .theme-toggle{
     padding: 0;
   }
@@ -630,7 +662,7 @@ img {
 
 @media screen and (min-width: 769px) and (max-width: 860px){
   .nav__list {
-    gap: 2rem;
+    gap: 1rem;
   }
 
   .nav__item{
