@@ -146,6 +146,7 @@ img {
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
+  box-shadow: 2px 2px 20px gray;
 }
 
 /*========== NAV ==========*/
