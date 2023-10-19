@@ -30,14 +30,12 @@ function toggleSignIn() {
 
 function clickSignInButton() {
   const signInBtn = document.getElementById("bg-sign-in")
-  if(signInBtn.classList.contains("d-none")) {
-    signInBtn.classList.remove('d-none')
-  }
-  if(signInBtn.classList.contains("animationOffSignIn")) {
+
+  if (signInBtn.classList.contains("animationOffSignIn")) {
     signInBtn.classList.remove("animationOffSignIn")
     signInBtn.classList.toggle("animationSignIn")
   }
-  if(signInBtn.classList.contains("animationSignIn")) {
+  if (signInBtn.classList.contains("animationSignIn")) {
     signInBtn.classList.remove("animationSignIn")
     signInBtn.classList.toggle("animationOffSignIn")
   }
@@ -51,11 +49,5 @@ function clickSignInButton() {
     document.body.style.overflowY = "hidden";
   }
 
-  if(signInBtn.classList.contains("animationOffSignIn")) {
-    setTimeout(function() {
-      if(signInBtn.classList.contains("animationOffSignIn")) {
-        signInBtn.classList.toggle('d-none')
-      }
-    }, 1000);
-  }
+
 }
