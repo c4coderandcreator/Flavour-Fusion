@@ -292,6 +292,10 @@ img {
 .home__img {
   width: 280px;
   justify-self: center;
+  animation-name: floating1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 .home_img{
   border-radius: 20px;
@@ -422,6 +426,10 @@ img {
 .landing-s2-main__img {
   width: 280px;
   justify-self: center;
+  animation-name: floating2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 /*========== order-landing ==========*/
@@ -679,3 +687,21 @@ img {
   }
 }
 
+/* Keyframes for animations */
+@keyframes floating1 {
+  0% { transform: rotate(0deg); }
+  20% { transform: rotate(5deg); }
+  40% { transform: rotate(0deg); }
+  60% { transform: rotate(-5deg); }
+  80% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes floating2 {
+  0% { transform: translateY(0px); }
+  20% { transform: translateY(5px); }
+  40% { transform: translateY(0px); }
+  60% { transform: translateY(-5px); }
+  80% { transform: translateY(0px); }
+  100% { transform: translateY(0px); }
+}
