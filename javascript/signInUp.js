@@ -41,7 +41,15 @@ function clickSignInButton() {
     signInBtn.classList.remove("animationSignIn")
     signInBtn.classList.toggle("animationOffSignIn")
   }
+
   signInBtn.classList.toggle("animationSignIn")
+
+  signInBtn.classList.toggle("disable-scroll-y")
+  document.body.style.overflowY = "auto";
+
+  if (signInBtn.classList.contains("disable-scroll-y")) {
+    document.body.style.overflowY = "hidden";
+  }
 
   if(signInBtn.classList.contains("animationOffSignIn")) {
     setTimeout(function() {
