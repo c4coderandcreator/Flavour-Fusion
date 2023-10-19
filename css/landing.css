@@ -434,7 +434,7 @@ img {
 
 /*========== order-landing ==========*/
 .order-landing__container {
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .order-landing__data {
@@ -628,6 +628,10 @@ img {
     background-color: var(--first-color-send);
     padding: 2rem;
     border-radius: 1.5rem;
+  }
+  .order-landing__img{
+    height: 120px;
+    width: 120px;
   }
   
 }
