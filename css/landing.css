@@ -317,35 +317,47 @@ img {
 
 /*========== BUTTONS ==========*/
 .landing-button {
-  display: inline-block;
-  background-color: #ffe417;
-  color: #333;
-  padding: 1rem 1.5rem;
-  border-radius: 1rem;
-  border: 1px solid black;
-  box-shadow: 1px 1px 2px 0px black;
-  font-weight: var(--font-semi-bold);
-  transition: .3s;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #ebdc40;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden; 
+  outline: 2px solid yellowgreen;
+  background-color: yellowgreen;
+
 }
 
 .landing-button:hover {
-  background-color: #d8ac4d;
-  color:#050505;
+  color: yellowgreen;
+  transform: scale(1.2);
+  background-color: yellowgreen;
+
+  outline: 2px solid yellowgreen;
+  box-shadow: 2px 2px 30px 1px yellowgreen;
 }
 
-.landing-button-link {
-  background: none;
-  padding: 10px;
-  color: black !important;
-  background-color: #F9F2B9;
-  transform: translateZ(20px);
+.landing-button::before {
+  /* content: ""; */
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 1;
+  height: 100%;
+  background-color: rgb(11, 195, 130);
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 700ms;
 }
 
-.landing-button-link:hover {
-  background-color: #FFF;
-  color: black;
-}
-
+/* .landing-button:hover::before {
+  width: 25%;
+} */
 /*#theme-toggle-button{
   padding: 3px 6px;
   border-radius: 10px;
