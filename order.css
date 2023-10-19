@@ -35,12 +35,12 @@ body {
   font-family: Poppins;
 }
 
-#closeh1id >div {
+#closeh1id>div {
   text-align: center;
-  justify-items: center;
- }
+  justify-items: center;3
+}
 
- #closeh1center {
+#closeh1center {
   padding-top: 25px;
 }
 
@@ -64,9 +64,9 @@ body {
   z-index: 69;
   gap: 10px;
   position: absolute;
-  margin-top: 100px; 
+  margin-top: 100px;
   height: 800px;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .container-sam-wrapper {
@@ -90,7 +90,7 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
   width: 40%;
   height: 90%;
-  padding: 20px;  
+  padding: 20px;
 }
 
 .head-content-sam {
@@ -119,8 +119,8 @@ body {
   border: none;
   outline: none;
   font-size: 1.2rem;
-  font-family: "Poppins" ;
-  padding:10px 10px ;
+  font-family: "Poppins";
+  padding: 10px 10px;
 
   height: 65%;
 }
@@ -313,6 +313,10 @@ body {
 
 @media (max-width: 1024px) and (min-width: 780px) {}
 
-@media (max-width: 780px) and (min-width: 612px) {}
+@media (max-width: 780px) and (min-width: 612px) {
+}
 
-@media (max-width: 612px) {}
+@media (max-width: 612px) {
+  
+  
+}
