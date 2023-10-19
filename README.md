@@ -1,6 +1,12 @@
 # Flavour-Fusion : Food Website
 
 This is a Food Website built with HTML, CSS, and JavaScript. It allows user to order food , view menu list and many more.
+# Features 
+Place and customize food orders
+
+View order history and track current orders
+
+Real-time updates on order status
 
 ## Tech Stack
 
@@ -24,6 +30,13 @@ Open the index.html file in your web browser to start using the application.
  2. Check for Features
  3. Try out those features 
  4. Finally Try to improve it
+
+## Screenshots 
+
+![sign in page](https://github.com/soniyaprasad77/Flavour-Fusion/assets/63783532/53e4bb1e-f012-4c6f-b93d-c7c7a3fa27fb)
+![aboutus](https://github.com/soniyaprasad77/Flavour-Fusion/assets/63783532/bfac4576-87ed-4709-999e-8dfdc57625ac)
+
+![ss2](https://github.com/soniyaprasad77/Flavour-Fusion/assets/63783532/a8f20814-a536-42b0-a817-4f1e59c33257)
 
 
 ## Contributing
