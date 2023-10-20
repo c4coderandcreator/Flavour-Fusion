@@ -120,11 +120,14 @@
   }
 }
 
-@media (max-width: 1600px) {}
+@media (max-width: 1600px) {
+}
 
-@media (max-width: 1500px) {}
+@media (max-width: 1500px) {
+}
 
-@media (max-width: 1400px) {}
+@media (max-width: 1400px) {
+}
 
 @media (max-width: 1330px) {
   #sign-in-content {
@@ -179,7 +182,6 @@
 }
 
 @media (max-width: 680px) {
-
   .sign-in-loco,
   #sign-in-line {
     display: none;
@@ -188,7 +190,6 @@
 }
 
 @media (max-width: 570px) {
-
   .sign-in-loco,
   #sign-in-line {
     display: none;
@@ -203,7 +204,6 @@
 }
 
 @media (max-width: 280px) {
-
   .sign-in-loco,
   #sign-in-line {
     display: none;
