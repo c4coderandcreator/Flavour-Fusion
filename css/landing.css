@@ -317,13 +317,13 @@ img {
 
 /*========== BUTTONS ==========*/
 .landing-button {
-  padding: 0.5em 0.5em;
+  padding: 1em 1em;
   border: none;
   border-radius: 10px;
   font-weight: bold;
   letter-spacing: 5px;
   text-transform: uppercase;
-  color: #5b5757;
+  color: black;
   transition: all 1000ms;
   font-size: 15px;
   position: relative;
