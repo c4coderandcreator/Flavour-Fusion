@@ -7,7 +7,7 @@ a {
 
 /*===== VARIABLES CSS =====*/
 :root {
-  --header-height: 3rem;
+  --header-height: 8rem;
 
   /*========== Colors ==========*/
   --first-color: #DA2535;
@@ -181,16 +181,24 @@ img {
   margin-bottom: var(--mb-3);
 }
 
-.nav__link,
-.nav__logo {
+.nav__link {
   color: rgb(0, 0, 0);
   font-weight: var(--font-semi-bold);
 }
 
-.nav__logo:hover {
-  color: rgb(97, 97, 97);
+.ff-logo{
+  width:21vw;
+  height:19.5vh;
+  margin-top:0;
+  padding-bottom:3.5%;
+  border-radius:15%;
 }
 
+@media screen and (max-width: 768px) {
+.ff-logo{
+  display:none;
+}
+}
 
 .nav__link:not(.sign-in-btn-nav){
   transition: .3s;
