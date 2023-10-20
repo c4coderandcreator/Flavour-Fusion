@@ -157,6 +157,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  top: 40px;
 }
 .dish-new {
   position: relative;
@@ -164,10 +166,12 @@
   top: -50px;
   left: -80px;
   z-index: 1;
+  transition: .3s;
 }
 .dish-img {
   height: 10rem;
   position: absolute;
+  transition: .3s;
 }
 .dish-text-container {
   height: 300px;
@@ -179,11 +183,10 @@
   justify-content: end;
   align-items: flex-end;
   z-index: -1;
-  position: relative;
-  top: -40px;
   text-align: right;
   padding: 9% 5%;
   border-radius: 5%;
+  transition: .3s;
 }
 
 /* Dark Mode */
@@ -198,33 +201,32 @@
   font-size: 0.85rem;
   font-weight: 600;
   color: rgb(70, 69, 69);
+  transition: .3s;
 }
 .dish-name {
   font-size: 1rem;
   font-weight: bold;
   color: black;
+  transition: .3s;
 }
 .dish:hover {
   cursor: pointer;
-  .dish-new {
-    width: 65px;
-    transition: 0.3s;
-  }
-  .dish-img {
-    height: 10.7rem;
-    transition: 0.3s;
-  }
-  .dish-text-container {
-    box-shadow: 4px 4px 10px 1px black;
-  }
-  .dish-price {
-    font-size: 0.89rem;
-    transition: 0.3s;
-  }
-  .dish-name {
-    font-size: 1.03rem;
-    transition: 0.3s;
-  }
+}
+
+.dish:hover .dish-new {
+  width: 65px;
+}
+.dish:hover .dish-img {
+  height: 10.7rem;
+}
+.dish:hover .dish-text-container {
+  box-shadow: 4px 4px 10px 1px black;
+}
+.dish:hover .dish-price {
+  font-size: 0.89rem;
+}
+.dish:hover .dish-name {
+  font-size: 1.03rem;
 }
 
 /* Media Queries */

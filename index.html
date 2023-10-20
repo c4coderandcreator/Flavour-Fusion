@@ -66,14 +66,14 @@
             <button onclick="toggleTheme()" class="theme-toggle-button" id="theme-toggle-button">&#9728;
             </button>
           </li>
-      </ul>
+        </ul>
       </div>
 
       <div class="nav__toggle" id="nav-toggle">
         <i class="bx bx-grid-alt"></i>
       </div>
     </nav>
-    <div id="bg-sign-in" class="d-none">
+    <div id="bg-sign-in">
       <div id="sign-in-content">
         <div class="d-none sign-in-element" id="signIn-Up-hd1">
           <h1 style="color: #bfd5b6; margin-bottom: 0.5rem;">Sign Up</h1>
@@ -163,8 +163,8 @@
           <p class="food-fact__description">
             Have you ever wondered why comfort food has such a powerful impact
             on our emotions? Science tells us that certain foods can trigger
-            the release of serotonin and dopamine, which are associated with
-            feelings of happiness & relaxation. This biological response is
+            the release of serotonin & dopamine, which are associated with
+            feelings of happiness and relaxation. This biological response is
             believed to be one reason why we often turn to comfort food during
             times of stress or sadness.
           </p>
@@ -308,13 +308,13 @@
       <div class="checkout-sam">
         <div id="closeh1id">
           <div id="closeh1" style="flex-grow: 6">
-            <h1 id="closeh1center" >Your Cart</h1>
+            <h1 id="closeh1center">Your Cart</h1>
           </div>
-          <div id="close-sam-section" >
-            <button >&times;</button>
+          <div id="close-sam-section">
+            <button>&times;</button>
           </div>
         </div>
-       
+
         <div class="text-content-sam">
           <h1>Total:</h1>
           <h2 id="totalPrice">Rs.0</h2>
@@ -324,7 +324,7 @@
           Reset cart
         </button>
       </div>
-    </section> 
+    </section>
 
     <section class="track-container-sam" id="track-container-sam">
       <button id="close-track-section"> <i class="fa fa-arrow-left" aria-hidden="true"></i> </button>
@@ -859,6 +859,7 @@
       </div>
     </div>
     <div id="orderHistory"></div>
+    <div id="cafeResults"></div>
   </div>
 
 
@@ -1010,6 +1011,65 @@
     const year = document.querySelector('.year');
     const currentYear = new Date().getFullYear();
     year.innerHTML = currentYear;
+
+    // Realistic cafe names for testing
+    const realisticCafeNames = [
+      'Aroma Cafe',
+      'Bean & Brew',
+      'Cappuccino Corner',
+      'Dolce Espresso',
+      'Espresso Emporium',
+      'Frothy Mugs Cafe',
+      'Green Bean Roastery',
+      'Heavenly Sips',
+      'Island Joes Java',
+      'Kona Cafe',
+      'Latte Love',
+      'Mocha Mornings',
+      'Nectar Cafe',
+      'Oasis Brews',
+      'Perk Up Coffeehouse',
+      'Quality Roasts',
+      'Rustic Roasters',
+      'Sip & Savor',
+      'Tropical Beans',
+      'Urban Grind',
+      'Viva Espresso',
+      'Wholesome Brews',
+      'Xpresso Xperience',
+      'Yummy Mugs Cafe',
+      'Zestful Zebra Cafe'
+    ];
+
+    const cafeInput = document.getElementById('cafeInput');
+    const cafeResults = document.getElementById('cafeResults');
+    const searchButtonCafe = document.getElementById('searchButtonCafe');
+
+    // Function to filter and display cafe names based on user input
+    function displayCafeResults() {
+      const query = cafeInput.value.toLowerCase();
+      const filteredCafes = realisticCafeNames.filter(cafe => cafe.toLowerCase().includes(query));
+      cafeResults.innerHTML = '';
+
+      if (filteredCafes.length > 0) {
+        const ul = document.createElement('ul');
+        filteredCafes.forEach(cafe => {
+          const li = document.createElement('li');
+          li.textContent = cafe;
+          ul.appendChild(li);
+        });
+        cafeResults.appendChild(ul);
+      } else {
+        cafeResults.textContent = 'No results found';
+      }
+    }
+
+    // Event listener for the cafe input
+    cafeInput.addEventListener('input', displayCafeResults);
+
+    // Event listener for the search button
+    searchButtonCafe.addEventListener('click', displayCafeResults);
+
 
   </script>
 

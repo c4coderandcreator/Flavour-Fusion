@@ -146,6 +146,7 @@ img {
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--body-color);
+  box-shadow: 2px 2px 20px gray;
 }
 
 /*========== NAV ==========*/
@@ -292,6 +293,10 @@ img {
 .home__img {
   width: 280px;
   justify-self: center;
+  animation-name: floating1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 .home_img{
   border-radius: 20px;
@@ -312,35 +317,47 @@ img {
 
 /*========== BUTTONS ==========*/
 .landing-button {
-  display: inline-block;
-  background-color: #ffe417;
-  color: #333;
-  padding: 1rem 1.5rem;
-  border-radius: 1rem;
-  border: 1px solid black;
-  box-shadow: 1px 1px 2px 0px black;
-  font-weight: var(--font-semi-bold);
-  transition: .3s;
+  padding: 0.5em 0.5em;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #5b5757;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden; 
+  outline: 2px solid yellowgreen;
+  background-color: yellowgreen;
+
 }
 
 .landing-button:hover {
-  background-color: #d8ac4d;
-  color:#050505;
+  color: yellowgreen;
+  transform: scale(1.2);
+  background-color: yellowgreen;
+
+  outline: 2px solid yellowgreen;
+  box-shadow: 2px 2px 30px 1px yellowgreen;
 }
 
-.landing-button-link {
-  background: none;
-  padding: 10px;
-  color: black !important;
-  background-color: #F9F2B9;
-  transform: translateZ(20px);
+.landing-button::before {
+  /* content: ""; */
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 1;
+  height: 100%;
+  background-color: rgb(11, 195, 130);
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 700ms;
 }
 
-.landing-button-link:hover {
-  background-color: #FFF;
-  color: black;
-}
-
+/* .landing-button:hover::before {
+  width: 25%;
+} */
 /*#theme-toggle-button{
   padding: 3px 6px;
   border-radius: 10px;
@@ -417,11 +434,16 @@ img {
 
 .food-fact__description {
   margin-bottom: var(--mb-2);
+  text-align: justify;
 }
 
 .landing-s2-main__img {
   width: 280px;
   justify-self: center;
+  animation-name: floating2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 /*========== order-landing ==========*/
@@ -679,3 +701,21 @@ img {
   }
 }
 
+/* Keyframes for animations */
+@keyframes floating1 {
+  0% { transform: rotate(0deg); }
+  20% { transform: rotate(5deg); }
+  40% { transform: rotate(0deg); }
+  60% { transform: rotate(-5deg); }
+  80% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes floating2 {
+  0% { transform: translateY(0px); }
+  20% { transform: translateY(5px); }
+  40% { transform: translateY(0px); }
+  60% { transform: translateY(-5px); }
+  80% { transform: translateY(0px); }
+  100% { transform: translateY(0px); }
+}
