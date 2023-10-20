@@ -909,41 +909,43 @@
   </section>
 
 
+  <div class="footer_section">
   <footer class="footer section">
-    <div class="footer__container bd-container bd-grid">
-      <div class="footer__content">
-        <h3 class="footer__title">
-          <a href="#" class="footer__logo">FlavorFusion</a>
-        </h3>
-        <p class="footer__description">Providing Quality!</p>
+      <div class="footer__container bd-container bd-grid">
+        <div class="footer__content">
+          <h3 class="footer__title">
+            <a href="#" class="footer__logo">FlavorFusion</a>
+          </h3>
+          <p class="footer__description">Providing Quality!</p>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Explore</h3>
+          <ul>
+            <li><a href="#" id="menu-footer-btn" class="footer__link">Menu</a></li>
+            <li><a href="#order-landing" id="order-footer-btn" class="footer__link">Orders</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Our Company</h3>
+          <ul>
+            <li><a href="#" id="aboutFbtn" class="footer__link">About Us</a></li>
+            <li><a href="#" id="homeFbtn" class="footer__link">Home</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Social</h3>
+          <a href="https://www.facebook.com" class="footer__social"><i class="bx bxl-facebook-circle"></i></a>
+          <a href="https://www.twitter.com" class="footer__social"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.instagram.com" class="footer__social"><i class="bx bxl-instagram-alt"></i></a>
+        </div>
       </div>
 
-      <div class="footer__content">
-        <h3 class="footer__title">Explore</h3>
-        <ul>
-          <li><a href="#" id="menu-footer-btn" class="footer__link">Menu</a></li>
-          <li><a href="#order-landing" id="order-footer-btn" class="footer__link">Orders</a></li>
-        </ul>
-      </div>
-
-      <div class="footer__content">
-        <h3 class="footer__title">Our Company</h3>
-        <ul>
-          <li><a href="#" id="aboutFbtn" class="footer__link">About Us</a></li>
-          <li><a href="#" id="homeFbtn" class="footer__link">Home</a></li>
-        </ul>
-      </div>
-
-      <div class="footer__content">
-        <h3 class="footer__title">Social</h3>
-        <a href="https://www.facebook.com" class="footer__social"><i class="bx bxl-facebook-circle"></i></a>
-        <a href="https://www.twitter.com" class="footer__social"><i class="bx bxl-twitter"></i></a>
-        <a href="https://www.instagram.com" class="footer__social"><i class="bx bxl-instagram-alt"></i></a>
-      </div>
-    </div>
-
-    <p class="footer__copy">&#169; <span class="year"></span> FlavorFusion. All right reserved</p>
-  </footer>
+      <p class="footer__copy">&#169; <span class="year"></span> FlavorFusion. All right reserved</p>
+    </footer>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
@@ -985,20 +987,22 @@
       }
     }
 
+    
     function changeTextColors(color) {
-      const allTextElements = document.querySelectorAll('body *');  // Select all elements
+      document.querySelector('.home__title').style.color = color;
+      document.querySelector('.section-title-center').style.color = color;
+      document.querySelector('.section-title-center').style.color = color;
+      document.querySelector('.footer__logo').style.color = color;
+      document.querySelector('.section-title').style.color = color;
+      footer = document.querySelectorAll('.footer__link');
+      for (var i = 0; i < footer.length; i++) {
+        footer[i].style.color = color; 
+      }
 
-      // Exclude header elements and buttons from color change
-      const headerElements = document.querySelectorAll('header *');
-      const buttonElements = document.querySelectorAll('button');
-      const orderlandingtitle = document.querySelectorAll('.order-landing__title');
-      const elementsToExclude = Array.from(headerElements).concat(Array.from(buttonElements)).concat(Array.from(orderlandingtitle));
-
-      allTextElements.forEach(element => {
-        if (!elementsToExclude.includes(element)) {
-          element.style.color = color;
+      footer_title = document.querySelectorAll('.footer__title');
+        for (var i = 0; i < footer.length; i++) {
+          footer_title[i].style.color = color; 
         }
-      });
     }
 
     // code for dynamic year
