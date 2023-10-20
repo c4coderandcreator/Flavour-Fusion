@@ -317,13 +317,13 @@ img {
 
 /*========== BUTTONS ==========*/
 .landing-button {
-  padding: 1em 2em;
+  padding: 0.5em 0.5em;
   border: none;
   border-radius: 10px;
   font-weight: bold;
   letter-spacing: 5px;
   text-transform: uppercase;
-  color: #ebdc40;
+  color: #5b5757;
   transition: all 1000ms;
   font-size: 15px;
   position: relative;
@@ -434,6 +434,7 @@ img {
 
 .food-fact__description {
   margin-bottom: var(--mb-2);
+  text-align: justify;
 }
 
 .landing-s2-main__img {
