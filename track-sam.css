@@ -93,11 +93,11 @@ body {
 }
 #close-track-section {
   position: absolute;
-  top: 15%;
+  top: 18%;
   right: 8%;
   background-color: black;
   color: white;
-  padding: 5px 7px;
+  padding: 10px 15px;
   border-radius: 5px;
   border: 1px solid black;
   cursor: pointer;

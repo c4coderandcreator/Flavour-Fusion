@@ -317,13 +317,13 @@ img {
 
 /*========== BUTTONS ==========*/
 .landing-button {
-  padding: 0.5em 0.5em;
+  padding: 1em 1em;
   border: none;
   border-radius: 10px;
   font-weight: bold;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   text-transform: uppercase;
-  color: #5b5757;
+  color: black;
   transition: all 1000ms;
   font-size: 15px;
   position: relative;
@@ -334,10 +334,9 @@ img {
 }
 
 .landing-button:hover {
-  color: yellowgreen;
   transform: scale(1.2);
+  color: black;
   background-color: yellowgreen;
-
   outline: 2px solid yellowgreen;
   box-shadow: 2px 2px 30px 1px yellowgreen;
 }
@@ -477,10 +476,9 @@ img {
 
 .order-landing__title {
   font-size: var(--h3-font-size);
-  margin-bottom: var(--mb-1);
+  margin-bottom: var(--mb-5);
   transform: translateZ(20px); /*Tilt JS*/
   cursor: default;
-  margin-bottom: 1rem;
 }
 
 /*========== FOOTER ==========*/
