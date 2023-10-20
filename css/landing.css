@@ -433,6 +433,7 @@ img {
 
 .food-fact__description {
   margin-bottom: var(--mb-2);
+  text-align: justify;
 }
 
 .landing-s2-main__img {
