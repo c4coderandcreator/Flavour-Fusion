@@ -1013,63 +1013,79 @@
     year.innerHTML = currentYear;
 
   // Realistic cafe names for testing
-const realisticCafeNames = [
-    'Aroma Cafe',
-    'Bean & Brew',
-    'Cappuccino Corner',
-    'Dolce Espresso',
-    'Espresso Emporium',
-    'Frothy Mugs Cafe',
-    'Green Bean Roastery',
-    'Heavenly Sips',
-    'Island Joes Java',
-    'Kona Cafe',
-    'Latte Love',
-    'Mocha Mornings',
-    'Nectar Cafe',
-    'Oasis Brews',
-    'Perk Up Coffeehouse',
-    'Quality Roasts',
-    'Rustic Roasters',
-    'Sip & Savor',
-    'Tropical Beans',
-    'Urban Grind',
-    'Viva Espresso',
-    'Wholesome Brews',
-    'Xpresso Xperience',
-    'Yummy Mugs Cafe',
-    'Zestful Zebra Cafe'
-];
+  const realisticCafeNames = [
+            'Aroma Cafe',
+            'Bean & Brew',
+            'Cappuccino Corner',
+            'Dolce Espresso',
+            'Espresso Emporium',
+            'Frothy Mugs Cafe',
+            'Green Bean Roastery',
+            'Heavenly Sips',
+            'Island Joes Java',
+            'Kona Cafe',
+            'Latte Love',
+            'Mocha Mornings',
+            'Nectar Cafe',
+            'Oasis Brews',
+            'Perk Up Coffeehouse',
+            'Quality Roasts',
+            'Rustic Roasters',
+            'Sip & Savor',
+            'Tropical Beans',
+            'Urban Grind',
+            'Viva Espresso',
+            'Wholesome Brews',
+            'Xpresso Xperience',
+            'Yummy Mugs Cafe',
+            'Zestful Zebra Cafe'
+        ];
 
-const cafeInput = document.getElementById('cafeInput');
-const cafeResults = document.getElementById('cafeResults');
-const searchButtonCafe = document.getElementById('searchButtonCafe');
+        
+        const userOrderHistory = {}; // To store user's order history
 
-// Function to filter and display cafe names based on user input
-function displayCafeResults() {
-    const query = cafeInput.value.toLowerCase();
-    const filteredCafes = realisticCafeNames.filter(cafe => cafe.toLowerCase().includes(query));
-    cafeResults.innerHTML = '';
+        const cafeInput = document.getElementById('cafeInput');
+        const cafeResults = document.getElementById('cafeResults');
+        const searchButtonCafe = document.getElementById('searchButtonCafe');
 
-    if (filteredCafes.length > 0) {
-        const ul = document.createElement('ul');
-        filteredCafes.forEach(cafe => {
-            const li = document.createElement('li');
-            li.textContent = cafe;
-            ul.appendChild(li);
-        });
-        cafeResults.appendChild(ul);
-    } else {
-        cafeResults.textContent = 'No results found';
-    }
-}
+        // Function to filter and display cafe names based on user input
+        function displayCafeResults() {
+            const query = cafeInput.value.toLowerCase();
+            const filteredCafes = realisticCafeNames.filter(cafe => cafe.toLowerCase().includes(query));
+            cafeResults.innerHTML = '';
 
-// Event listener for the cafe input
-cafeInput.addEventListener('input', displayCafeResults);
+            if (filteredCafes.length > 0) {
+                const ul = document.createElement('ul');
+                filteredCafes.forEach(cafe => {
+                    const li = document.createElement('li');
+                    li.textContent = cafe;
+                    if (userOrderHistory[cafe]) {
+                        li.innerHTML += ' (Ordered)';
+                    }
+                    li.addEventListener('click', () => toggleOrderStatus(cafe));
+                    ul.appendChild(li);
+                });
+                cafeResults.appendChild(ul);
+            } else {
+                cafeResults.textContent = 'No results found';
+            }
+        }
 
-// Event listener for the search button
-searchButtonCafe.addEventListener('click', displayCafeResults);
+        // Function to toggle the order status of a cafe
+        function toggleOrderStatus(cafe) {
+            if (userOrderHistory[cafe]) {
+                delete userOrderHistory[cafe]; // Remove from order history
+            } else {
+                userOrderHistory[cafe] = true; // Mark as ordered
+            }
+            displayCafeResults(); // Update the results to show the order status
+        }
 
+        // Event listener for the cafe input
+        cafeInput.addEventListener('input', displayCafeResults);
+
+        // Event listener for the search button
+        searchButtonCafe.addEventListener('click', displayCafeResults);
 
   </script>
 
