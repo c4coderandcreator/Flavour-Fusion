@@ -31,13 +31,6 @@ Open the index.html file in your web browser to start using the application.
 3. Try out those features 🎉
 4. Finally, try to improve it! 🌱
 
-## Screenshots 🖼️
-
-![sign in page](https://github.com/soniyaprasad77/Flavour-Fusion/assets/63783532/53e4bb1e-f012-4c6f-b93d-c7c7a3fa27fb)
-![about us](https://github.com/soniyaprasad77/Flavour-Fusion/assets/63783532/bfac4576-87ed-4709-999e-8dfdc57625ac)
-
-![ss2](https://github.com/soniyaprasad77/Flavour-Fusion/assets/63783532/a8f20814-a536-42b0-a817-4f1e59c33257)
-
 ## Contributing 🤝
 
 We welcome and appreciate contributions from the open-source community to make Flavour Fusion even better. 
