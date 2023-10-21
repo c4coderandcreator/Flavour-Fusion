@@ -1428,6 +1428,29 @@
   <script src="vanilla-tilt.js"></script>
 
   <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const body = document.body;
+      const themeToggleButton = document.getElementById('theme-toggle-button');
+      const header = document.querySelector('header');
+      const nav = document.getElementById('nav-menu');
+      const sunSymbol = "&#9728;";
+      const moonSymbol = "&#9790;";
+      const savedTheme = sessionStorage.getItem('theme');
+      if (savedTheme) {
+        document.body.classList.add(savedTheme);
+      }
+
+      if (body.classList.contains('dark-theme')) {
+        themeToggleButton.innerHTML = moonSymbol;
+        changeTextColors('white');
+        header.style.color = 'white';  // Change header text color to white
+      } else {
+
+        themeToggleButton.innerHTML = sunSymbol;
+        changeTextColors('black');
+        header.style.color = 'black';  // Change header text color to black
+      }
+    });
     function toggleTheme() {
       const body = document.body;
       body.classList.toggle('dark-theme');
@@ -1445,10 +1468,12 @@
       }
 
       if (body.classList.contains('dark-theme')) {
+        sessionStorage.setItem('theme','dark-theme');
         themeToggleButton.innerHTML = moonSymbol;
         changeTextColors('white');
         header.style.color = 'white'; // Change header text color to white
       } else {
+        sessionStorage.setItem('theme','');
         themeToggleButton.innerHTML = sunSymbol;
         changeTextColors('black');
         header.style.color = 'black'; // Change header text color to black
