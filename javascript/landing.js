@@ -1,36 +1,43 @@
-/*====================Landing Page and Navbar Code by Navuuu====================*/
-const showMenu = (toggleId, navId) =>{
-    const toggle = document.getElementById(toggleId),
-    nav = document.getElementById(navId);
+/*==================== Landing Page and Navbar Code by Navuuu ====================*/
 
-    if(toggle && nav){
-        toggle.addEventListener('click', ()=>{
-            nav.classList.toggle('show-menu');
-            const body = document.body;
-            if (nav.classList.contains('show-menu')) {
-                body.style.overflow = 'hidden';
-            } else {
-                body.style.overflow = 'visible';
-            }
-        })
-    }
+const sections = document.querySelectorAll('section[id]');
+
+// Store the IDs of visited sections
+const visitedSections = [];
+
+// Function to update history and scroll to a section
+function scrollAndPushState(sectionId) {
+  const section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+    visitedSections.push(sectionId);
+    history.pushState({ section: sectionId }, null, `#${sectionId}`);
+  }
 }
-showMenu('nav-toggle','nav-menu');
 
-const navLink = document.querySelectorAll('.nav__link');
-function linkAction(){
-    const navMenu = document.getElementById('nav-menu')
-    navMenu.classList.remove('show-menu');
-    document.body.style.overflow = 'visible';
+// Function to scroll to a section by ID
+function scrollToSection(sectionId) {
+  scrollAndPushState(sectionId);
 }
-navLink.forEach(n => n.addEventListener('click', linkAction))
-const sections = document.querySelectorAll('section[id]')
 
+// Add event listener to scroll to a section when a nav link is clicked
+navLink.forEach(n => n.addEventListener('click', (event) => {
+  const sectionId = event.target.getAttribute('href').slice(1); // Get the section ID
+  scrollToSection(sectionId);
+}));
 
-/*==================== Scroll Top ====================*/ 
-function scrollTop(){
-    const scrollTop = document.getElementById('scroll-top');
-    if(this.scrollY >= 560) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
+// Add event listener for popstate (backward/forward) navigation
+window.addEventListener('popstate', (event) => {
+  const sectionId = event.state.section;
+  if (sectionId) {
+    scrollToSection(sectionId);
+  }
+});
+
+/*==================== Scroll Top ====================*/
+function scrollTop() {
+  const scrollTop = document.getElementById('scroll-top');
+  if (this.scrollY >= 560) scrollTop.classList.add('show-scroll');
+  else scrollTop.classList.remove('show-scroll');
 }
-window.addEventListener('scroll', scrollTop)
-
+window.addEventListener('scroll', scrollTop);
