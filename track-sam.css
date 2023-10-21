@@ -16,8 +16,13 @@ body {
   align-items: center;
   position: absolute;
   z-index: 2;
-  background: white;
+  background-color: #FEFBFB;;
 }
+
+.dark-theme .track-container-sam{
+  background-color: #333;
+}
+
 .track-top {
   width: 70%;
   height: 15%;
@@ -91,17 +96,29 @@ body {
   height: 100%;
   cursor: pointer;
 }
+
+.dark-theme .progress-sam img {
+  filter: invert(100%);
+}
+
 #close-track-section {
   position: absolute;
   top: 18%;
   right: 8%;
-  background-color: black;
-  color: white;
+  background-color: white;
   padding: 10px 15px;
   border-radius: 5px;
   border: 1px solid black;
   cursor: pointer;
 }
+#close-track-section a{
+  color: black;
+}
+
+.dark-theme #close-track-section {
+  background-color: black;
+}
+
 .track-container-sam {
   display: none;
   transition: transform 0.4s ease-in-out;
