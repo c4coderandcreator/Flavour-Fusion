@@ -11,7 +11,8 @@ function scrollAndPushState(sectionId) {
   if (section) {
     section.scrollIntoView({ behavior: 'smooth' });
     visitedSections.push(sectionId);
-    history.pushState({ section: sectionId }, null, `#${sectionId}`);
+    // Update the browser's history with the correct URL and state
+    history.pushState({ section: sectionId }, '', `#${sectionId}`);
   }
 }
 
@@ -22,6 +23,7 @@ function scrollToSection(sectionId) {
 
 // Add event listener to scroll to a section when a nav link is clicked
 navLink.forEach(n => n.addEventListener('click', (event) => {
+  event.preventDefault(); // Prevent default link behavior
   const sectionId = event.target.getAttribute('href').slice(1); // Get the section ID
   scrollToSection(sectionId);
 }));
@@ -41,3 +43,13 @@ function scrollTop() {
   else scrollTop.classList.remove('show-scroll');
 }
 window.addEventListener('scroll', scrollTop);
+
+// Initial setup for scroll-based navigation
+document.addEventListener('DOMContentLoaded', () => {
+  if (window.location.hash) {
+    const initialSectionId = window.location.hash.substring(1);
+    if (sections[initialSectionId]) {
+      scrollToSection(initialSectionId);
+    }
+  }
+});
