@@ -150,6 +150,7 @@
   width: 250px;
   height: 250px;
   margin: 29px 39px;
+  position: relative;
 }
 .dish-img-container {
   width: 200px;
@@ -166,12 +167,12 @@
   top: -50px;
   left: -80px;
   z-index: 1;
-  transition: .3s;
+  transition: 0.3s;
 }
 .dish-img {
   height: 10rem;
   position: absolute;
-  transition: .3s;
+  transition: 0.3s;
 }
 .dish-text-container {
   height: 300px;
@@ -186,28 +187,27 @@
   text-align: right;
   padding: 9% 5%;
   border-radius: 5%;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 /* Dark Mode */
 .dark-theme .dish-price,
 .dark-theme .dish-name {
-    color: #fff; /* Set the text color to white */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); 
+  color: #fff; /* Set the text color to white */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
-
 
 .dish-price {
   font-size: 0.85rem;
   font-weight: 600;
   color: rgb(70, 69, 69);
-  transition: .3s;
+  transition: 0.3s;
 }
 .dish-name {
   font-size: 1rem;
   font-weight: bold;
   color: black;
-  transition: .3s;
+  transition: 0.3s;
 }
 .dish:hover {
   cursor: pointer;
@@ -227,6 +227,44 @@
 }
 .dish:hover .dish-name {
   font-size: 1.03rem;
+}
+
+.dish > .bx {
+  position: absolute;
+  font-size: 24px;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+}
+
+.dish > .bx-heart {
+  color: #766;
+  animation: heart-hovered-animate 0.3s linear;
+}
+
+@keyframes heart-hovered-animate {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.dish > .bxs-heart {
+  color: red;
+  animation: heart-liked-animate 0.5s ease;
+}
+
+@keyframes heart-liked-animate {
+  0% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /* Media Queries */
