@@ -976,8 +976,15 @@
 
       const themeToggleButton = document.getElementById('theme-toggle-button');
       const header = document.querySelector('header');
+      const nav = document.getElementById('nav-menu');
       const sunSymbol = "&#9728;";
       const moonSymbol = "&#9790;";
+
+
+      if (nav.classList.contains('show-menu')) {
+          nav.classList.remove('show-menu');
+          body.style.overflow = 'visible';
+      }
 
       if (body.classList.contains('dark-theme')) {
         themeToggleButton.innerHTML = moonSymbol;

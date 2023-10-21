@@ -247,6 +247,17 @@ img {
 /* Show menu */
 .show-menu {
   top: calc(var(--header-height) + 1rem);
+  width: 100vw;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  bottom: 0px;
+}
+
+.hide-overflow {
+  overflow: hidden;
 }
 
 
