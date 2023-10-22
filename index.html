@@ -22,7 +22,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-176HRZFSW3"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'G-176HRZFSW3');
@@ -86,18 +89,14 @@
           </div>
           <form action="#"></form>
 
-          <input type="email" id="email-sign-in" class="form-control rounded-pill" aria-describedby="emailHelp"
-            placeholder="Enter email">
+          <input type="email" id="email-sign-in" class="form-control rounded-pill" aria-describedby="emailHelp" placeholder="Enter email">
           <br>
-          <input type="password" name="password-sign-in" class="form-control rounded-pill" id="password-sign-in"
-            placeholder="Password">
+          <input type="password" name="password-sign-in" class="form-control rounded-pill" id="password-sign-in" placeholder="Password">
           <br>
-          <input type="password" name="confirmpassword-sign-in" class="form-control rounded-pill"
-            id="confirmpassword-sign-in" placeholder="Confirm password">
+          <input type="password" name="confirmpassword-sign-in" class="form-control rounded-pill" id="confirmpassword-sign-in" placeholder="Confirm password">
 
           <br>
-          <button style="color: black; background-color: #c8dfbf; border-radius: 50px;" class="btn loginBtn" type="submit"
-            class="btn">Sign Up</button>
+          <button style="color: black; background-color: #c8dfbf; border-radius: 50px;" class="btn loginBtn" type="submit" class="btn">Sign Up</button>
           </form>
         </div>
         <div class="sign-in-loco" id="signIn-Up-hd2">
@@ -114,14 +113,12 @@
           </div>
           <form action="#"></form>
 
-          <input type="email" id="email-sign-in" class="form-control rounded-pill" aria-describedby="emailHelp"
-            placeholder="Enter email">
+          <input type="email" id="email-sign-in" class="form-control rounded-pill" aria-describedby="emailHelp" placeholder="Enter email">
           <br>
-          <input type="password" name="password-sign-in" class="form-control rounded-pill" id="password-sign-in"
-            placeholder="Password">
-            <a href="# " class="forgotps"   >Forgot Password?</a>
+          <input type="password" name="password-sign-in" class="form-control rounded-pill" id="password-sign-in" placeholder="Password">
+          <a href="# " class="forgotps">Forgot Password?</a>
 
-          
+
           <button style="color: black; background-color: #c8dfbf; border-radius: 50px;" class="btn  loginBtn" type="submit">Sign
             In</button>
           </form>
@@ -171,30 +168,128 @@
         </div>
 
         <div class="landing-s2-main__img">
-          <img src="./assets/healthyhappyfood.jpg" alt="healthy-happy-food" class="home_img2" data-tilt
-            data-tilt-scale="1.1" />
+          <img src="./assets/healthyhappyfood.jpg" alt="healthy-happy-food" class="home_img2" data-tilt data-tilt-scale="1.1" />
         </div>
       </div>
     </section>
 
     <!-- Order Section -->
 
-    <section id="sam" class="container-sam"> 
-      <div class="main-head-sam ">  
+    <section id="sam" class="container-sam">
+      <div class="main-head-sam ">
         <div class="head-content-sam">
           <i class="bx bx-search-alt-2"></i>
           <input type="text" id="search-box-sam" placeholder="Search menu" onkeyup="searchSAM()" />
         </div>
 
         <div class="food-items-sam" id="food-items-sam">
+          <!-- list of menu items -->
+          <!-- starters -->
           <div class="food-content-sam ">
-            <img  src="./assets/image/salad (2).png" alt=" salad-image" />
+            <img  src="./assets/starter/starter1.png" alt="starter-image" />
             <div class="food-content-sam-description">
               <div class="description-sam ">
-                <h3>Noodle organica</h3>
-                <p>Rs. 100</p>
+                <h3>Caprese Starter</h3>
+                <p>$ 10.30</p>
               </div>
+          
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="food-content-sam ">
+            <img  src="./assets/starter/starter2.png" alt="starter-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam ">
+                <h3>Israeli Starter</h3>
+                <p>$ 12.30</p>
+              </div>
+          
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="food-content-sam ">
+            <img  src="./assets/starter/starter3.png" alt="starter-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam ">
+                <h3>Roll Ball Starter</h3>
+                <p>$ 19.39</p>
+              </div>
+          
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="food-content-sam ">
+            <img  src="./assets/starter/starter4.png" alt="starter-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam ">
+                <h3>Organic Mix Starter</h3>
+                <p>$ 60.30</p>
+              </div>
+          
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="food-content-sam ">
+            <img  src="./assets/starter/starter5.png" alt="starter-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam ">
+                <h3>Quinoa Starter</h3>
+                <p>$ 21.10</p>
+              </div>
+          
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+      
+          <div class="food-content-sam ">
+            <img  src="./assets/starter/starter6.png" alt="starter-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam ">
+                <h3>Asparagus Starter</h3>
+                <p>$ 41.10</p>
+              </div>
+          
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
 
+          <!-- Salads -->
+          <div class="food-content-sam ">
+            <img  src="./assets/salad/salad1.png" alt="salad-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam ">
+                <h3>Asian Salad</h3>
+                <p>$ 20.40</p>
+              </div>
+          
               <div class="item-sam">
                 <button class="sub">-</button>
                 <span class="quantity">0</span>
@@ -202,14 +297,96 @@
               </div>
             </div>
           </div>
-          <div class="food-content-sam">
-            <img src="./assets/image/salad (3).png" alt=" salad-image" />
+          
+          <div class="food-content-sam ">
+            <img  src="./assets/salad/salad2.png" alt="salad-image" />
             <div class="food-content-sam-description">
-              <div class="description-sam">
-                <h3>Egg-salad Organica</h3>
-                <p>Rs. 100</p>
+              <div class="description-sam ">
+                <h3>Spinach Salad</h3>
+                <p>$ 17.10</p>
               </div>
+          
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="food-content-sam ">
+            <img  src="./assets/salad/salad3.png" alt="salad-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam ">
+                <h3>Mexican Salad</h3>
+                <p>$ 11.47</p>
+              </div>
+          
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="food-content-sam ">
+            <img  src="./assets/salad/salad4.png" alt="salad-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam ">
+                <h3>Quinoa Salad</h3>
+                <p>$ 91.30</p>
+              </div>
+          
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="food-content-sam ">
+            <img  src="./assets/salad/salad5.png" alt="salad-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam ">
+                <h3>Tabbouleh Salad</h3>
+                <p>$ 56.25</p>
+              </div>
+          
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="food-content-sam ">
+            <img  src="./assets/salad/salad6.png" alt="salad-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam ">
+                <h3>Lentil Salad</h3>
+                <p>$ 31.91</p>
+              </div>
+          
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
 
+          <!-- Desserts -->
+          <div class="food-content-sam ">
+            <img  src="./assets/dessert/dessert1.png" alt="dessert-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam ">
+                <h3>Pantua Dessert</h3>
+                <p>$ 60.50</p>
+              </div>
+          
               <div class="item-sam">
                 <button class="sub">-</button>
                 <span class="quantity">0</span>
@@ -217,28 +394,96 @@
               </div>
             </div>
           </div>
-          <div class="food-content-sam">
-            <img src="./assets/image/salad (4).png" alt=" salad-image" />
+          
+          <div class="food-content-sam ">
+            <img  src="./assets/dessert/dessert2.png" alt="dessert-image" />
             <div class="food-content-sam-description">
-              <div class="description-sam">
-                <h3>Fruits de fresh</h3>
-                <p>Rs. 130</p>
+              <div class="description-sam ">
+                <h3>Panna Dessert</h3>
+                <p>$ 32.20</p>
               </div>
+          
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="food-content-sam ">
+            <img  src="./assets/dessert/dessert3.png" alt="dessert-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam ">
+                <h3>Pecan Pie</h3>
+                <p>$ 41.97</p>
+              </div>
+          
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="food-content-sam ">
+            <img  src="./assets/dessert/dessert4.png" alt="dessert-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam ">
+                <h3>Fruit Dessert</h3>
+                <p>$ 19.20</p>
+              </div>
+          
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="food-content-sam ">
+            <img  src="./assets/dessert/dessert5.png" alt="dessert-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam ">
+                <h3>Pineapple Dessert</h3>
+                <p>$ 21.10</p>
+              </div>
+          
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="food-content-sam ">
+            <img  src="./assets/dessert/dessert6.png" alt="dessert-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam ">
+                <h3>Chocolate Dessert</h3>
+                <p>$ 41.10</p>
+              </div>
+          
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
 
-              <div class="item-sam">
-                <button class="sub">-</button>
-                <span class="quantity">0</span>
-                <button class="add">+</button>
-              </div>
-            </div>
-          </div>
-          <div class="food-content-sam">
-            <img src="./assets/image/salad (5).png" alt=" salad-image" />
+          <!-- Soups -->
+          <div class="food-content-sam ">
+            <img  src="./assets/soup/soup1.png" alt="soup-image" />
             <div class="food-content-sam-description">
-              <div class="description-sam">
-                <h3>Vegetable Mashup</h3>
-                <p>Rs. 120</p>
+              <div class="description-sam ">
+                <h3>Butternut Soup</h3>
+                <p>$ 10.30</p>
               </div>
+          
               <div class="item-sam">
                 <button class="sub">-</button>
                 <span class="quantity">0</span>
@@ -246,13 +491,15 @@
               </div>
             </div>
           </div>
-          <div class="food-content-sam">
-            <img src="./assets/image/salad (6).png" alt=" salad-image" />
+          
+          <div class="food-content-sam ">
+            <img  src="./assets/soup/soup2.png" alt="soup-image" />
             <div class="food-content-sam-description">
-              <div class="description-sam">
-                <h3>Organica de salad</h3>
-                <p>Rs. 160</p>
+              <div class="description-sam ">
+                <h3>Italian Mix Soup</h3>
+                <p>$ 12.30</p>
               </div>
+          
               <div class="item-sam">
                 <button class="sub">-</button>
                 <span class="quantity">0</span>
@@ -260,13 +507,15 @@
               </div>
             </div>
           </div>
-          <div class="food-content-sam">
-            <img src="./assets/image/salad (7).png" alt=" salad-image" />
+          
+          <div class="food-content-sam ">
+            <img  src="./assets/soup/soup3.png" alt="soup-image" />
             <div class="food-content-sam-description">
-              <div class="description-sam">
-                <h3>Nature en salad</h3>
-                <p>Rs. 170</p>
+              <div class="description-sam ">
+                <h3>Hot Pasta Soup</h3>
+                <p>$ 19.39</p>
               </div>
+          
               <div class="item-sam">
                 <button class="sub">-</button>
                 <span class="quantity">0</span>
@@ -274,13 +523,15 @@
               </div>
             </div>
           </div>
-          <div class="food-content-sam">
-            <img src="./assets/image/salad (8).png" alt=" salad-image" />
+          
+          <div class="food-content-sam ">
+            <img  src="./assets/soup/soup4.png" alt="soup-image" />
             <div class="food-content-sam-description">
-              <div class="description-sam">
-                <h3>Mix-fresh salad</h3>
-                <p>Rs. 110</p>
+              <div class="description-sam ">
+                <h3>Miso Soup</h3>
+                <p>$ 60.30</p>
               </div>
+          
               <div class="item-sam">
                 <button class="sub">-</button>
                 <span class="quantity">0</span>
@@ -288,13 +539,15 @@
               </div>
             </div>
           </div>
-          <div class="food-content-sam">
-            <img src="./assets/image/salad (9).png" alt=" salad-image" />
+          
+          <div class="food-content-sam ">
+            <img  src="./assets/soup/soup5.png" alt="soup-image" />
             <div class="food-content-sam-description">
-              <div class="description-sam">
-                <h3>Fruit-e-convoy</h3>
-                <p>Rs. 210</p>
+              <div class="description-sam ">
+                <h3>Thai Soup</h3>
+                <p>$ 69.55</p>
               </div>
+          
               <div class="item-sam">
                 <button class="sub">-</button>
                 <span class="quantity">0</span>
@@ -302,22 +555,234 @@
               </div>
             </div>
           </div>
+          
+          <div class="food-content-sam ">
+            <img  src="./assets/soup/soup6.png" alt="soup-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam ">
+                <h3>Tomato Soup</h3>
+                <p>$ 21.31</p>
+              </div>
+          
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Spaghetti -->
+          <div class="food-content-sam ">
+            <img  src="./assets/spaghetti/spaghetti1.png" alt="spaghetti-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam ">
+                <h3>Mixed Spaghetti</h3>
+                <p>$ 10.30</p>
+              </div>
+          
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="food-content-sam ">
+            <img  src="./assets/spaghetti/spaghetti2.png" alt="spaghetti-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam ">
+                <h3>Spicy Spaghetti</h3>
+                <p>$ 12.30</p>
+              </div>
+          
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="food-content-sam ">
+            <img  src="./assets/spaghetti/spaghetti3.png" alt="spaghetti-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam ">
+                <h3>Creamy Spaghetti</h3>
+                <p>$ 19.39</p>
+              </div>
+          
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="food-content-sam ">
+            <img  src="./assets/spaghetti/spaghetti4.png" alt="spaghetti-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam ">
+                <h3>Simple Spaghetti</h3>
+                <p>$ 60.30</p>
+              </div>
+          
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="food-content-sam ">
+            <img  src="./assets/spaghetti/spaghetti5.png" alt="spaghetti-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam ">
+                <h3>Cheesy Spaghetti</h3>
+                <p>$ 21.10</p>
+              </div>
+          
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="food-content-sam ">
+            <img  src="./assets/spaghetti/spaghetti6.png" alt="spaghetti-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam ">
+                <h3>Roasted Spaghetti</h3>
+                <p>$ 41.10</p>
+              </div>
+          
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Drinks -->
+          <div class="food-content-sam ">
+            <img  src="./assets/drinks/drinks1.png" alt="drinks-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam ">
+                <h3>Saffron Shake</h3>
+                <p>$ 10.30</p>
+              </div>
+          
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="food-content-sam ">
+            <img  src="./assets/drinks/drinks2.png" alt="drinks-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam ">
+                <h3>Orange Juice</h3>
+                <p>$ 12.30</p>
+              </div>
+          
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="food-content-sam ">
+            <img  src="./assets/drinks/drinks3.png" alt="drinks-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam ">
+                <h3>Strawberry Juice</h3>
+                <p>$ 19.39</p>
+              </div>
+          
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="food-content-sam ">
+            <img  src="./assets/drinks/drinks4.png" alt="drinks-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam ">
+                <h3>Avocado Smoothie</h3>
+                <p>$ 60.30</p>
+              </div>
+          
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="food-content-sam ">
+            <img  src="./assets/drinks/drinks5.png" alt="drinks-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam ">
+                <h3>Malted Drink</h3>
+                <p>$ 21.10</p>
+              </div>
+          
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="food-content-sam ">
+            <img  src="./assets/drinks/drinks6.png" alt="drinks-image" />
+            <div class="food-content-sam-description">
+              <div class="description-sam ">
+                <h3>Special Juice</h3>
+                <p>$ 41.10</p>
+              </div>
+          
+              <div class="item-sam">
+                <button class="sub">-</button>
+                <span class="quantity">0</span>
+                <button class="add">+</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- end of list of menu items -->
         </div>
       </div>
       <!-- Your Cart -->
-      <div class="checkout-sam "> 
+      <div class="checkout-sam ">
         <div id="closeh1id">
           <div id="closeh1" style="flex-grow: 6">
             <h1 id="closeh1center">Your Cart</h1>
           </div>
-          <div id="close-sam-section" >
-           <button type="button" class="close-icon">&times;</button> 
+          <div id="close-sam-section">
+            <button type="button" class="close-icon">&times;</button>
           </div>
         </div>
 
         <div class="text-content-sam">
           <h1>Total:</h1>
-          <h2 id="totalPrice">Rs.0</h2>
+          <h2 id="totalPrice">$ 0</h2>
         </div>
         <button class="checkout-btn-sam" id="reset-sam">Checkout</button>
         <button class="checkout-btn-sam" id="reset-cart-sam">
@@ -873,8 +1338,7 @@
 
 
       <div class="allsection">
-        <img class="allimg" src="./Resources/About-us-page/contentImg1.jpg" alt="Image 1" data-tilt
-          data-tilt-scale="1.1">
+        <img class="allimg" src="./Resources/About-us-page/contentImg1.jpg" alt="Image 1" data-tilt data-tilt-scale="1.1">
         <div class="allcontent">
           <h3 class="allh3">Nurtured by Local Farmers</h3>
           <p class="allp">At Harvest Haven, we believe in the symbiotic relationship between the land and our tables.
@@ -894,15 +1358,13 @@
             garden, where rows of vibrant greens and fragrant herbs flourish under the sun's embrace. We take immense
             pride in cultivating our own organic produce, carefully tending to each plant from seed to plate.</p>
         </div>
-        <img class="allimg" src="./Resources/About-us-page/contentImg3.jpg" alt="Image 3" data-tilt
-          data-tilt-scale="1.1">
+        <img class="allimg" src="./Resources/About-us-page/contentImg3.jpg" alt="Image 3" data-tilt data-tilt-scale="1.1">
       </div>
       <hr>
 
 
       <div class="allsection">
-        <img class="allimg" src="./Resources/About-us-page/contentImg2.jpg" alt="Image 2" data-tilt
-          data-tilt-scale="1.1">
+        <img class="allimg" src="./Resources/About-us-page/contentImg2.jpg" alt="Image 2" data-tilt data-tilt-scale="1.1">
         <div class="allcontent">
           <h3 class="allh3">The Essence of Organic Ingredients</h3>
           <p class="allp">Nature's bounty takes center stage in our culinary creations. We source only the finest
@@ -952,12 +1414,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
-    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
 
   <script src="./javascript/landing.js"></script>
   <script src="./menu.js"></script>
@@ -970,6 +1428,29 @@
   <script src="vanilla-tilt.js"></script>
 
   <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const body = document.body;
+      const themeToggleButton = document.getElementById('theme-toggle-button');
+      const header = document.querySelector('header');
+      const nav = document.getElementById('nav-menu');
+      const sunSymbol = "&#9728;";
+      const moonSymbol = "&#9790;";
+      const savedTheme = sessionStorage.getItem('theme');
+      if (savedTheme) {
+        document.body.classList.add(savedTheme);
+      }
+
+      if (body.classList.contains('dark-theme')) {
+        themeToggleButton.innerHTML = moonSymbol;
+        changeTextColors('white');
+        header.style.color = 'white';  // Change header text color to white
+      } else {
+
+        themeToggleButton.innerHTML = sunSymbol;
+        changeTextColors('black');
+        header.style.color = 'black';  // Change header text color to black
+      }
+    });
     function toggleTheme() {
       const body = document.body;
       body.classList.toggle('dark-theme');
@@ -982,23 +1463,25 @@
 
 
       if (nav.classList.contains('show-menu')) {
-          nav.classList.remove('show-menu');
-          body.style.overflow = 'visible';
+        nav.classList.remove('show-menu');
+        body.style.overflow = 'visible';
       }
 
       if (body.classList.contains('dark-theme')) {
+        sessionStorage.setItem('theme','dark-theme');
         themeToggleButton.innerHTML = moonSymbol;
         changeTextColors('white');
-        header.style.color = 'white';  // Change header text color to white
+        header.style.color = 'white'; // Change header text color to white
       } else {
+        sessionStorage.setItem('theme','');
         themeToggleButton.innerHTML = sunSymbol;
         changeTextColors('black');
-        header.style.color = 'black';  // Change header text color to black
+        header.style.color = 'black'; // Change header text color to black
       }
     }
 
     function changeTextColors(color) {
-      const allTextElements = document.querySelectorAll('body *');  // Select all elements
+      const allTextElements = document.querySelectorAll('body *'); // Select all elements
 
       // Exclude header elements and buttons from color change
       const headerElements = document.querySelectorAll('header *');
@@ -1076,8 +1559,6 @@
 
     // Event listener for the search button
     searchButtonCafe.addEventListener('click', displayCafeResults);
-
-
   </script>
 
 </body>

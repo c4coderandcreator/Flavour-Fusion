@@ -83,16 +83,16 @@ let totalPrice = 0;
 
 foodItems.forEach((item) => {
   const priceText = item.textContent.trim();
-  const price = parseInt(priceText.split("Rs. ")[1]);
+  const price = parseFloat(priceText.split("$ ")[1]).toFixed(2);
   priceList.push(price);
 });
 
 function calculateTotalPrice() {
   totalPrice = 0;
   quantities.forEach((quantity, index) => {
-    totalPrice += priceList[index] * parseInt(quantity.textContent);
+    totalPrice += (priceList[index] * parseInt(quantity.textContent));
   });
-  totalPriceDisplay.textContent = `Rs. ${totalPrice}`;
+  totalPriceDisplay.textContent = `$ ${totalPrice.toFixed(2)}`;
 }
 
 function Adder(index) {
