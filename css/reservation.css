@@ -23,7 +23,7 @@ body {
     margin: 0 auto;
     border: 3px solid white;
     border-radius: 2rem;
-    background-color: rgb(8, 8, 8)
+    background-color: rgb(8, 8, 8);
 }
 
 .reservation-form {
@@ -32,7 +32,8 @@ body {
     padding: 2rem;
 }
 
-.form-left, .form-right {
+.form-left,
+.form-right {
     width: 48%;
 }
 
@@ -68,6 +69,31 @@ body {
     background-color: #222;
     color: white;
     outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-field:hover,
+.input-field:focus {
+    border-color: yellowgreen;
+    box-shadow: 0 0 5px yellowgreen;
+}
+
+.input-select {
+    appearance: none;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid #333;
+    background-color: #222;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-select:hover,
+.input-select:focus {
+    border-color: yellowgreen;
+    box-shadow: 0 0 5px yellowgreen;
 }
 
 .icon-wrapper {
@@ -115,7 +141,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
-
 
 .contact-label,
 .body-4 {
