@@ -122,3 +122,8 @@ for (let i = 0; i < addBtns.length; i++) {
 }
 calculateTotalPrice();
 
+const navOrder = document.getElementById("aboutLink");
+
+navOrder.addEventListener("click", () => {
+  sessionStorage.setItem('currentSection', 'home');
+})
