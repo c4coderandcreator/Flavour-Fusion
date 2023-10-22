@@ -11,13 +11,24 @@ menuBtn.addEventListener("click", function () {
   menuNaima.style.display = "block";
   homeBtn.classList.remove("active-link");
   menuBtn.classList.add("active-link");
+  sessionStorage.setItem('currentSection', 'menu');
 });
+
+const storedSection = sessionStorage.getItem('currentSection');
+
+if (storedSection === 'menu') {
+  main.style.display = "none";
+  menuNaima.style.display = "block";
+  homeBtn.classList.remove("active-link");
+  menuBtn.classList.add("active-link");
+}
 
 homeBtn.addEventListener("click", function () {
   menuNaima.style.display = "none";
   main.style.display = "block";
   menuBtn.classList.remove("active-link");
   homeBtn.classList.add("active-link");
+  sessionStorage.setItem('currentSection', 'home');
 });
 
 // Summer Sale
