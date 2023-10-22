@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Forum&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    color: white; /* Set default text color to white */
+}
+
+body {
+    background-image: url('../assets/healthyhappyfood.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reservation {
+    vertical-align: middle;
+    padding: 2rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 3px solid white;
+    border-radius: 2rem;
+    background-color: rgb(8, 8, 8)
+}
+
+.reservation-form {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.form-left, .form-right {
+    width: 48%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.headline-1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: 'Forum', cursive;
+}
+
+.form-text {
+    margin-bottom: 2rem;
+}
+
+.link {
+    color: yellowgreen;
+    text-decoration: none;
+}
+
+.input-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-field {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid #333;
+    background-color: #222;
+    color: white;
+    outline: none;
+}
+
+.icon-wrapper {
+    position: relative;
+    width: 32%;
+}
+
+.btn {
+    display: inline-block;
+    border-radius: 2rem;
+    background-color: yellowgreen;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: yellowgreen;
+}
+
+.hover-underline:hover {
+    text-decoration: underline;
+}
+
+.separator {
+    height: 1px;
+    background-color: #333;
+    margin: 1rem 0;
+}
+
+.contact-label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.body-4 {
+    margin-bottom: 1.5rem;
+    color: grey;
+}
+
+.form-right {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.contact-label,
+.body-4 {
+    color: white;
+}
