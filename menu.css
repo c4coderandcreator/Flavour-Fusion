@@ -15,6 +15,9 @@
   width: 75%;
   height: 100%;
 }
+.mySwiper {
+  border-radius: 2rem;
+}
 .ss-container {
   width: 100%;
   height: 100%;
@@ -22,7 +25,6 @@
   justify-content: center;
   align-items: center;
   background: linear-gradient(to left, #e8e3bd, #e3d253);
-  border-radius: 2rem;
 }
 .ss-text {
   text-align: center;
