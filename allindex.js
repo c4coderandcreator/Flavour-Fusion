@@ -32,7 +32,8 @@ const orderbtnf = document.querySelector("#order-footer-btn")
             targetMenu.style.display = "none";
             targetDiv.style.display = "block"; 
             orderHistory.style.display = "none";
-          };
+            sessionStorage.setItem('currentSection', 'about');
+          };    
     flavorBtn.onclick = function () {
       alhome.click()
     };
@@ -99,3 +100,12 @@ menuF.onclick = function () {
     targetOrder.style.display = "block" 
     targetFoot.style.display = "block";
     orderHistory.style.display = "none"; }
+
+const newstoredSection = sessionStorage?.getItem('currentSection');
+if (newstoredSection === 'about') {
+  targetItem.style.display = "none";
+  targetFoot.style.display = "block";
+  targetMenu.style.display = "none";
+  targetDiv.style.display = "block"; 
+  orderHistory.style.display = "none";
+}
