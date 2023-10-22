@@ -142,7 +142,7 @@ img {
 }
 
 .l-header {
-  padding: 1rem 0;
+  /*padding: 1rem 0;*/
   width: 100%;
   position: sticky;
   top: 0;
@@ -158,7 +158,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1rem;
+  padding-top: 0.75rem;
   padding-bottom: 1rem;
 }
 
