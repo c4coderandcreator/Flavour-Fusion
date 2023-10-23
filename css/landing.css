@@ -373,10 +373,10 @@ img {
   justify-content: center;
   align-items: center;
   margin-left: 25%;
-  margin-top: 5%;
+  margin-top: 6%;
   color: black;
   transition: all 1000ms;
-  font-size: 12px;
+  font-size: 13px;
   position: relative;
   overflow: hidden; 
   background-color: yellowgreen;
