@@ -130,7 +130,7 @@ img {
 }
 
 .bd-container {
-  max-width: 968px;
+  max-width: 1024px;
   width: calc(100% - 3rem);
   margin-left: var(--mb-3);
   margin-right: var(--mb-3);
@@ -365,6 +365,44 @@ img {
   transition: width 700ms;
 }
 
+.landings-button {
+  padding: 0.5em 0.8em;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25%;
+  margin-top: 5%;
+  color: black;
+  transition: all 1000ms;
+  font-size: 12px;
+  position: relative;
+  overflow: hidden; 
+  background-color: yellowgreen;
+
+}
+
+.landings-button:hover {
+  transform: scale(1.2);
+  color: black;
+  background-color: yellowgreen;
+  outline: 2px solid yellowgreen;
+  box-shadow: 2px 2px 30px 1px yellowgreen;
+}
+
+.landings-buttons::before {
+  /* content: ""; */
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 1;
+  height: 100%;
+  background-color: rgb(11, 195, 130);
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 700ms;
+}
 /* .landing-button:hover::before {
   width: 25%;
 } */
