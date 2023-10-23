@@ -8,6 +8,8 @@
   align-content: center;
   display: flex;
   position: fixed;
+  right: 100%;
+  transition: 1.5s right;
 }
 
 #sign-in-content {
@@ -18,7 +20,38 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  border-radius: 40px;
 }
+
+.fa.fa-google{
+   
+  background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+
+}
+.forgotps{
+  text-decoration: none;
+  color: #bfd5b6;
+  font-size: medium;
+  margin: 10px 0;
+
+}
+
+.forgotps:hover{
+  color: white;
+}
+
+.changeCursor {
+  border: unset;
+  background-color: unset;
+  text-decoration: underline;
+  color: white;
+}
+
 
 .changeCursor:hover {
   cursor: pointer;
@@ -73,12 +106,12 @@
   background: #eee;
 }
 
-.animationSignIn {
-  animation: animationRightToMiddle 1.5s;
+#bg-sign-in.animationSignIn {
+  right: 0%;
 }
 
-.animationOffSignIn {
-  animation: animationMiddleToRight 1.5s;
+#bg-sign-in.animationOffSignIn {
+  right: 100%;
 }
 
 .closeBtn {
@@ -89,25 +122,7 @@
   margin-bottom: auto;
 }
 
-@keyframes animationRightToMiddle {
-  0% {
-    right: 100%;
-  }
 
-  100% {
-    right: 0%;
-  }
-}
-
-@keyframes animationMiddleToRight {
-  0% {
-    right: 0%;
-  }
-
-  100% {
-    right: 100%;
-  }
-}
 
 @keyframes fadeIn {
   0% {

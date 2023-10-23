@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
+
 * {
   margin: 0;
   padding: 0;
@@ -13,35 +14,50 @@ body {
 }
 
 #close-sam-section {
-  width: fit-content;
-  background-color: black;
-  padding: 8px 12px;
-  border-radius: 12px;
-  border: 1px solid black;
   cursor: pointer;
-}
+  background-color: #f9f2b9;
+} 
 
-#close-sam-section p {
-  color: white;
-}
+#closeh1id {
+  width: 90%;
+  height: 13%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-block-end: auto;
+  padding-top: 5px;
+  padding: 0px 20px;
+  background-color: #f9f2b9;
+  border-radius: 10px;
+  font-size: 1.69rem;
+  font-family: "Poppins";
+  border-bottom: 1px solid grey;
+} 
+
+#closeh1id >div {
+  text-align: center;
+  justify-items: center;
+ }
 
 .close-icon {
   font-size: 24px;
   line-height: 24px;
-  transform: rotate(45deg);
+  padding: 5px;
+  border-radius: 5px;
+  background-color: yellowgreen;
 }
 
 .container-sam {
   width: 100%;
-  height: 600px;
   background-color: #fdfbfb;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 69;
-  gap: 8px;
+  gap: 10px;
   position: absolute;
+  height: 800px;  
+  overflow: none;
 }
 
 .container-sam-wrapper {
@@ -58,28 +74,32 @@ body {
 
 .main-head-sam {
   overflow: hidden;
-  width: 100%;
   background-color: white;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 16px 24px #eaeaea;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+  width: 30%;
+  height: 80%;
+  padding: 20px;  
 }
 
 .head-content-sam {
+  border-radius: 10px;
+  height: 13%;
   width: 100%;
   background-color: #f9f2b9;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  padding: 16px 0;
+  gap: 10px;
+  padding: 0px 20px;
+  border-bottom: 1px solid grey;
 }
 
 .head-content-sam i {
   font-size: 1.69rem;
-  color: #aea76f;
 }
 
 #search-box-sam {
@@ -88,11 +108,11 @@ body {
   /* 99px for max without having to use 50% which can cause a visual bug */
   border: none;
   outline: none;
-  padding: 8px 16px;
-  font-size: 1rem;
-  font-family: Poppins;
-  color: #6d6840;
-  background-color: #e8e0a1;
+  font-size: 1.2rem;
+  font-family: "Poppins" ;
+  padding:10px 10px ;
+
+  height: 65%;
 }
 
 #search-box-sam::placeholder {
@@ -115,17 +135,15 @@ body {
   width: 100%;
   border-radius: 12px;
   display: flex;
-  flex-direction: row;
+ flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  gap: 8px;
-  padding: 0 10px;
   position: relative;
+  height: 30%;
 }
 
 .food-content-sam img {
-  width: 75px;
-  height: 75px;
+  height: 70%;
   z-index: 1;
 }
 
@@ -133,16 +151,25 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  border: 2px solid black;
+  justify-content: center;
+  width: 75%;
+  height: 70%;
+  border: 1px solid black;
   border-radius: 12px;
-  padding: 8px;
+  position: absolute;
+  left: 22%;
+  padding: 10px;
+  box-shadow: 0px 0px 2px 1px black;
 }
 
 .description-sam {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 70%;
+  height: 70%;
+  padding-left: 15%;
 }
 
 .description-sam h3 {
@@ -156,6 +183,7 @@ body {
   font-size: 0.8rem;
   font-weight: 400;
   margin: 0 !important;
+  color: #000;
 }
 
 .item-sam {
@@ -198,6 +226,7 @@ body {
   font-size: 1.2rem;
   font-weight: 600;
   text-align: center;
+  color: #000;
 }
 
 .checkout-sam {
@@ -205,12 +234,13 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  background-color: #fff;
+  background: white;
   border-radius: 12px;
-  box-shadow: 0 16px 24px #eaeaea;
-  padding: 16px;
-  gap: 8px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4); 
+  gap: 5%;
+  padding: 1.5% 0;
+  width: 30%;
+  height: 80%;
 }
 
 .checkout-sam h1 {
@@ -236,21 +266,23 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-  /* border: 2px solid black; */
-  border-radius: 12px;
+
+  width: 80%;
+  padding: 10px 20px;
+  border: 2px solid black;
 }
 
 .checkout-btn-sam {
-  width: 100%;
+  height: max-content;
+  width: 50%;
   background-color: black;
   color: white;
-  padding: 8px 16px;
-  border: 2px solid transparent;
+  padding: 3% 5%;
+  border: none;
   outline: none;
   border-radius: 12px;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 1.1rem;
+  font-weight: 600;
   cursor: pointer;
 }
 
@@ -263,6 +295,12 @@ body {
 #order-sam {
   cursor: pointer;
 }
+.close-button{
+
+  cursor: pointer;
+  border-radius: 20%;
+  background-color: #fdea5e;
+}
 
 /* Media Queries */
 @media (max-width: 1280px) and (min-width: 1024px) {}
@@ -272,3 +310,172 @@ body {
 @media (max-width: 780px) and (min-width: 612px) {}
 
 @media (max-width: 612px) {}
+
+
+
+
+@media (max-width: 1280px) and (min-width: 1024px) {
+  .main-head-sam {
+    height: 75%;
+    width: 45%;
+  }
+  .checkout-sam {
+    margin-left: 0rem;
+    height: 75%;
+    width: 45%;
+  }
+}
+@media (max-width: 1024px) and (min-width: 780px) {
+  .main-head-sam {
+    height: 70%;
+    width: 45%;
+  }
+  .checkout-sam {
+    margin-left: 0rem;
+    height: 70%;
+    width: 45%;
+  }
+  .checkout-sam h1 {
+    padding: 0;
+  }
+}
+
+
+
+@media (max-width: 780px) and (min-width: 612px)  {
+  
+  .food-content-sam img {
+    height: 100% !important;
+  }
+  
+  .container-sam.active-sam {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+  }
+  .main-head-sam {
+    width: 70%;
+    height: 60%;
+  }
+  .checkout-sam {
+    margin-left: 0rem;
+    width: 70%;
+    height: 60%;
+  }
+  .checkout-sam h1 {
+    font-size: 1.1rem;
+    padding: 0;
+  }
+  .description-sam h3 {
+    font-size: 0.7rem !important;
+    line-height: 100%;
+    padding: 5% !important;
+  }
+  .description-sam p {
+    font-size: 0.8rem;
+    line-height: 100%;
+  }
+  .item-sam button {
+    font-size: 0.8rem;
+  }
+  .food-content-sam-description {
+    height: 90%;
+   
+    padding: 10px;
+  }
+  #search-box-sam {
+    font-size: 1.1rem;
+  }
+  .checkout-btn-sam {
+    font-size: 0.9rem;
+  }
+  .checkout-sam h2 {
+    font-size: 0.9rem;
+  }
+  .item-sam button {
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background-color: black;
+    font-size: 0.6rem !important;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 20% 25%;
+    color: white;
+  }
+ .item-sam {
+  gap: 1px;
+ }
+  
+} 
+@media (max-width: 612px) {
+  .food-content-sam img {
+    height: 60%;
+  }
+
+  .container-sam.active-sam {
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+  }
+  .main-head-sam {
+    width: 90%;
+    height: 60%;
+  }
+  .checkout-sam {
+    margin-left: 0rem;
+    width: 90%;
+    height: 60%;
+    
+  }
+  .checkout-sam h1 {
+    font-size: 1.1rem;
+    padding: 0;
+  }
+  .description-sam {
+    width: 40%;
+    height: 40%;
+    padding-left: 0px; 
+  }
+  .description-sam h3 {
+    font-size: 0.7rem !important;
+    line-height: 100%;
+    padding: 5% !important;
+  }
+  .description-sam p {
+    font-size: 0.8rem;
+    line-height: 100%;
+  }
+  .item-sam button {
+    font-size: 0.8rem;
+    
+  }
+  .food-content-sam-description {
+   
+    height: 80%;
+    padding: 0px;
+  }
+  #search-box-sam {
+    font-size: 1.1rem;
+  }
+  .checkout-btn-sam {
+    font-size: 0.9rem;
+  }
+  .checkout-sam h2 {
+    font-size: 0.9rem;
+  }
+  .item-sam button {
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background-color: black;
+    font-size: 0.6rem !important;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 20% 20%;
+    color: white;
+  }
+ .item-sam {
+  gap: 1px;
+ }
+}
