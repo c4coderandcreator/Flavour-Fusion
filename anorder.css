@@ -43,6 +43,10 @@ flex-wrap: wrap;
   margin-top: 5%;
   padding: 1.5%;
   font-size: 12px;
+  border: none;
+  color: white;
+  background-color: black;
+  padding: 8px;
 }
 .searchButton:hover{
   background-color:#46945c ;
