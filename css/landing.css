@@ -130,7 +130,7 @@ img {
 }
 
 .bd-container {
-  max-width: 968px;
+  max-width: 1024px;
   width: calc(100% - 3rem);
   margin-left: var(--mb-3);
   margin-right: var(--mb-3);
