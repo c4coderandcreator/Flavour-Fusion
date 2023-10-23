@@ -98,3 +98,35 @@
     margin-bottom: 9.69%;
   }
   }
+  
+  .footer__social {
+    position: relative;
+    color: #333;
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .footer__social::before {
+    content: "";
+    position: absolute;
+    width: 0; 
+    height: 2px; 
+    background: #ffcc00; 
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s; 
+  }
+  
+  .footer__social:hover::before {
+    width: 100%; 
+  }
+  
+  .footer__social i {
+    transform: translateY(0); 
+    transition: transform 0.3s; 
+  }
+  
+  .footer__social:hover i {
+    transform: translateY(-3px); 
+  }
