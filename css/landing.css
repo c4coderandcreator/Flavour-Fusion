@@ -736,7 +736,30 @@ footer {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 860px){
+@media screen and (min-width: 769px) and (max-width: 900px){
+  .nav__link{
+    font-size: 0.84rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .theme-toggle{
+    padding: 0;
+  }
+
+  .nav__list {
+    gap: 0.5rem;
+  }
+
+  .nav__item{
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1150px){
+  .nav__link{
+    padding: 0.5rem 1rem;
+  }
+
   .nav__list {
     gap: 1rem;
   }
@@ -744,7 +767,6 @@ footer {
   .nav__item{
     margin-left: 0;
   }
-
 }
 
 /* === For home section === (because it's hiding behind the navbar on smaller screns) */
