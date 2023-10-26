@@ -11,12 +11,12 @@ menuBtn.addEventListener("click", function () {
   menuNaima.style.display = "block";
   homeBtn.classList.remove("active-link");
   menuBtn.classList.add("active-link");
-  sessionStorage.setItem('currentSection', 'menu');
+  sessionStorage.setItem("currentSection", "menu");
 });
 
-const storedSection = sessionStorage.getItem('currentSection');
+const storedSection = sessionStorage.getItem("currentSection");
 
-if (storedSection === 'menu') {
+if (storedSection === "menu") {
   main.style.display = "none";
   menuNaima.style.display = "block";
   homeBtn.classList.remove("active-link");
@@ -28,7 +28,7 @@ homeBtn.addEventListener("click", function () {
   main.style.display = "block";
   menuBtn.classList.remove("active-link");
   homeBtn.classList.add("active-link");
-  sessionStorage.setItem('currentSection', 'home');
+  sessionStorage.setItem("currentSection", "home");
 });
 
 // Summer Sale
@@ -39,6 +39,7 @@ var swiper = new Swiper(".mySwiper", {
     delay: 2000,
     disableOnInteraction: false,
   },
+  loop : true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -47,6 +48,19 @@ var swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+});
+
+
+var swiperContainer = document.querySelector(".mySwiper");
+
+// on mouse enter this function stops the slider
+swiperContainer.addEventListener("mouseenter", function () {
+  swiper.autoplay.stop();
+});
+
+//on mouse leave this function starts the slider
+swiperContainer.addEventListener("mouseleave", function () {
+  swiper.autoplay.start();
 });
 
 // Menu Buttons
