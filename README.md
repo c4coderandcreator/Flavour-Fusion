@@ -40,7 +40,6 @@ Feel free to contribute to this project.
 
 ## Thanks to all Contributors 💪
 
-  <img src="https://contrib.rocks/image?repo=c4coderandcreator/Flavour-Fusion" />
 
 Your contribution is the root of success for this project.
 
