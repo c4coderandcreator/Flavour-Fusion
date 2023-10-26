@@ -39,6 +39,7 @@ To get started with contributing, please read our [Contributing Guidelines](CONT
 Feel free to contribute to this project. 
 
 ## Thanks to all Contributors 💪
+
 <a href="https://github.com/c4coderandcreator/Flavour-Fusion/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=c4coderandcreator/Flavour-Fusion" />
 </a>
