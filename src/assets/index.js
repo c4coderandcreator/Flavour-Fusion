@@ -1,0 +1,11 @@
+export { default as HomeSalad } from "./imgs/salmon-salad.png";
+export { default as HomeEgg } from "./imgs/egg.jpg";
+export { default as HomeNewOrder } from "./icons/new-order-landing.png";
+export { default as HomeOrderHistory } from "./icons/order-history-image-landing.png";
+export { default as HomeTrackOrder } from "./icons/track-order-landing.png";
+export { default as AboutCircle1 } from "./imgs/contentImg1.jpg";
+export { default as AboutCircle2 } from "./imgs/contentImg2.jpg";
+export { default as AboutCircle3 } from "./imgs/contentImg3.jpg";
+export { default as MenuSS1 } from "./imgs/ss-1.png";
+export { default as MenuSS2 } from "./imgs/ss-2.png";
+export { default as MenuSS3 } from "./imgs/ss-3.png";
