@@ -110,7 +110,12 @@ $(document).ready(function () {
   const $slides = $carouselContainer.find(".SP-slider");
   let currentIndex = 0;
   const slideCount = $slides.length;
-  const slidesPerView = 3; // Number of reviews to display at a time
+  let slidesPerView = 3; // Number of reviews to display at a time
+  const mediaQueryTablet = window.matchMedia("(max-width: 768px)");
+  if (mediaQueryTablet.matches) {
+    slidesPerView = 1; // Adjust for tablets
+  }
+
   const autoSlideInterval = 5000; // Interval in milliseconds (e.g., 5 seconds)
 
   function showSlides(index) {
@@ -123,11 +128,13 @@ $(document).ready(function () {
   function nextSlides() {
     currentIndex = (currentIndex + slidesPerView) % slideCount;
     showSlides(currentIndex);
+    activateDot(currentIndex / slidesPerView);
   }
 
   function prevSlides() {
     currentIndex = (currentIndex - slidesPerView + slideCount) % slideCount;
     showSlides(currentIndex);
+    activateDot(currentIndex / slidesPerView);
   }
 
   function autoSlide() {
@@ -148,10 +155,8 @@ $(document).ready(function () {
     $(".dot").eq(index).addClass("active");
   }
 
-  // Initialize the first set of slides
+  // Initialize the first set of slides and dots
   showSlides(currentIndex);
-
-  // Create pagination dots
   createDots();
 
   // Set up auto-sliding

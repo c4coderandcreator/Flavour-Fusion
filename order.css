@@ -489,6 +489,10 @@ body {
   .item-sam {
     gap: 1px;
   }
+
+  .sp-carousel {
+    flex-direction: column;
+  }
 }
 
 /* CSS REVIEW */
