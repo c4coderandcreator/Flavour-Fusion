@@ -1,60 +1,37 @@
+# Flavor Fusion
 
-# Flavour-Fusion: Food Website 🍔🥗
+**Technologies Used:** Vite + React.js, Tailwind CSS, DaisyUI, React Router DOM
 
-This is a Food Website built with HTML, CSS, and JavaScript. It allows users to order food, view the menu list, and much more.
+## Project Description
 
-## Features 🌟
+Flavor Fusion is an exciting web application that explores the delightful world of culinary creativity. Powered by Vite, React.js, Tailwind CSS, and DaisyUI, this project combines cutting-edge technologies to offer a seamless and visually appealing user experience.
 
-- Place and customize food orders 🍽️
-- View order history and track current orders 📊
-- Real-time updates on order status 🚚
+## How to Run the Project
 
-## Tech Stack 💻
+To get started with Flavor Fusion, follow these steps:
 
-- HTML
-- CSS
-- BootStrap
-- JavaScript
+1. **Clone the Repository:**
+   ```
+   git clone https://github.com/your-username/flavor-fusion.git
+   ```
+2. **Navigate to the Project Directory:**
+   ```
+   cd flavor-fusion
+   ```
+3. **Install Dependencies:**
+   ```
+   npm install
+   ```
+4. **Run the Project:**
 
-## Installation 🛠️
+   ```
+   npm run dev
+   ```
 
-Fork the repository to your Github:
+   The application will be accessible at [http://localhost:5173](http://localhost:5173).
 
+## Author
 
-After Forking, clone the repo to your local machine.
+**LinkedIn:** [Kapil](https://www.linkedin.com/in/askapil07)
 
-Open the index.html file in your web browser to start using the application.
-
-## Usage 🚀
-1. Go through sections 📚
-2. Check for Features 🧐
-3. Try out those features 🎉
-4. Finally, try to improve it! 🌱
-
-## Contributing 🤝
-
-We welcome and appreciate contributions from the open-source community to make Flavour Fusion even better. 
-To get started with contributing, please read our [Contributing Guidelines](CONTRIBUTING.md).
-
-Feel free to contribute to this project. 
-
-## Thanks to all Contributors 💪
-<a href="https://github.com/c4coderandcreator/Flavour-Fusion/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=c4coderandcreator/Flavour-Fusion" />
-</a>
-
-
-Your contribution is the root of success for this project.
-
-Also, give it a Star 🌟, if you loved contributing to the project. 
-Let's connect on my [Github](https://github.com/c4coderandcreator) for more such projects !!
-
-## Security Policy 🔒
-
-We take the security of Flavour Fusion seriously. We appreciate your efforts to responsibly disclose your findings, 
-and we will work to promptly address and resolve any reported security issues.
-Found a security issue? Want to report it? Please read our [Security Policy](SECURITY.md).
-
-## [MIT Licensed](https://github.com/c4coderandcreator/Flavour-Fusion/blob/main/LICENSE) 📜
-
-
+Feel free to explore, contribute, and enjoy Flavor Fusion! Happy cooking! 🍳🌶️🍲
