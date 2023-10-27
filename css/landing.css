@@ -160,6 +160,7 @@ img {
   align-items: center;
   padding-top: 0.75rem;
   padding-bottom: 1rem;
+  flex-wrap: nowrap;
 }
 
 @media screen and (max-width: 768px) {
@@ -229,7 +230,7 @@ img {
   background-color: #161212;
   border: #050505 1px solid;
   color: #FFF;
-  padding: 8px 30px;
+  padding: 8px 10px;
   border-radius: 20px;
   transition: 0.3s;
 }
@@ -448,7 +449,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 0 0 3.001rem;
 }
 #theme-toggle-button {
   width: 40px; /* Set the width and height to create a circular button */
@@ -662,10 +662,10 @@ footer {
   .nav__list {
     display: flex;
     align-items: center;
+    gap: .625rem;
   }
 
   .nav__item {
-    margin-left: var(--mb-3);
     margin-bottom: 0;
   }
 
@@ -699,6 +699,7 @@ footer {
 }
 
 @media screen and (min-width: 968px) {
+  
   .bd-container {
     margin-left: auto;
     margin-right: auto;
@@ -736,15 +737,42 @@ footer {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 860px){
+@media screen and (min-width: 769px) and (max-width: 900px){
+  .nav__link{
+    font-size: 0.84rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .theme-toggle{
+    padding: 0;
+  }
+
   .nav__list {
-    gap: 1rem;
+    gap: 0.5rem;
   }
 
   .nav__item{
     margin-left: 0;
   }
+}
 
+@media screen and (min-width: 901px) and (max-width: 1150px){
+  .nav__link{
+    padding: 0.5rem 1rem;
+  }
+
+  .nav__list {
+    gap: 1rem;
+  }
+  
+  #flavor-fusion-btn{
+    font-size: 1.3rem ;
+  }
+
+  .nav__item{
+    margin-left: 0;
+    font-size: .7rem;
+  }
 }
 
 /* === For home section === (because it's hiding behind the navbar on smaller screns) */
