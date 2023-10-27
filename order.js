@@ -239,3 +239,4 @@ const navOrder = document.getElementById("aboutLink");
 navOrder.addEventListener("click", () => {
   sessionStorage.setItem('currentSection', 'home');
 })
+

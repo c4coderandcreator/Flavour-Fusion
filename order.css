@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
-
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +15,7 @@ body {
 #close-sam-section {
   cursor: pointer;
   background-color: #f9f2b9;
-} 
+}
 
 #closeh1id {
   width: 90%;
@@ -33,12 +32,12 @@ body {
   font-size: 1.69rem;
   font-family: "Poppins";
   border-bottom: 1px solid grey;
-} 
+}
 
-#closeh1id >div {
+#closeh1id > div {
   text-align: center;
   justify-items: center;
- }
+}
 
 .close-icon {
   font-size: 24px;
@@ -56,7 +55,7 @@ body {
   z-index: 69;
   gap: 10px;
   position: absolute;
-  height: 800px;  
+  height: 800px;
   overflow: none;
 }
 
@@ -81,7 +80,7 @@ body {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
   width: 30%;
   height: 80%;
-  padding: 20px;  
+  padding: 20px;
 }
 
 .head-content-sam {
@@ -109,8 +108,8 @@ body {
   border: none;
   outline: none;
   font-size: 1.2rem;
-  font-family: "Poppins" ;
-  padding:10px 10px ;
+  font-family: "Poppins";
+  padding: 10px 10px;
 
   height: 65%;
 }
@@ -135,7 +134,7 @@ body {
   width: 100%;
   border-radius: 12px;
   display: flex;
- flex-direction: row;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   position: relative;
@@ -237,7 +236,7 @@ body {
   overflow: scroll;
   background: white;
   border-radius: 12px;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4); 
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
   gap: 5%;
   padding: 1.5% 0;
   width: 30%;
@@ -296,14 +295,13 @@ body {
 #order-sam {
   cursor: pointer;
 }
-.close-button{
-
+.close-button {
   cursor: pointer;
   border-radius: 20%;
   background-color: #fdea5e;
 }
 
-.selected-order-box{
+.selected-order-box {
   border: 2px solid black;
   padding: 0.5rem;
   margin: 0.3rem;
@@ -311,27 +309,28 @@ body {
   justify-content: space-around;
 }
 
-.selected-order-heading{
+.selected-order-heading {
   display: flex;
   justify-content: space-around;
   font-weight: bold;
 }
 
-#selected-orders{
+#selected-orders {
   width: 100%;
 }
 
 /* Media Queries */
-@media (max-width: 1280px) and (min-width: 1024px) {}
+@media (max-width: 1280px) and (min-width: 1024px) {
+}
 
-@media (max-width: 1024px) and (min-width: 780px) {}
+@media (max-width: 1024px) and (min-width: 780px) {
+}
 
-@media (max-width: 780px) and (min-width: 612px) {}
+@media (max-width: 780px) and (min-width: 612px) {
+}
 
-@media (max-width: 612px) {}
-
-
-
+@media (max-width: 612px) {
+}
 
 @media (max-width: 1280px) and (min-width: 1024px) {
   .main-head-sam {
@@ -359,14 +358,11 @@ body {
   }
 }
 
-
-
-@media (max-width: 780px) and (min-width: 612px)  {
-  
+@media (max-width: 780px) and (min-width: 612px) {
   .food-content-sam img {
     height: 100% !important;
   }
-  
+
   .container-sam.active-sam {
     width: 100%;
     height: 100vh;
@@ -399,7 +395,7 @@ body {
   }
   .food-content-sam-description {
     height: 90%;
-   
+
     padding: 10px;
   }
   #search-box-sam {
@@ -422,11 +418,10 @@ body {
     padding: 20% 25%;
     color: white;
   }
- .item-sam {
-  gap: 1px;
- }
-  
-} 
+  .item-sam {
+    gap: 1px;
+  }
+}
 @media (max-width: 612px) {
   .food-content-sam img {
     height: 60%;
@@ -445,7 +440,6 @@ body {
     margin-left: 0rem;
     width: 90%;
     height: 60%;
-    
   }
   .checkout-sam h1 {
     font-size: 1.1rem;
@@ -454,7 +448,7 @@ body {
   .description-sam {
     width: 40%;
     height: 40%;
-    padding-left: 0px; 
+    padding-left: 0px;
   }
   .description-sam h3 {
     font-size: 0.7rem !important;
@@ -467,10 +461,8 @@ body {
   }
   .item-sam button {
     font-size: 0.8rem;
-    
   }
   .food-content-sam-description {
-   
     height: 80%;
     padding: 0px;
   }
@@ -494,7 +486,75 @@ body {
     padding: 20% 20%;
     color: white;
   }
- .item-sam {
-  gap: 1px;
- }
+  .item-sam {
+    gap: 1px;
+  }
+
+  .sp-carousel {
+    flex-direction: column;
+  }
+}
+
+/* CSS REVIEW */
+.review-wrapper {
+  padding: 3em;
+  color: #000 !important;
+}
+.sp-carousel {
+  display: flex;
+  gap: 15px;
+  margin: auto auto;
+  position: relative;
+  overflow: hidden;
+  width: 100% !important;
+}
+.SP-slider {
+  padding: 5px 10px;
+  height: 15em;
+  transition: opacity 0.5s ease-in-out;
+  flex: 0 0 100%;
+  max-width: 320px;
+  margin: 30px auto;
+}
+.SP-slider > img {
+  width: 5em;
+  margin: 5px 5px;
+}
+
+.SP-slider > .reviewer-name {
+  font-size: large;
+  color: #000 !important;
+}
+.review {
+  color: #000 !important;
+}
+
+.carousel-dots {
+  display: flex;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+  display: flex;
+}
+
+.dot.active {
+  background-color: #000;
+}
+
+.dot:hover {
+  background-color: #aaa;
+}
+
+.dots-center {
+  display: flex;
+  justify-content: center;
+  width: inherit;
+}
+.bi {
+  color: yellowgreen !important;
 }
