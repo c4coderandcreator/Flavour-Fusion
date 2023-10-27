@@ -32,6 +32,6 @@ To get started with Flavor Fusion, follow these steps:
 
 ## Author
 
-**LinkedIn:** [Connect with me on LinkedIn](https://www.linkedin.com/in/askapil07)
+**LinkedIn:** [A S Kapil](https://www.linkedin.com/in/askapil07)
 
 Feel free to explore, contribute, and enjoy Flavor Fusion! Happy cooking! 🍳🌶️🍲
