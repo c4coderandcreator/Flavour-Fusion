@@ -167,13 +167,21 @@ reset.addEventListener("click", () => {
 const items = document.querySelectorAll(".item-sam");
 //Reset Cart
 const resetButton = document.getElementById("reset-cart-sam");
+
+
+
 function resetCart() {
-  items.forEach((item) => {
+  items.forEach((item, index) => {
     const quantity = item.querySelector(".quantity");
     quantity.textContent = 0;
-    totalPriceDisplay.textContent = `Rs. ${0}`;
+    totalPriceDisplay.textContent = `$ ${0}`;
+    const itemName = orderNumbers[index];
+    selectedOrders[itemName][0] = 0;
   });
+  displaySelectedOrders(); // Update the displayed orders after resetting
+  calculateTotalPrice(); // Recalculate the total price after resetting
 }
+
 resetButton.addEventListener("click", () => {
   resetCart();
 });
