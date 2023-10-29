@@ -24,6 +24,21 @@
   align-items: center;
   height: 100vh;
   padding: 1rem;
+  position: relative;
+}
+
+/* // reservation closing button  */
+.closeReservation{
+  color: black;
+  position: absolute;
+  font-size: 1.5rem;
+  right: 20px;
+  top: 12px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 @media (max-width: 567px) {
@@ -170,7 +185,7 @@
 
     <section class="reservation">
         <div class="container">
-
+          <a href="index.html" class="closeReservation">X</a>
             <div class="form reservation-form">
 
                 <form action="" class="form-left">
