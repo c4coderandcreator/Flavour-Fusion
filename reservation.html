@@ -8,13 +8,30 @@
 
     <link rel="stylesheet" href="./css/reservation.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.2/css/ionicons.min.css">
-
+    <style>
+        #close-button {
+            width: 35px; 
+            height: 35px;
+            display: block;
+            align-self: center;
+            float: right;
+            margin-top: 3%;
+            margin-right: 3%;
+            background-color: #9ACD32;
+            cursor: pointer;
+            border-radius: 20%;
+        }
+    </style>
 </head>
-
+<script>
+    function closeRegistrationPopup() {
+            window.history.back();
+    }
+</script>
 <body>
     <section class="reservation">
         <div class="container">
-
+            <button onClick="closeRegistrationPopup()" id="close-button">X</button>
             <div class="form reservation-form">
 
                 <form action="" class="form-left">
@@ -95,7 +112,6 @@
                     </button>
 
                 </form>
-
                 <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')">
 
                     <h2 class="headline-1 text-center">Contact Us</h2>
