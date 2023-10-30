@@ -120,7 +120,6 @@ img {
 .section-title-center {
   font-size: var(--h2-font-size);
   color: var(--title-color);
-  text-align: center;
   margin-bottom: var(--mb-3);
 }
 
@@ -149,7 +148,6 @@ img {
   left: 0;
   z-index: var(--z-fixed);
   background-color: yellowgreen;
-  box-shadow: 1px 1px 20px rgb(62, 62, 62);
 }
 
 /*========== NAV ==========*/
@@ -313,7 +311,7 @@ img {
   animation-timing-function: ease-in-out;
 }
 .home_img{
-  border-radius: 20px;
+  cursor: pointer;
 }
 .home_img2{
   border-radius: 20px;
@@ -476,9 +474,7 @@ img {
 
 
 /*========== food-fact ==========*/
-.food-fact__data {
-  text-align: center;
-}
+
 
 .food-fact__description {
   margin-bottom: var(--mb-2);
@@ -597,7 +593,7 @@ footer {
   text-align: center;
   font-size: var(--small-font-size);
   color: var(--text-color-light);
-  margin-top: 4rem;
+  margin: 3rem 0rem;
 }
 
 /*========== MEDIA QUERIES ==========*/
