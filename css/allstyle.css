@@ -97,6 +97,13 @@
   hr{
     margin-bottom: 9.69%;
   }
+
+  #reviews .order-landing__container{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    }
+
   }
   
   .footer__social {
