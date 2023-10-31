@@ -1,158 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Make a Reservation</title>
 
-    <link rel="stylesheet" href="./css/reservation.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.2/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="./css/reservation.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.2/css/ionicons.min.css"
+    />
     <style>
-        #close-button {
-            width: 35px; 
-            height: 35px;
-            display: block;
-            align-self: center;
-            float: right;
-            margin-top: 3%;
-            margin-right: 3%;
-            background-color: #9ACD32;
-            cursor: pointer;
-            border-radius: 20%;
-        }
+      #close-button {
+        width: 35px;
+        height: 35px;
+        display: block;
+        align-self: center;
+        float: right;
+        margin-top: 3%;
+        margin-right: 3%;
+        background-color: #9acd32;
+        cursor: pointer;
+        border-radius: 20%;
+      }
+      
+        /* General Styling */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 1rem;
+  position: relative;
+}
+
+/* // reservation closing button  */
+.closeReservation{
+  color: black;
+  position: absolute;
+  font-size: 1.5rem;
+  right: 20px;
+  top: 12px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media (max-width: 567px) {
+  h1 {
+    font-size: 7vw;
+    text-align: center;
+  }
+}
+
+
+/* Loader Styles start here */
+.loader-wrapper {
+  --line-width: 5px;
+  --curtain-color: #f1faee;
+  --outer-line-color: #a8dadc;
+  --middle-line-color: #457b9d;
+  --inner-line-color: #1d3557;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:1000;
+}
+
+.loader {
+  display:block;
+  position: relative;
+  top:50%;
+  left:50%;
+/*   transform: translate(-50%, -50%); */
+  width:150px;
+  height:150px;
+  margin:-75px 0 0 -75px;
+  border:var(--line-width) solid transparent;
+  border-top-color: var(--outer-line-color);
+  border-radius:100%;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+  z-index:1001;
+}
+
+.loader:before {
+  content:"";
+  position: absolute;
+  top:4px;
+  left:4px;
+  right:4px;
+  bottom:4px;
+  border:var(--line-width) solid transparent;
+  border-top-color: var(--inner-line-color);
+  border-radius:100%;
+  -webkit-animation: spin 3s linear infinite;
+          animation: spin 3s linear infinite;
+}
+
+.loader:after {
+  content:"";
+  position: absolute;
+  top:14px;
+  left:14px;
+  right:14px;
+  bottom:14px;
+  border:var(--line-width) solid transparent;
+  border-top-color: var(--middle-line-color);
+  border-radius:100%;
+  -webkit-animation: spin 1.5s linear infinite;
+          animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0%   { 
+    -webkit-transform: rotate(0deg); 
+      -ms-transform: rotate(0deg); 
+          transform: rotate(0deg);
+  }
+  100% { 
+    -webkit-transform: rotate(360deg); 
+      -ms-transform: rotate(360deg); 
+          transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0%   { 
+    -webkit-transform: rotate(0deg); 
+      -ms-transform: rotate(0deg); 
+          transform: rotate(0deg);
+  }
+  100% { 
+    -webkit-transform: rotate(360deg); 
+      -ms-transform: rotate(360deg); 
+          transform: rotate(360deg);
+  }
+}
+
+.loader-wrapper .loader-section {
+  position:fixed;
+  top:0;
+  background:var(--curtain-color);
+  width:51%;
+  height:100%;
+  z-index:1000;
+}
+
+.loader-wrapper .loader-section.section-left {
+  left:0
+}
+.loader-wrapper .loader-section.section-right {
+  right:0;
+}
+
+/* Loaded Styles */ 
+.loaded .loader-wrapper .loader-section.section-left {
+  transform: translateX(-100%);
+  transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
+}
+.loaded .loader-wrapper .loader-section.section-right {
+  transform: translateX(100%);
+  transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
+}
+.loaded .loader {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+.loaded .loader-wrapper {
+  visibility: hidden;
+  transform:translateY(-100%);
+  transition: all .3s 1s ease-out;
+}
     </style>
-</head>
-<script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <script>
     function closeRegistrationPopup() {
-            window.history.back();
+      window.history.back();
     }
-</script>
-<body>
+    window.addEventListener('load',function(){
+  document.querySelector('body').classList.add("loaded")  
+});
+  </script>
+  <body>
+       <div class="loader-wrapper">
+        <div class="loader">
+        </div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+      </div>
+    
     <section class="reservation">
-        <div class="container">
-            <button onClick="closeRegistrationPopup()" id="close-button">X</button>
-            <div class="form reservation-form">
+      <div class="container">
+        <button onClick="closeRegistrationPopup()" id="close-button">X</button>
+        <div class="form reservation-form">
+          <form action="" class="form-left">
+            <h2 class="headline-1 text-center">Online Reservation</h2>
 
-                <form action="" class="form-left">
+            <p class="form-text text-center">
+              Booking request
+              <a href="tel:+88123123456" class="link">+123 456 7890</a>
+              or fill out the order form
+            </p>
 
-                    <h2 class="headline-1 text-center">Online Reservation</h2>
+            <div class="separator"></div>
 
-                    <p class="form-text text-center">
-                        Booking request <a href="tel:+88123123456" class="link">+123 456 7890</a>
-                        or fill out the order form
-                    </p>
+            <div class="input-wrapper">
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                autocomplete="off"
+                class="input-field input-text"
+              />
 
-                    <div class="separator"></div>
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Phone Number"
+                autocomplete="off"
+                class="input-field input-text"
+              />
+            </div>
 
-                    <div class="input-wrapper">
-                        <input type="text" name="name" placeholder="Your Name" autocomplete="off" class="input-field input-text">
 
-                        <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off"
-                            class="input-field input-text">
-                    </div>
+            <div class="input-wrapper">
+              <div class="icon-wrapper">
+                <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
 
-                    <div class="input-wrapper">
+                <select name="person" class="input-field input-select">
+                  <option value="1-person">1 Person</option>
+                  <option value="2-person">2 Person</option>
+                  <option value="3-person">3 Person</option>
+                  <option value="4-person">4 Person</option>
+                  <option value="5-person">5 Person</option>
+                  <option value="6-person">6 Person</option>
+                  <option value="7-person">7 Person</option>
+                  <option value="7-person">8 Person</option>
+                </select>
 
-                        <div class="icon-wrapper">
-                            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+              </div>
 
-                            <select name="person" class="input-field input-select">
-                                <option value="1-person">1 Person</option>
-                                <option value="2-person">2 Person</option>
-                                <option value="3-person">3 Person</option>
-                                <option value="4-person">4 Person</option>
-                                <option value="5-person">5 Person</option>
-                                <option value="6-person">6 Person</option>
-                                <option value="7-person">7 Person</option>
-                                <option value="7-person">8 Person</option>
-                            </select>
+              <div class="icon-wrapper">
+                <ion-icon
+                  name="calendar-clear-outline"
+                  aria-hidden="true"
+                ></ion-icon>
 
-                            <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
-                        </div>
+                <input
+                  type="date"
+                  name="reservation-date"
+                  class="input-field input-date"
+                />
 
-                        <div class="icon-wrapper">
-                            <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+                <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+              </div>
 
-                            <input type="date" name="reservation-date" class="input-field input-date">
+              <div class="icon-wrapper">
+                <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
 
-                            <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
-                        </div>
+                <select name="person" class="input-field input-select">
+                  <option value="08:00am">08 : 00 am</option>
+                  <option value="09:00am">09 : 00 am</option>
+                  <option value="010:00am">10 : 00 am</option>
+                  <option value="011:00am">11 : 00 am</option>
+                  <option value="012:00am">12 : 00 am</option>
+                  <option value="01:00pm">01 : 00 pm</option>
+                  <option value="02:00pm">02 : 00 pm</option>
+                  <option value="03:00pm">03 : 00 pm</option>
+                  <option value="04:00pm">04 : 00 pm</option>
+                  <option value="05:00pm">05 : 00 pm</option>
+                  <option value="06:00pm">06 : 00 pm</option>
+                  <option value="07:00pm">07 : 00 pm</option>
+                  <option value="08:00pm">08 : 00 pm</option>
+                  <option value="09:00pm">09 : 00 pm</option>
+                  <option value="10:00pm">10 : 00 pm</option>
+                </select>
 
-                        <div class="icon-wrapper">
-                            <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+              </div>
+            </div>
 
-                            <select name="person" class="input-field input-select">
-                                <option value="08:00am">08 : 00 am</option>
-                                <option value="09:00am">09 : 00 am</option>
-                                <option value="010:00am">10 : 00 am</option>
-                                <option value="011:00am">11 : 00 am</option>
-                                <option value="012:00am">12 : 00 am</option>
-                                <option value="01:00pm">01 : 00 pm</option>
-                                <option value="02:00pm">02 : 00 pm</option>
-                                <option value="03:00pm">03 : 00 pm</option>
-                                <option value="04:00pm">04 : 00 pm</option>
-                                <option value="05:00pm">05 : 00 pm</option>
-                                <option value="06:00pm">06 : 00 pm</option>
-                                <option value="07:00pm">07 : 00 pm</option>
-                                <option value="08:00pm">08 : 00 pm</option>
-                                <option value="09:00pm">09 : 00 pm</option>
-                                <option value="10:00pm">10 : 00 pm</option>
-                            </select>
+            <textarea
+              name="message"
+              placeholder="Message"
+              autocomplete="off"
+              class="input-field input-textarea"
+            ></textarea>
 
-                            <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
-                        </div>
-
-                    </div>
-
-                    <textarea name="message" placeholder="Message" autocomplete="off" class="input-field input-textarea"></textarea>
-
-                    <button type="submit" class="btn btn-secondary">
-                        <span class="text text-1">Book A Table</span>
-                    </button>
+            <button type="submit" class="btn btn-secondary">
+              <span class="text text-1">Book A Table</span>
+            </button>
+         
+          <div
+            class="form-right text-center"
+            style="background-image: url('./assets/images/form-pattern.png')"
+          >
+            <h2 class="headline-1 text-center">Contact Us</h2>
 
                 </form>
-                <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')">
 
-                    <h2 class="headline-1 text-center">Contact Us</h2>
 
-                    <p class="contact-label">Booking Request</p>
 
-                    <a href="tel:+88123123456" class="body-1 contact-number hover-underline">+123 456 7890</a>
-                    
-                    <div class="separator"></div>
+            <p class="contact-label">Booking Request</p>
 
-                    <p class="contact-label">Location</p>
+            <a
+              href="tel:+88123123456"
+              class="body-1 contact-number hover-underline"
+              >+123 456 7890</a
+            >
 
-                    <address class="body-4">
-                        Restaurant Location
-                        <br>
-                        Restaurant Location
-                    </address>
+            <div class="separator"></div>
 
-                    <div class="separator"></div>
+            <p class="contact-label">Location</p>
 
-                    <p class="contact-label">Email Us</p>
+            <address class="body-4">
+                123 Main Street,<br />
+                City Name
+            </address>
 
-                    <p class="body-4">
-                        support@flavorfusion.com
-                    </p>
+            <div class="separator"></div>
 
-                    <div class="separator"></div>
+            <p class="contact-label">Email Us   <i class="fa fa-envelope"></i></p>
 
-                    <p class="contact-label">Social Media</p>
+            <p class="body-4">support@flavorfusion.com</p>
 
-                    <p class="body-4">
-                        Instagram
-                        <br>
-                        Facebook
-                        <br>
-                        Twitter
-                    </p>
-                </div>
-            </div>
+            <div class="separator"></div>
+
+            <p class="contact-label">Social Media</p>
+
+
+            <p class="body-4">
+              <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a>
+            </p>
+          </div>
         </div>
+      </div>
     </section>
-</body>
-
+  </body>
 </html>
