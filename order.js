@@ -1,18 +1,18 @@
 //Import Sections
 const homeSam = document.getElementById("home");
-const homeSam2= document.getElementById("#");
-const homeSam3= document.getElementById("order-landing");
+const homeSam2 = document.getElementById("#");
+const homeSam3 = document.getElementById("order-landing");
 
 //Remove content
-function removeContent(){
-  homeSam.style.display="none";
-  homeSam2.style.display="none";
-  homeSam3.style.display="none";
+function removeContent() {
+  homeSam.style.display = "none";
+  homeSam2.style.display = "none";
+  homeSam3.style.display = "none";
 }
-function revealContent(){
-  homeSam.style.display="block";
-  homeSam2.style.display="block";
-  homeSam3.style.display="block";
+function revealContent() {
+  homeSam.style.display = "block";
+  homeSam2.style.display = "block";
+  homeSam3.style.display = "block";
 }
 
 //Search bar functionality
@@ -38,45 +38,45 @@ const searchSAM = () => {
 const order = document.getElementById("order-now-sam");
 const content = document.getElementById("sam");
 const reset = document.getElementById("reset-sam");
-const closeSamSec = document.getElementById("close-sam-section")
+const closeSamSec = document.getElementById("close-sam-section");
 
 const selectedOrders = {
-  "Caprese Starter": [0, 10.30],
-  "Israeli Starter": [0, 12.30],
+  "Caprese Starter": [0, 10.3],
+  "Israeli Starter": [0, 12.3],
   "Roll Ball Starter": [0, 19.39],
-  "Organic Mix Starter": [0, 60.30],
-  "Quinoa Starter": [0, 21.10],
-  "Asparagus Starter": [0, 41.10],
-  "Asian Salad": [0, 20.40],
-  "Spinach Salad": [0, 17.10],
+  "Organic Mix Starter": [0, 60.3],
+  "Quinoa Starter": [0, 21.1],
+  "Asparagus Starter": [0, 41.1],
+  "Asian Salad": [0, 20.4],
+  "Spinach Salad": [0, 17.1],
   "Mexican Salad": [0, 11.47],
-  "Quinoa Salad": [0, 91.30],
+  "Quinoa Salad": [0, 91.3],
   "Tabbouleh Salad": [0, 56.25],
   "Lentil Salad": [0, 31.91],
-  "Pantua Dessert": [0, 60.50],
-  "Panna Dessert": [0, 32.20],
+  "Pantua Dessert": [0, 60.5],
+  "Panna Dessert": [0, 32.2],
   "Pecan Pie": [0, 41.97],
-  "Fruit Dessert": [0, 19.20],
-  "Pineapple Dessert": [0, 21.10],
-  "Chocolate Dessert": [0, 41.10],
-  "Butternut Soup": [0, 10.30],
-  "Italian Mix Soup": [0, 12.30],
+  "Fruit Dessert": [0, 19.2],
+  "Pineapple Dessert": [0, 21.1],
+  "Chocolate Dessert": [0, 41.1],
+  "Butternut Soup": [0, 10.3],
+  "Italian Mix Soup": [0, 12.3],
   "Hot Pasta Soup": [0, 19.39],
-  "Miso Soup": [0, 60.30],
+  "Miso Soup": [0, 60.3],
   "Thai Soup": [0, 69.55],
   "Tomato Soup": [0, 21.31],
-  "Mixed Spaghetti": [0, 10.30],
-  "Spicy Spaghetti": [0, 12.30],
+  "Mixed Spaghetti": [0, 10.3],
+  "Spicy Spaghetti": [0, 12.3],
   "Creamy Spaghetti": [0, 19.39],
-  "Simple Spaghetti": [0, 60.30],
-  "Cheesy Spaghetti": [0, 21.10],
-  "Roasted Spaghetti": [0, 41.10],
-  "Saffron Shake": [0, 10.30],
-  "Orange Juice": [0, 12.30],
+  "Simple Spaghetti": [0, 60.3],
+  "Cheesy Spaghetti": [0, 21.1],
+  "Roasted Spaghetti": [0, 41.1],
+  "Saffron Shake": [0, 10.3],
+  "Orange Juice": [0, 12.3],
   "Strawberry Juice": [0, 19.39],
-  "Avocado Smoothie": [0, 60.30],
-  "Malted Drink": [0, 21.10],
-  "Special Juice": [0, 41.10],
+  "Avocado Smoothie": [0, 60.3],
+  "Malted Drink": [0, 21.1],
+  "Special Juice": [0, 41.1],
 };
 
 const orderNumbers = {
@@ -118,9 +118,8 @@ const orderNumbers = {
   35: "Special Juice",
 };
 
-
-function displaySelectedOrders(){
-  const selectedOrder = document.getElementById('selected-orders');
+function displaySelectedOrders() {
+  const selectedOrder = document.getElementById("selected-orders");
   selectedOrder.innerHTML = `
     <div class='selected-order-heading'>
       <span>Sr.No</span>
@@ -133,13 +132,13 @@ function displaySelectedOrders(){
   for (const key in selectedOrders) {
     if (selectedOrders.hasOwnProperty(key)) {
       const value = selectedOrders[key];
-      if(value[0]>0){
-        selectedOrder.innerHTML+=`
+      if (value[0] > 0) {
+        selectedOrder.innerHTML += `
           <div class='selected-order-box'>
             <span>${index}</span>  
             <span>${key}</span>  
             <span>${value[0]}</span>  
-            <span>${value[1]*value[0].toFixed(2)}</span>  
+            <span>${value[1] * value[0].toFixed(2)}</span>  
           </div>
         `;
         index++;
@@ -197,7 +196,7 @@ foodItems.forEach((item) => {
 function calculateTotalPrice() {
   totalPrice = 0;
   quantities.forEach((quantity, index) => {
-    totalPrice += (priceList[index] * parseInt(quantity.textContent));
+    totalPrice += priceList[index] * parseInt(quantity.textContent);
   });
   totalPriceDisplay.textContent = `$ ${totalPrice.toFixed(2)}`;
 }
@@ -237,6 +236,5 @@ calculateTotalPrice();
 const navOrder = document.getElementById("aboutLink");
 
 navOrder.addEventListener("click", () => {
-  sessionStorage.setItem('currentSection', 'home');
-})
-
+  sessionStorage.setItem("currentSection", "home");
+});
