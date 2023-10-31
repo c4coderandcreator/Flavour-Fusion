@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body{
+    background-color: #fefbfb;
+    font-family: "Poppins", sans-serif !important;
+}
+.ahead{
+  text-align: center;
+  width: 100%;
+  display: none;
+}
+.antop{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 28px;
+}
+.orderresponse{
+display: inline-flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+.ansearch1{
+  margin-right: 5%;
+  margin-top: 2%;
+}
+.orinput{
+  background-color: #bae497; 
+  border-radius: 12px;
+  text-align: center;
+  border-style: none;
+  padding: 2.5px;
+  margin-right: 10px;
+}
+#datePicker {
+  margin-right: 10px;
+  border-style: none;
+}
+.searchButton {
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25%;
+  margin-top: 6%;
+  padding: 1em 2.3em;
+  font-size: 14px;
+  outline: none;
+  border:none;
+  overflow: hidden;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 1000ms;
+  background-color: yellowgreen;
+}
+.searchButton:hover,
+.searchButton:focus
+{
+  background-color: yellowgreen;
+  outline: 2px solid yellowgreen;
+  transform: scale(1.1);
+  box-shadow: 2px 2px 30px 1px yellowgreen;
+}
+.ansearch2{
+  margin-left: 10%;
+  margin-top: 2%;
+}
+.highlighted {
+  color: #fefbfb;
+  background-color: #46945c;
+  padding: 2px;
+  border-radius: 12px;
+  width: 30%;
+  text-align: center;
+  margin-bottom: 2.5%;
+  margin-left: 35%;
+}
+  
+#orderHistory {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+    margin: 2.5% auto;
+    line-height: 2rem;
+    text-align: center;
+    width: 38%;
+
+  }
+
+  @media (max-width: 868px) {
+  
+    .orderresponse{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      flex-direction: column;
+      }
+    .ansearch1{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .ansearch2{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-left: 0%;
+    }
+    #dotta2{
+      display: none;
+    }
+
+    .ahead{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .highlighted {
+      width: 40% !important;
+      text-align: center;
+      margin: 0 auto 2.5% auto;
+
+    }
+    #orderHistory {
+      width: 100%;
+      font-size: 10px;
+      text-align:center;
+      padding: 0%;
+      line-height: 1rem;
+    }
+    .searchButton{
+      margin: 5% auto;
+    }
+    ul{
+      padding-inline-start:0px;
+    }
+  }
+  @media (min-width:868px ) and (max-width:1400px) {
+#orderHistory {
+  width: 50%;
+  text-align: center;
+  padding: 0%;
+}
+.highligted{
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+ul{
+  padding-inline-start:0px;
+}
+  }
