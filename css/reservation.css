@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Forum&display=swap");
 
 * {
+
   box-sizing: border-box;
   font-family: "DM Sans", sans-serif;
   color: white; /* Set default text color to white */
@@ -11,6 +12,18 @@ body {
   background-image: url("../assets/healthyhappyfood.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+=======
+}
+
+button {
+    font-size: 1rem;
+}
+
+a {
+    color: yellowgreen;
+    text-decoration: none;
+
 }
 
 .reservation {
@@ -19,11 +32,14 @@ body {
 }
 
 .container {
+
   max-width: 1200px;
   margin: 0 auto;
   border: 3px solid white;
   border-radius: 2rem;
   background-color: rgb(8, 8, 8, 0.9);
+  box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.5);
+
 }
 
 .reservation-form {
@@ -53,7 +69,10 @@ body {
 
 .form-text {
   margin-bottom: 2rem;
+
+
 }
+
 
 .link {
   color: yellowgreen;
@@ -82,6 +101,7 @@ body {
   box-shadow: 0 0 5px yellowgreen;
 }
 
+
 .input-select {
   appearance: none;
   padding: 1rem;
@@ -97,6 +117,7 @@ body {
 .input-select option{
     color: #333;
 }
+
 
 .input-select:hover,
 .input-select:focus {
@@ -148,6 +169,7 @@ body {
     margin-right: 10px;
 }
 
+
 .form-right {
   background-size: cover;
   background-position: center;
@@ -156,6 +178,7 @@ body {
 
 .contact-label,
 .body-4 {
+
   color: white;
 }
 
@@ -174,3 +197,14 @@ button{
 button:hover {
     transform: scale(1.05); 
 }
+
+    color: black;
+}
+
+.fa-facebook,
+.fa-instagram,
+.fa-twitter {
+  color: #fff;
+}
+
+
