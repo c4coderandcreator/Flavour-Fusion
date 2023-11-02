@@ -121,6 +121,7 @@ img {
   font-size: var(--h2-font-size);
   color: var(--title-color);
   margin-bottom: var(--mb-3);
+  text-align: center;
 }
 
 /*========== LAYOUT ==========*/
@@ -325,6 +326,7 @@ img {
 
 .home__description {
   margin-bottom: var(--mb-3);
+  padding-bottom: 1rem;
 }
 
 /*========== BUTTONS ==========*/
@@ -528,10 +530,10 @@ img {
 
 /*========== FOOTER ==========*/
 
-footer {
+/*footer {
   border-top: 2px solid black;
   padding: 2rem 0;
-}
+} */
 
 .footer__container {
 
