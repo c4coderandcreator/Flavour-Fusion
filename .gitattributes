@@ -1,0 +1,7 @@
+#gitattributes
+bug_report.md
+CONTRIBUTING.md
+faeture_request.md
+pull-request-template.md
+
+*.md
