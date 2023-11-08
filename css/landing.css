@@ -121,6 +121,7 @@ img {
   font-size: var(--h2-font-size);
   color: var(--title-color);
   margin-bottom: var(--mb-3);
+  text-align: center;
 }
 
 /*========== LAYOUT ==========*/
@@ -325,6 +326,7 @@ img {
 
 .home__description {
   margin-bottom: var(--mb-3);
+  padding-bottom: 1rem;
 }
 
 /*========== BUTTONS ==========*/
@@ -503,6 +505,8 @@ img {
   border-radius: 1rem;
   transform-style: preserve-3d;
   perspective: 1000px;
+  margin-top: 0;
+  margin-bottom: 2.5em;
 
 }
 
@@ -528,10 +532,10 @@ img {
 
 /*========== FOOTER ==========*/
 
-footer {
+/*footer {
   border-top: 2px solid black;
   padding: 2rem 0;
-}
+} */
 
 .footer__container {
 
