@@ -16,10 +16,10 @@
         width: 35px;
         height: 35px;
         display: block;
-        align-self: center;
+        align-self: flex-start;
         float: right;
         margin-top: 3%;
-        margin-right: 3%;
+        /*margin-right: 3%;*/
         background-color: #9acd32;
         cursor: pointer;
         border-radius: 20%;
@@ -200,7 +200,7 @@
     
     <section class="reservation">
       <div class="container">
-        <button onClick="closeRegistrationPopup()" id="close-button">X</button>
+       
         <div class="form reservation-form">
           <form action="" class="form-left">
             <h2 class="headline-1 text-center">Online Reservation</h2>
@@ -300,14 +300,12 @@
             <button type="submit" class="btn btn-secondary">
               <span class="text text-1">Book A Table</span>
             </button>
+          </form>
          
-          <div
-            class="form-right text-center"
-            style="background-image: url('./assets/images/form-pattern.png')"
-          >
+          <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')">
             <h2 class="headline-1 text-center">Contact Us</h2>
 
-                </form>
+               
 
 
 
@@ -346,7 +344,9 @@
             </p>
           </div>
         </div>
+        <button onClick="closeRegistrationPopup()" id="close-button">X</button>
       </div>
+    
     </section>
   </body>
 </html>
