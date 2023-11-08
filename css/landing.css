@@ -505,6 +505,8 @@ img {
   border-radius: 1rem;
   transform-style: preserve-3d;
   perspective: 1000px;
+  margin-top: 0;
+  margin-bottom: 2.5em;
 
 }
 
