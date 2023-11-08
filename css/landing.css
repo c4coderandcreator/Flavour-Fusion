@@ -161,7 +161,23 @@ img {
   padding-bottom: 1rem;
   flex-wrap: nowrap;
 }
-
+@media screen and (max-width: 868px){
+  .nav__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    right: 0;
+    width: 90%;
+    margin: -0.5rem auto;
+    padding: 2.5rem 0 0;
+    text-align: center;
+    background-color: var(--body-color);
+    transition: .4s;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .1);
+    border-radius: 2rem;
+    z-index: var(--z-fixed);
+  }
+}
 @media screen and (max-width: 768px) {
   .nav__menu {
     position: fixed;
@@ -331,7 +347,7 @@ img {
 
 /*========== BUTTONS ==========*/
 .landing-button {
-  padding: 1em 2.5em;
+  padding: 1em 2em;
   border: none;
   border-radius: 30px;
   font-weight: 700;
