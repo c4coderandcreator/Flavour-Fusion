@@ -108,11 +108,11 @@ If you encounter a bug or have a feature request, please open an issue on the [i
 
 ## Code of Conduct
 
-Please review and adhere to our [Code of Conduct](CODE_OF_CONDUCT.md) to maintain a respectful and welcoming environment for all contributors.
+Please review and adhere to our [Code of Conduct](./.github/ISSUE_TEMPLATE/CODE_OF_CONDUCT.md) to maintain a respectful and welcoming environment for all contributors.
 
 ## License
 
-By contributing to Flavour Fusion, you agree that your contributions will be licensed under the project's [MIT License](LICENSE).
+By contributing to Flavour Fusion, you agree that your contributions will be licensed under the project's [MIT License](./.github/ISSUE_TEMPLATE/LICENSE).
 
 We appreciate your contributions and look forward to collaborating with you on Flavour Fusion!
 
