@@ -34,7 +34,7 @@ Open the index.html file in your web browser to start using the application.
 ## Contributing 🤝
 
 We welcome and appreciate contributions from the open-source community to make Flavour Fusion even better. 
-To get started with contributing, please read our [Contributing Guidelines](CONTRIBUTING.md).
+To get started with contributing, please read our [Contributing Guidelines](./.github/ISSUE_TEMPLATE/CONTRIBUTING.md).
 
 Feel free to contribute to this project. 
 
@@ -53,7 +53,7 @@ Let's connect on my [Github](https://github.com/c4coderandcreator) for more such
 
 We take the security of Flavour Fusion seriously. We appreciate your efforts to responsibly disclose your findings, 
 and we will work to promptly address and resolve any reported security issues.
-Found a security issue? Want to report it? Please read our [Security Policy](SECURITY.md).
+Found a security issue? Want to report it? Please read our [Security Policy](./.github/ISSUE_TEMPLATE/SECURITY.md).
 
 ## [MIT Licensed](https://github.com/c4coderandcreator/Flavour-Fusion/blob/main/LICENSE) 📜
 
