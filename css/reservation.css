@@ -4,7 +4,8 @@
 * {
   box-sizing: border-box;
   font-family: "DM Sans", sans-serif;
-  color: white; /* Set default text color to white */
+  color: white;
+  /* Set default text color to white */
 }
 
 body {
@@ -155,6 +156,7 @@ a {
   margin-bottom: 1.5rem;
   color: grey;
 }
+
 .body-4 i {
   margin-right: 10px;
 }

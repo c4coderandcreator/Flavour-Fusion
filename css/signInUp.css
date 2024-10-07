@@ -23,25 +23,22 @@
   border-radius: 40px;
 }
 
-.fa.fa-google{
-   
+.fa.fa-google {
   background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
-
-
 }
-.forgotps{
+
+.forgotps {
   text-decoration: none;
   color: #bfd5b6;
   font-size: medium;
   margin: 10px 0;
-
 }
 
-.forgotps:hover{
+.forgotps:hover {
   color: white;
 }
 
@@ -51,7 +48,6 @@
   text-decoration: underline;
   color: white;
 }
-
 
 .changeCursor:hover {
   cursor: pointer;
@@ -122,8 +118,6 @@
   margin-bottom: auto;
 }
 
-
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -144,14 +138,11 @@
   }
 }
 
-@media (max-width: 1600px) {
-}
+@media (max-width: 1600px) {}
 
-@media (max-width: 1500px) {
-}
+@media (max-width: 1500px) {}
 
-@media (max-width: 1400px) {
-}
+@media (max-width: 1400px) {}
 
 @media (max-width: 1330px) {
   #sign-in-content {
@@ -206,6 +197,7 @@
 }
 
 @media (max-width: 680px) {
+
   .sign-in-loco,
   #sign-in-line {
     display: none;
@@ -214,6 +206,7 @@
 }
 
 @media (max-width: 570px) {
+
   .sign-in-loco,
   #sign-in-line {
     display: none;
@@ -228,6 +221,7 @@
 }
 
 @media (max-width: 280px) {
+
   .sign-in-loco,
   #sign-in-line {
     display: none;
