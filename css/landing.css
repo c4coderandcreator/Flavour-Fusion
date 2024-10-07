@@ -146,6 +146,9 @@ img {
   left: 0;
   z-index: var(--z-fixed);
   background-color: yellowgreen;
+  height: 90px; /* Added height */
+  display: flex; /* Aligned navbar elements */
+  align-items: center;
 }
 
 /*========== NAV ==========*/
@@ -199,6 +202,11 @@ img {
   margin-bottom: var(--mb-3);
 }
 
+.nav__link {
+  font-size: 20px; /* Changed font size */
+  margin-right: 10px; /* Added margin for better spacing */
+}
+
 .nav__link,
 .nav__logo {
   color: rgb(0, 0, 0);
@@ -208,7 +216,6 @@ img {
 .nav__logo:hover {
   color: rgb(97, 97, 97);
 }
-
 
 .nav__link:not(.sign-in-btn-nav) {
   transition: .3s;
@@ -231,7 +238,6 @@ img {
   transition: 0.5s;
 }
 
-
 .nav__link:hover:not(.sign-in-btn-nav)::after {
   transform: translateX(0%) translateY(0%);
 }
@@ -242,17 +248,17 @@ img {
 
 .sign-in-btn-nav {
   background-color: #161212;
-  border: #050505 1px solid;
+  border: #ffffff 2px solid; /* Changed border color */
   color: #FFF;
-  padding: 8px 10px;
+  padding: 8px 14px;
   border-radius: 20px;
   transition: 0.3s;
 }
 
 .sign-in-btn-nav:hover {
-  background-color: #ffffff;
+  background-color: yellowgreen; /* Changed background color on hover */
   color: #050505;
-  border: #050505 1px solid;
+  border: #050505 2px solid;
 }
 
 .nav__toggle {
