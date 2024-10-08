@@ -126,13 +126,6 @@ img {
   overflow: hidden;
 }
 
-.nav { /* Separate nav styling */
-  max-width: 1100px; 
-  width: calc(100% - 3rem);
-  margin-left: var(--mb-3);
-  margin-right: var(--mb-3);
-}
-
 .bd-container {
   max-width: 1024px;
   width: calc(100% - 3rem);
@@ -152,10 +145,6 @@ img {
   left: 0;
   z-index: var(--z-fixed);
   background-color: yellowgreen;
-  height: 90px; /* Added height */
-  display: flex; /* Aligned navbar elements */
-  align-items: center;
-  justify-content: center;
 }
 
 /*========== NAV ==========*/
