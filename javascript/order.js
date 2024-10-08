@@ -9,6 +9,7 @@ function removeContent() {
   homeSam2.style.display = "none";
   homeSam3.style.display = "none";
 }
+
 function revealContent() {
   homeSam.style.display = "block";
   homeSam2.style.display = "block";
@@ -34,6 +35,7 @@ const searchSAM = () => {
     }
   }
 };
+
 // Order page pop-up functionality
 const order = document.getElementById("order-now-sam");
 const content = document.getElementById("sam");

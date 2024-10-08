@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
       { date: "2023-08-18", order: " #12345 Pizza x3",        StoreName: "FlavorFusion" },
       // .... (more data)
     ];
+
     // Function to filter orders and update the order history
     function updateOrderHistory(selectedDate, selectedCafe=false) {
       orderHistoryContainer.innerHTML = ""; // Clear previous results
@@ -65,4 +66,3 @@ document.addEventListener("DOMContentLoaded", function() {
     })
 
   });
-  
