@@ -109,7 +109,7 @@ body {
   outline: none;
   font-size: 1.2rem;
   font-family: "Poppins";
-  padding: 10px 10px;
+  padding: 10px 10px 10px 20px;
   height: 65%;
 }
 
@@ -267,20 +267,22 @@ body {
   width: 80%;
   padding: 10px 20px;
   border: 2px solid black;
+  border-radius: 10px; /* Added border radius */
 }
 
 .checkout-btn-sam {
   height: max-content;
   width: 50%;
   background-color: black;
+  border: 2px solid transparent;
   color: white;
   padding: 3% 5%;
-  border: none;
   outline: none;
   border-radius: 12px;
   font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .checkout-btn-sam:hover {
@@ -305,6 +307,7 @@ body {
   margin: 0.3rem;
   display: flex;
   justify-content: space-around;
+  border-radius: 10px;
 }
 
 .selected-order-heading {
