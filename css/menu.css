@@ -274,7 +274,7 @@
 }
 
 .dish>.bx-heart {
-  color: #766;
+  color: rgb(226, 79, 79); /* Changed hover effect of heart color */
   animation: heart-hovered-animate 0.3s linear;
 }
 
