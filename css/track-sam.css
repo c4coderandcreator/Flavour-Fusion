@@ -125,10 +125,15 @@ body {
   border-radius: 5px;
   border: 1px solid black;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 #close-track-section a {
   color: black;
+}
+
+#close-track-section:hover {
+  background: yellowgreen;
 }
 
 .dark-theme #close-track-section {
