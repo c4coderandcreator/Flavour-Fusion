@@ -485,7 +485,6 @@ img {
   perspective: 1000px;
   margin-top: 0;
   margin-bottom: 2.5em;
-
 }
 
 .order-landing__data:hover {
@@ -533,7 +532,6 @@ img {
   display: inline-block;
   margin-bottom: .75rem;
   color: var(--text-color);
-
   text-decoration: none;
   cursor: pointer;
 }
@@ -554,11 +552,10 @@ img {
 
 .footer__link:hover::after {
   width: 100%;
-
 }
 
 .footer__social {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: var(--title-color);
   margin-right: var(--mb-3);
 }
