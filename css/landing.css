@@ -38,8 +38,8 @@ a {
   --mb-4: 2rem;
   --mb-5: 2.5rem;
   --mb-6: 3rem;
-  /*========== z index ==========*/
 
+  /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
 }
@@ -360,7 +360,6 @@ img {
   position: relative;
   overflow: hidden;
   background-color: yellowgreen;
-
 }
 
 .landing-button:hover {
