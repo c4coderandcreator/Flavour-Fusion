@@ -148,6 +148,7 @@ function addHoverHeartIconToDish(dish) {
     dish.appendChild(newHeartIcon);
   }
 }
+
 // Hover dish
 function removeHeartIconFromDish(dish) {
   const heartIcon = dish.querySelector(".bxs-heart");

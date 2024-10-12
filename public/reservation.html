@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Make a Reservation</title>
 
-
     <link rel="stylesheet" href="../css/reservation.css" />
     <link
       rel="stylesheet"
@@ -19,7 +18,6 @@
         align-self: flex-start;
         float: right;
         margin-top: 3%;
-        /*margin-right: 3%;*/
         background-color: #9acd32;
         cursor: pointer;
         border-radius: 20%;
@@ -56,7 +54,6 @@
   }
 }
 
-
 /* Loader Styles start here */
 .loader-wrapper {
   --line-width: 5px;
@@ -77,7 +74,6 @@
   position: relative;
   top:50%;
   left:50%;
-/*   transform: translate(-50%, -50%); */
   width:150px;
   height:150px;
   margin:-75px 0 0 -75px;
@@ -129,6 +125,7 @@
           transform: rotate(360deg);
   }
 }
+
 @keyframes spin {
   0%   { 
     -webkit-transform: rotate(0deg); 
@@ -154,6 +151,7 @@
 .loader-wrapper .loader-section.section-left {
   left:0
 }
+
 .loader-wrapper .loader-section.section-right {
   right:0;
 }
@@ -163,14 +161,17 @@
   transform: translateX(-100%);
   transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
 }
+
 .loaded .loader-wrapper .loader-section.section-right {
   transform: translateX(100%);
   transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
 }
+
 .loaded .loader {
   opacity: 0;
   transition: all 0.3s ease-out;
 }
+
 .loaded .loader-wrapper {
   visibility: hidden;
   transform:translateY(-100%);
@@ -305,10 +306,6 @@
           <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')">
             <h2 class="headline-1 text-center">Contact Us</h2>
 
-               
-
-
-
             <p class="contact-label">Booking Request</p>
 
             <a
@@ -335,7 +332,6 @@
             <div class="separator"></div>
 
             <p class="contact-label">Social Media</p>
-
 
             <p class="body-4">
               <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>

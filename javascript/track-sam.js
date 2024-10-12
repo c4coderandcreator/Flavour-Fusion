@@ -33,5 +33,3 @@ document.getElementById("aboutLink").addEventListener("click", () => {
 document.getElementById("sign-in-btn").addEventListener("click", () => {
     removeSamSection();
     });
-
-   

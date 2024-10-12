@@ -141,7 +141,6 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" async defer></script>
   
 
-
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-176HRZFSW3"></script>
   <script>
@@ -154,7 +153,6 @@
 
     gtag('config', 'G-176HRZFSW3');
 
-
     // Preloader script
     window.addEventListener('load',function(){
   document.querySelector('body').classList.add("loaded")  
@@ -162,7 +160,6 @@
 
   // preloader script ends
   
-
   </script>
   <style>
     body.dark-theme {
@@ -170,11 +167,10 @@
       /* Update with your dark theme color */
       color: #fff;
       /* Update with your dark theme color */
-
       /*preloader animation */
       /* General Styling */
-
     }
+
 .container {
   display: flex;
   justify-content: center;
@@ -189,7 +185,6 @@
     text-align: center;
   }
 }
-
 
 /* Loader Styles start here */
 .loader-wrapper {
@@ -211,7 +206,6 @@
   position: relative;
   top:50%;
   left:50%;
-/*   transform: translate(-50%, -50%); */
   width:150px;
   height:150px;
   margin:-75px 0 0 -75px;
@@ -263,6 +257,7 @@
           transform: rotate(360deg);
   }
 }
+
 @keyframes spin {
   0%   { 
     -webkit-transform: rotate(0deg); 
@@ -288,6 +283,7 @@
 .loader-wrapper .loader-section.section-left {
   left:0
 }
+
 .loader-wrapper .loader-section.section-right {
   right:0;
 }
@@ -297,19 +293,23 @@
   transform: translateX(-100%);
   transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
 }
+
 .loaded .loader-wrapper .loader-section.section-right {
   transform: translateX(100%);
   transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
 }
+
 .loaded .loader {
   opacity: 0;
   transition: all 0.3s ease-out;
 }
+
 .loaded .loader-wrapper {
   visibility: hidden;
   transform:translateY(-100%);
   transition: all .3s 1s ease-out;
 }
+
 /* preloader ends */
   </style>
 </head>
@@ -317,22 +317,22 @@
 <body>
 
   <div class="loader-wrapper">
-    <div class="loader">
-    </div>
+    <div class="loader"></div>
     <div class="loader-section section-left"></div>
     <div class="loader-section section-right"></div>
   </div>
-
 
   <a href="#" class="scrolltop" id="scroll-top">
     <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
   </a>
 
   <header class="l-header" id="header">
+
     <nav class="nav bd-container">
       <a href="#" class="nav__logo" id="flavor-fusion-btn" style="font-size: 2rem;">FlavorFusion</a>
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
+
           <li class="nav__item">
             <a href="#home" class="nav__link active-link" id="home-btn">Home</a>
           </li>
@@ -349,22 +349,23 @@
             <a href="#sign-in" onClick="clickSignInButton()" class="nav__link sign-in-btn-nav" id="sign-in-btn">Sign
               In</a>
           </li>
-
           <li class="nav__item">
             <a href="./public/reservation.html" class="nav__link sign-in-btn-nav" id="reg-btn">Reservation</a>
           </li>
-          
           <li class="nav__item theme-toggle">
             <button onclick="toggleTheme()" class="theme-toggle-button" id="theme-toggle-button">&#9728;
             </button>
           </li>
+
         </ul>
       </div>
 
       <div class="nav__toggle" id="nav-toggle">
         <i class="bx bx-grid-alt"></i>
       </div>
+
     </nav>
+
     <div id="bg-sign-in">
       <div id="sign-in-content">
         <div class="d-none sign-in-element" id="signIn-Up-hd1">
@@ -377,21 +378,22 @@
           <div class="divider d-flex align-items-center my-4">
             <p style="color: white;" class="text-center fw-bold mx-3 mb-0">Or</p>
           </div>
-          <form action="#"></form>
+          <form action="#">
           
           <input type="email" id="email-sign-in" class="form-control rounded-pill" aria-describedby="emailHelp" placeholder="Enter email">
           <br>
           <input type="password" name="password-sign-in" class="form-control rounded-pill" id="password-sign-in" placeholder="Password">
           <br>
           <input type="password" name="confirmpassword-sign-in" class="form-control rounded-pill" id="confirmpassword-sign-in" placeholder="Confirm password">
-          
           <br>
           <button style="color: black; background-color: #c8dfbf; border-radius: 50px;" class="btn loginBtn" type="submit" class="btn">Sign Up</button>
           <br>
-          <h6 class="signIn-Up-desc">Already have account? <button onclick="toggleSignIn()" class="changeCursor">
+          <h6 class="signIn-Up-desc Text-below-btn">Already have account? <button onclick="toggleSignIn()" class="changeCursor">
               Sign In</button></h6>
         </form>
+
         </div>
+
         <div class="sign-in-loco" id="signIn-Up-hd2">
           <img src="./assets/logoSignInUp.png" alt="FlavorFusion-Logo" width="100%" height="auto">
         </div>
@@ -414,25 +416,29 @@
           <a href="# " class="forgotps">Forgot Password?</a>
           
           
-          <button style="color: black; background-color: #c8dfbf; border-radius: 50px;" class="btn  loginBtn" type="submit">Sign
+          <button style="color: black; background-color: #c8dfbf; border-radius: 50px;" class="btn loginBtn" type="submit">Sign
             In</button>
             <br>
             <h6 class="signIn-Up-desc">Don't have an account yet? <button onclick="toggleSignUp()" class="changeCursor">
                 Sign Up</button></h6>
           </form>
+
         </div>
+
         <div class="d-none sign-in-loco" id="signIn-Up-hd4">
           <img src="./assets/logoSignInUp.png" alt="FlavorFusion-Logo" width="100%" height="auto">
         </div>
         <button type="button" onClick="clickSignInButton()" class="btn btn-dark closeBtn">x</button>
       </div>
     </div>
+
   </header>
 
 
   <main class="l-main">
     <section class="home" id="home">
       <div class="home__container bd-container bd-grid">
+
         <div class="home__img">
           <img src="./assets/salmon-salad.png" alt="" class="home_img" data-tilt data-tilt-scale="1.1" />
         </div>
@@ -445,12 +451,14 @@
           </p>
           <a href="#order-landing" class="landing-button" style="color: black;">Order Now</a>
         </div>
+
       </div>
     </section>
 
 
     <section class="food-fact section bd-container" id="#">
       <div class="food-fact__container bd-grid">
+
         <div class="food-fact__data">
           <h2 class="section-title-center">
             Eat What Makes You Healthy & Happy!
@@ -468,6 +476,7 @@
         <div class="landing-s2-main__img">
           <img src="./assets/healthyhappyfood.jpg" alt="healthy-happy-food" class="home_img2" data-tilt data-tilt-scale="1.1" />
         </div>
+
       </div>
     </section>
 
@@ -1067,6 +1076,7 @@
           <!-- end of list of menu items -->
         </div>
       </div>
+
       <!-- Your Cart -->
       <div class="checkout-sam ">
         <div id="closeh1id">
@@ -1094,6 +1104,7 @@
     </section>
 
     <section class="track-container-sam" id="track-container-sam">
+
       <button id="close-track-section"> <a href="#order-landing" id="aboutLink"><i class="fa fa-arrow-left" aria-hidden="true"></i> </a></button>
       <div class="track-top">
         <h1>Order id: <span class="colored">ABCD0123</span></h1>
@@ -1102,11 +1113,13 @@
           <p>Location: <span> ABC,XYZ city,1234</span></p>
         </div>
       </div>
+
       <div class="track-img">
         <img src="./assets/image/salad (3).png" alt="" />
         <img src="./assets/image/salad (4).png" alt="" />
         <img src="./assets/image/salad (5).png" alt="" />
       </div>
+
       <div class="track-mid">
         <div class="circle">✓</div>
         <div class="connector"></div>
@@ -1116,6 +1129,7 @@
         <div class="connector"></div>
         <div class="circle">✓</div>
       </div>
+
       <div class="track-bottom">
         <div class="progress-sam">
           <img src="./assets/cooking.png" alt="" />
@@ -1134,6 +1148,7 @@
           <p>Package<br />Delivered</p>
         </div>
       </div>
+
     </section>
 
 
@@ -1157,6 +1172,7 @@
           <h3 class="order-landing__title">Already Ordered?</h3>
           <a href="#" class="landing-button landing-button-link" id="reveal-track-section">Track Order</a>
         </div>
+
       </div>
     </section>
 
@@ -1315,10 +1331,7 @@
          <div class="order-landing__container bd-container dots-center"> <div class="carousel-dots"></div></div>
       </section>
 
-    
-
   </main>
-
 
   <div class="menu-naima" id="menu">
 
@@ -1411,6 +1424,7 @@
             <p class="dish-price">10.30 $</p>
           </div>
         </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-new" src="./assets/new.png" alt="">
@@ -1421,6 +1435,7 @@
             <p class="dish-price">12.30 $</p>
           </div>
         </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-img" src="./assets/starter/starter3.png" alt="">
@@ -1430,6 +1445,7 @@
             <p class="dish-price">19.39 $</p>
           </div>
         </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-img" src="./assets/starter/starter4.png" alt="">
@@ -1439,6 +1455,7 @@
             <p class="dish-price">60.30 $</p>
           </div>
         </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-img" src="./assets/starter/starter5.png" alt="">
@@ -1448,6 +1465,7 @@
             <p class="dish-price">21.10 $</p>
           </div>
         </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-img" src="./assets/starter/starter6.png" alt="">
@@ -1457,8 +1475,10 @@
             <p class="dish-price">41.10 $</p>
           </div>
         </div>
+
       </div>
     </div>
+
     <!-- Salad -->
     <div class="m-items-slide m-items-slide2">
       <div class="m-items-container">
@@ -1472,6 +1492,7 @@
             <p class="dish-price">20.40 $</p>
           </div>
         </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-new" src="./assets/new.png" alt="">
@@ -1482,6 +1503,7 @@
             <p class="dish-price">17.10 $</p>
           </div>
         </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-img" src="./assets/salad/salad3.png" alt="">
@@ -1491,6 +1513,7 @@
             <p class="dish-price">11.47 $</p>
           </div>
         </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-img" src="./assets/salad/salad4.png" alt="">
@@ -1500,6 +1523,7 @@
             <p class="dish-price">91.30 $</p>
           </div>
         </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-img" src="./assets/salad/salad5.png" alt="">
@@ -1509,6 +1533,7 @@
             <p class="dish-price">56.25 $</p>
           </div>
         </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-img" src="./assets/salad/salad6.png" alt="">
@@ -1518,8 +1543,10 @@
             <p class="dish-price">31.91 $</p>
           </div>
         </div>
+
       </div>
     </div>
+
     <!-- Dessert -->
     <div class="m-items-slide m-items-slide3">
       <div class="m-items-container">
@@ -1533,6 +1560,7 @@
             <p class="dish-price">60.50 $</p>
           </div>
         </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-new" src="./assets/new.png" alt="">
@@ -1543,6 +1571,7 @@
             <p class="dish-price">32.20 $</p>
           </div>
         </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-img" src="./assets/dessert/dessert3.png" alt="">
@@ -1552,6 +1581,7 @@
             <p class="dish-price">41.97 $</p>
           </div>
         </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-img" src="./assets/dessert/dessert4.png" alt="">
@@ -1561,6 +1591,7 @@
             <p class="dish-price">19.20 $</p>
           </div>
         </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-img" src="./assets/dessert/dessert5.png" alt="">
@@ -1570,6 +1601,7 @@
             <p class="dish-price">21.10 $</p>
           </div>
         </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-img" src="./assets/dessert/dessert6.png" alt="">
@@ -1579,8 +1611,10 @@
             <p class="dish-price">41.10 $</p>
           </div>
         </div>
+
       </div>
     </div>
+
     <!-- Soup -->
     <div class="m-items-slide m-items-slide4">
       <div class="m-items-container">
@@ -1594,6 +1628,7 @@
             <p class="dish-price">10.30 $</p>
           </div>
         </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-new" src="./assets/new.png" alt="">
@@ -1604,6 +1639,7 @@
             <p class="dish-price">12.30 $</p>
           </div>
         </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-img" src="./assets/soup/soup3.png" alt="">
@@ -1613,6 +1649,7 @@
             <p class="dish-price">19.39 $</p>
           </div>
         </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-img" src="./assets/soup/soup4.png" alt="">
@@ -1622,6 +1659,7 @@
             <p class="dish-price">60.30 $</p>
           </div>
         </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-img" src="./assets/soup/soup5.png" alt="">
@@ -1631,6 +1669,7 @@
             <p class="dish-price">69.55 $</p>
           </div>
         </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-img" src="./assets/soup/soup6.png" alt="">
@@ -1640,6 +1679,7 @@
             <p class="dish-price">21.31 $</p>
           </div>
         </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-img" src="./assets/soup/soup7.png" alt="">
@@ -1649,6 +1689,7 @@
             <p class="dish-price">41.31 $</p>
           </div>
         </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-img" src="./assets/soup/soup8.png" alt="">
@@ -1658,6 +1699,7 @@
             <p class="dish-price">45.31 $</p>
           </div>
          </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-img" src="./assets/soup/soup9.png" alt="">
@@ -1667,11 +1709,10 @@
             <p class="dish-price">51.31 $</p>
           </div>
          </div>
+
       </div>
     </div>
 
-
-      
     <!-- Spaghetti -->
     <div class="m-items-slide m-items-slide5">
       <div class="m-items-container">
@@ -1685,6 +1726,7 @@
             <p class="dish-price">10.30 $</p>
           </div>
         </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-new" src="./assets/new.png" alt="">
@@ -1695,6 +1737,7 @@
             <p class="dish-price">12.30 $</p>
           </div>
         </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-img" src="./assets/spaghetti/spaghetti3.png" alt="">
@@ -1704,6 +1747,7 @@
             <p class="dish-price">19.39 $</p>
           </div>
         </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-img" src="./assets/spaghetti/spaghetti4.png" alt="">
@@ -1713,6 +1757,7 @@
             <p class="dish-price">60.30 $</p>
           </div>
         </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-img" src="./assets/spaghetti/spaghetti5.png" alt="">
@@ -1722,6 +1767,7 @@
             <p class="dish-price">21.10 $</p>
           </div>
         </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-img" src="./assets/spaghetti/spaghetti6.png" alt="">
@@ -1731,8 +1777,10 @@
             <p class="dish-price">41.10 $</p>
           </div>
         </div>
+
       </div>
     </div>
+
     <!-- Drinks -->
     <div class="m-items-slide m-items-slide6">
       <div class="m-items-container">
@@ -1746,6 +1794,7 @@
             <p class="dish-price">10.30 $</p>
           </div>
         </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-new" src="./assets/new.png" alt="">
@@ -1756,6 +1805,7 @@
             <p class="dish-price">12.30 $</p>
           </div>
         </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-img" src="./assets/drinks/drinks3.png" alt="">
@@ -1765,6 +1815,7 @@
             <p class="dish-price">19.39 $</p>
           </div>
         </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-img" src="./assets/drinks/drinks4.png" alt="">
@@ -1774,6 +1825,7 @@
             <p class="dish-price">60.30 $</p>
           </div>
         </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-img" src="./assets/drinks/drinks5.png" alt="">
@@ -1783,6 +1835,7 @@
             <p class="dish-price">21.10 $</p>
           </div>
         </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-img" src="./assets/drinks/drinks6.png" alt="">
@@ -1792,6 +1845,7 @@
             <p class="dish-price">41.10 $</p>
           </div>
         </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-img" src="./assets/drinks/drinks7.png" alt="">
@@ -1801,6 +1855,7 @@
             <p class="dish-price">35.10 $</p>
           </div>
         </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-img" src="./assets/drinks/drinks8.png" alt="">
@@ -1810,6 +1865,7 @@
             <p class="dish-price">31.10 $</p>
           </div>
         </div>
+
         <div class="dish">
           <div class="dish-img-container">
             <img class="dish-img" src="./assets/drinks/drinks9.png" alt="">
@@ -1846,14 +1902,11 @@
   </div>
 
 
-
-
   <section id="allaboutus">
     <div class="close-button" id="closeButton"></div>
     <div class="allcontainer">
 
       <h2 class="allh2">About Us</h2>
-
 
       <div class="allsection">
         <img class="allimg" src="./Resources/About-us-page/contentImg1.jpg" alt="Image 1" data-tilt data-tilt-scale="1.1">
@@ -1868,7 +1921,6 @@
       </div>
       <hr>
 
-
       <div class="allsection allanay2">
         <div class="allcontent">
           <h3 class="allh3">Cultivating Goodness from Seed to Plate</h3>
@@ -1880,7 +1932,6 @@
       </div>
       <hr>
 
-
       <div class="allsection">
         <img class="allimg" src="./Resources/About-us-page/contentImg2.jpg" alt="Image 2" data-tilt data-tilt-scale="1.1">
         <div class="allcontent">
@@ -1890,6 +1941,7 @@
             nourishment. </p>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -1900,7 +1952,7 @@
         <h3 class="footer__title">
           <a href="#" class="footer__logo">FlavorFusion</a>
         </h3>
-        <p class="footer__description">Providing Quality!</p>
+        <p class="footer__description footer__link">Providing Quality!</p>
       </div>
 
       <div class="footer__content">
@@ -1934,12 +1986,12 @@
 
       <div>
         <strong>Github</strong><br>
-        <a href="https://github.com/c4coderandcreator/Flavour-Fusion">   Flavour-Fusion</a>
+        <a href="https://github.com/c4coderandcreator/Flavour-Fusion" class="footer__link">Flavour-Fusion</a>
       </div>
 
       <div>
         <strong>Author</strong><br>
-        <a href="https://github.com/c4coderandcreator"> c4coderandcreator</a>
+        <a href="https://github.com/c4coderandcreator" class="footer__link">c4coderandcreator</a>
       </div>
 
      </footer>
@@ -1959,7 +2011,7 @@
   <script src="./javascript/allindex.js"></script>
   <script src="./javascript/anorder.js"></script>
   <script src="./javascript/vanilla-tilt.js"></script>
-<script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 
   <script>

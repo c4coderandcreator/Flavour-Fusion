@@ -4,7 +4,8 @@
 * {
   box-sizing: border-box;
   font-family: "DM Sans", sans-serif;
-  color: white; /* Set default text color to white */
+  color: white;
+  /* Set default text color to white */
 }
 
 body {
@@ -74,11 +75,12 @@ a {
 .input-wrapper {
   display: flex;
   justify-content: space-between;
+  gap: 6px; /* Added gap between boxes */
 }
 
 .input-field {
   width: 100%;
-  padding: 1rem 0;
+  padding: 1rem 1rem; /* Fixed Padding */
   margin: 0.5rem 0;
   border: 1px solid #333;
   background-color: rgba(255, 255, 255, 0.1);
@@ -93,7 +95,12 @@ a {
   box-shadow: 0 0 5px yellowgreen;
 }
 
+.input-date {
+  padding: 1rem 0;
+}
+
 .input-select {
+  height: 53.2px; /* Added height to make it same as date box height */
   appearance: none;
   padding: 1rem;
   margin: 0.5rem 0;
@@ -155,6 +162,7 @@ a {
   margin-bottom: 1.5rem;
   color: grey;
 }
+
 .body-4 i {
   margin-right: 10px;
 }
@@ -179,7 +187,7 @@ a {
 }
 
 button {
-  transition: transform 0.3s ease-in-out;
+  transition: all 0.3s ease; /* Fixed transition effect */
 }
 
 button:hover {
@@ -187,8 +195,16 @@ button:hover {
   color: black;
 }
 
+.body-4 a {
+  font-size: 20px; /* Slighly increased the size of icons */
+}
+
 .fa-facebook,
 .fa-instagram,
 .fa-twitter {
   color: #fff;
+}
+
+.body-4 i:hover { /* Added hover effects on social media links */
+  color: yellowgreen;
 }

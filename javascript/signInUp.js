@@ -49,5 +49,4 @@ function clickSignInButton() {
     document.body.style.overflowY = "hidden";
   }
 
-
 }

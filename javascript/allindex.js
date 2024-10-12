@@ -30,9 +30,11 @@ about.onclick = function () {
   orderHistory.style.display = "none";
   sessionStorage.setItem("currentSection", "about");
 };
+
 flavorBtn.onclick = function () {
   alhome.click();
 };
+
 alhome.onclick = function () {
   targetDiv.style.display = "none";
   targetFoot.style.display = "block";
@@ -40,11 +42,13 @@ alhome.onclick = function () {
   homelink.style.display = "block";
   homelink2.style.display = "block";
 };
+
 targetMenu2.onclick = function () {
   targetDiv.style.display = "none";
   targetFoot.style.display = "block";
   orderHistory.style.display = "none";
 };
+
 targetOrder2.onclick = function () {
   targetOrder.style.display = "block";
   targetItem.style.display = "block";
@@ -52,10 +56,12 @@ targetOrder2.onclick = function () {
   targetDiv.style.display = "none";
   orderHistory.style.display = "none";
 };
+
 anorderlink.onclick = function () {
   orderHistory.style.display = "block";
   targetItem.style.display = "none";
 };
+
 if (mediaQuery.matches) {
   orderHistory.style.marginTop = "15%";
 } else {
